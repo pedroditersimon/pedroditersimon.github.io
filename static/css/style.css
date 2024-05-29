@@ -1,0 +1,8 @@
+#profile_photo_container {
+
+}
+#profile_photo_container > img {
+    width: 100px;
+}
+
+
