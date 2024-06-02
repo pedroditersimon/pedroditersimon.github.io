@@ -1,0 +1,4 @@
+Agregar idioma que hablo en pagina principal, o hacer una seccion 'acerca de mi'
+Poner cuadro perfil que te da linkedin
+secciones de mecanicas ailadas y como las implente, que se muestre en formato tarjetas y con shadow
+Agregar certificaciones
