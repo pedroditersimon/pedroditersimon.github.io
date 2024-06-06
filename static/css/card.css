@@ -1,0 +1,38 @@
+
+a.card {
+    background-color: var(--color-secondary);
+
+    height: 15vw;
+    width: 20vw;
+
+    border-radius: 10px;
+
+    /* text */
+    color: var(--color-white-text);
+    font-weight: bolder;
+    text-decoration: none;
+    font-size: calc(1.5vh + 0.5vw);
+
+    /* childs */
+    display: flex;
+    flex-direction: column;
+}
+
+a.card:hover {
+    background-color: var(--color-secondary-hover);
+}
+
+a.card > div.card_img {
+    height: 100%;
+
+    background-size: cover;
+    border-radius: inherit;
+}
+
+a.card > div.card_text {
+
+
+    text-align: center;
+
+    padding: 1vw;
+}

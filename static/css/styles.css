@@ -10,6 +10,7 @@
     --color-primary-hover:#141414;
 
     --color-secondary: #242323;
+    --color-secondary-hover: #202020;
 }
 
 html, body {
@@ -29,13 +30,32 @@ body {
 
 /* ------- Generics ------- */
 
+.inside_shadow {
+    /* inset | offset-x | offset-y | blur-radius | spread-radius | color */
+    box-shadow: inset 0 0 10px 0.1vw var(--color-primary-hover);
+ }
+
+.outside_shadow {
+    /* inset | offset-x | offset-y | blur-radius | spread-radius | color */
+    box-shadow: 0 0 10px 0.1vw var(--color-primary-hover);
+ }
+
+.horizontal_separator {
+    background-color: var(--color-white-text);
+
+    height: 0.15vh;
+    width: 100%;
+
+    border-radius: 7px;
+}
+
 a.button {
     background-color: var(--color-accent);
     color: var(--color-white-text);
 
     display: inline-block;
 
-    padding: 1vh 1vw;
+    padding: 0.8vh 0.8vw;
     border-radius: 7px;
 
     font-weight: bolder;
@@ -48,8 +68,8 @@ a.button:hover {
 }
 
 a.button > img {
-    padding-left: 1vw;
-    width: calc(1.5vh + 0.5vw);
+    padding-left: 0.5vw;
+    width: calc(1.0vh + 1.0vw);
 }
 
 
@@ -68,7 +88,7 @@ a.button > img {
     background-repeat: no-repeat;
     background-size: cover;
 
-        /* inset | offset-x | offset-y | blur-radius | spread-radius | color */
+    /* inset | offset-x | offset-y | blur-radius | spread-radius | color */
     box-shadow: inset 0 0 10px 0.1vw var(--color-primary-hover);
 }
 
@@ -146,6 +166,13 @@ a.button > img {
     font-size: calc(1.5vh + 1vw);
 }
 
+#page_content .text.boxed {
+    background-color: rgba(0, 0, 0, 0.1);
+    
+    padding: calc(1vh + 1vw);
+    border-radius: 7px;
+}
+
 #page_content > * {
     margin-bottom: 5vh;
     text-align: justify;
@@ -167,5 +194,12 @@ a.button > img {
 
     #page_content {
         padding-bottom: 5vh;
+    }
+
+    #page_content .text.boxed {
+        background-color: unset;
+        
+        padding: unset;
+        border-radius: unset;
     }
 }
