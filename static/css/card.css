@@ -1,38 +1,42 @@
+/* ------- Card ------- */
 
 a.card {
     background-color: var(--color-secondary);
 
-    height: 15vw;
-    width: 20vw;
+    --height-size: calc(10vh + 10vw);
+    height: var(--height-size);
+    width: calc(var(--height-size) * 1.4);
 
-    border-radius: 10px;
+    border-radius: var(--border-radius);
 
     /* text */
-    color: var(--color-white-text);
+    color: var(--color-secondary-text);
     font-weight: bolder;
     text-decoration: none;
-    font-size: calc(1.5vh + 0.5vw);
+    font-size: calc(0.5vh + 1.0vw);
 
     /* childs */
     display: flex;
     flex-direction: column;
 }
-
 a.card:hover {
-    background-color: var(--color-secondary-hover);
+    background-color: var(--color-accent);
+    color: var(--color-primary-text);
 }
 
-a.card > div.card_img {
-    height: 100%;
+a.card > img.card_img {
+    height: 50%;
 
-    background-size: cover;
+    object-fit: cover;
     border-radius: inherit;
 }
+a.card > img.card_img:hover {
+    opacity: 0.8;
+}
+
 
 a.card > div.card_text {
-
-
     text-align: center;
-
-    padding: 1vw;
+    overflow: hidden;
+    padding: calc(0.5vh + 1.0vw);
 }

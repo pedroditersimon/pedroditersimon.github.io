@@ -1,0 +1,128 @@
+
+/* Fonts */
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+/*
+.oswald-<uniquifier> {
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+}
+*/
+
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+/*
+.nunito-sans-<uniquifier> {
+    font-family: "Nunito Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+    font-variation-settings:
+    "wdth" 100,
+    "YTLC" 500;
+}
+*/
+
+
+:root {
+    /* text */
+    --color-primary-text: #f2f2f2;
+    --color-secondary-text: #858585;
+    
+    --color-primary: #161616;
+    --color-primary-hover:#141414;
+
+    --color-secondary: #1c1c1c;
+    --color-secondary-hover: #202020;
+
+    --color-accent: #414BB2;
+    --color-accent-hover: #3a43a3;
+
+    --border-radius: 7px;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    height: 100%;
+
+    font-family: "Nunito Sans", sans-serif;
+
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+
+/* ------- Page ------- */
+#page {
+    flex-grow: 3;
+    height: 80vh;
+
+    display: flex;
+    flex-direction: row;
+
+    overflow: hidden;
+}
+
+
+/* ------- Page Content ------- */
+
+#page_content {
+    background-color: var(--color-primary);
+
+    flex-grow: 1;
+
+    padding: calc(2.5vh + 2vw) calc(3vh + 3vw);
+    padding-bottom: 0;
+
+    overflow-y: scroll;
+    overflow-x: hidden; /* Hide horizontal scrollbar */
+}
+
+#page_content .text {
+    text-align: justify;
+}
+
+#page_content .text.boxed {
+    background-color: rgba(0, 0, 0, 0.1);
+    
+    padding: calc(1vh + 1vw);
+    border-radius: var(--border-radius);
+}
+
+#page_content > * {
+    margin-bottom: 5vh;
+}
+
+#page_content .button {
+    margin-right: 2vw;
+}
+
+@media (max-width: 576px) {
+    #banner #profile_photo {
+        top: 2vh;
+        left: 5vw;
+    }
+
+    #page {
+        flex-direction: column;
+    }
+
+    #page_content {
+        padding-bottom: 5vh;
+    }
+
+    #page_content .text.boxed {
+        background-color: unset;
+        
+        padding: unset;
+        border-radius: unset;
+    }
+}

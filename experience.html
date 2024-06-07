@@ -4,7 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./static/css/styles.css">
+    <link rel="stylesheet" href="./static/css/page.css">
+    <link rel="stylesheet" href="./static/css/banner.css">
+    <link rel="stylesheet" href="./static/css/generics.css">
     <link rel="stylesheet" href="./static/css/navigation_bar.css">
     <link rel="stylesheet" href="./static/css/scrollbar.css">
     <link rel="stylesheet" href="./static/css/card.css">
@@ -13,7 +15,7 @@
 </head>
 
 <body>
-    <div id="banner">
+    <div id="banner" class="inside_shadow">
         <div class="banner_text">
             <a class="name">PEDRO DITER<br>SIMÓN</a>
             <a id="tittle">Programador de videojuegos en Unity C#</a>
@@ -31,27 +33,29 @@
             <a class="nav_item button" href="academical.html"><img src="./static/images/circle.png">Formacion academica</a>
         </div>
 
-        <div id="page_content">
+        <div id="page_content" class="inside_shadow">
 
-            <div class="text">
+            <div class="text primary_text">
+                Experiencia y habilidades
+            </div>
+
+            <div class="text secondary_text">
                 Trabajé como FreeLancer en línea en la web Workana, finalizando con éxito proyectos de clientes que se encuentran en distintas partes del mundo (España, Ecuador, Uruguay, etc.).
             </div>
 
-            <div class="text">
+            <div class="text secondary_text">
                 Mi idioma natal es el Español. Comprendo lectura y escritura del Ingles.
                 <br>
                 Conocimiento en los lenguajes de programación: C#, Python, JavaScript, HTML/CSS.
             </div>
 
-
-            <div class="text">
+            <div class="text primary_text">
                 <br>
                 Certificaciones
-                <div class="horizontal_separator"></div>
             </div>
 
             <a class="card outside_shadow" href="https://www.udemy.com/certificate/UC-LV2POPKJ/" target="_blank">
-                <div class="card_img" style="background-image: url(./static/images/certificates/UC-LV2POPKJ.jpg);"></div>
+                <img class="card_img" src="./static/images/certificates/UC-LV2POPKJ.jpg">
                 <div class="card_text">
                     Máster en Programación de Videojuegos con Unity® 2020 y C#
                 </div>

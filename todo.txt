@@ -1,6 +1,5 @@
-Poner cuadro perfil que te da linkedin
 
 secciones de mecanicas ailadas y como las implente, que se muestre en formato tarjetas y con shadow
-Agregar certificaciones
+Agregar certificaciones de linkedin
 
-Hacer una base de css generico para usarlo a futuro
+Agregar link para descargar o ver pdf de resumen

@@ -10,13 +10,12 @@
     display: flex;
     flex-direction: column;
     justify-content: start;
-    
 }
 
 #navigation_bar .nav_item {
     background-color: var(--color-primary);
 
-    height: calc(2vh + 2vw);
+    height: calc(1vh + 3vw);
 
     margin-top: 4vh;
 
@@ -31,6 +30,7 @@
 
 #navigation_bar .nav_item.selected  {
     background-color: var(--color-accent);
+    color: var(--color-primary-text);
 }
 #navigation_bar .nav_item.selected:hover  {
     background-color: var(--color-accent-hover);
