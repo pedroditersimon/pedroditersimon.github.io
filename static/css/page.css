@@ -90,13 +90,6 @@ body {
     text-align: justify;
 }
 
-#page_content .text.boxed {
-    background-color: rgba(0, 0, 0, 0.1);
-    
-    padding: calc(1vh + 1vw);
-    border-radius: var(--border-radius);
-}
-
 #page_content > * {
     margin-bottom: 5vh;
 }
@@ -106,23 +99,13 @@ body {
 }
 
 @media (max-width: 576px) {
-    #banner #profile_photo {
-        top: 2vh;
-        left: 5vw;
-    }
-
     #page {
         flex-direction: column;
     }
 
     #page_content {
+        padding-left: calc(2vh + 2vw);
+        padding-right: calc(2vh + 2vw);
         padding-bottom: 5vh;
-    }
-
-    #page_content .text.boxed {
-        background-color: unset;
-        
-        padding: unset;
-        border-radius: unset;
     }
 }

@@ -52,5 +52,5 @@
 
     object-fit: cover;
     border-radius: 40%;
-    border: 0.25vw solid var(--color-primary-text);
+    border: calc(0.15vh + 0.15vw) solid var(--color-primary-text);
 }
