@@ -74,3 +74,26 @@ a.button > img {
         padding: 0.8vh 1.5vw;
     }
 }
+
+
+/* Layouts */
+
+.grid_container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+
+    gap: 5vw;
+    padding: 1vw;
+}
+/*
+.grid_item:hover {
+    z-index: 10;
+}
+*/
+
+@media (max-width: 576px) {
+    .grid_container {
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+        padding: 0;
+    }
+}

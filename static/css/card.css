@@ -28,6 +28,7 @@ a.card > img.card_img {
     height: 50%;
 
     object-fit: cover;
+    object-position: top;
     border-radius: inherit;
 }
 a.card:hover > img.card_img {
@@ -35,8 +36,12 @@ a.card:hover > img.card_img {
 }
 
 
-a.card > div.card_text {
+a.card > span {
     text-align: center;
+    align-content: center;
+
     overflow: hidden;
     padding: calc(0.5vh + 1.0vw);
+
+    flex-grow: 1;
 }
