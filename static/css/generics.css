@@ -1,5 +1,12 @@
 /* ------- Generics ------- */
 
+.space1 {
+    margin-top: 5vh;
+}
+.space2 {
+    margin-top: 2vh;
+}
+
 .inside_shadow {
     /* inset | offset-x | offset-y | blur-radius | spread-radius | color */
     box-shadow: inset 0 0 10px 0.1vw var(--color-primary-hover);

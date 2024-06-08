@@ -80,21 +80,12 @@ body {
     flex-grow: 1;
 
     padding: calc(2.5vh + 2vw) calc(5vh + 5vw);
-    padding-bottom: 0;
 
     overflow-y: scroll;
     overflow-x: hidden; /* Hide horizontal scrollbar */
 }
 
 
-
-#page_content .tittle {
-    margin-bottom: 2vh;
-}
-
-#page_content > * {
-    margin-bottom: 5vh;
-}
 
 #page_content .button {
     margin-right: 2vw;
@@ -108,6 +99,5 @@ body {
     #page_content {
         padding-left: calc(2vh + 2vw);
         padding-right: calc(2vh + 2vw);
-        padding-bottom: 5vh;
     }
 }

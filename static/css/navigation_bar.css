@@ -16,10 +16,11 @@
     background-color: var(--color-primary);
     */
 
-    width: fit-content;
+    width: max-content;
     font-size: calc(1vh + 0.7vw);
     text-wrap: nowrap;
-    
+
+    text-align: center;
     align-content: center;
 }
 #navigation_bar .nav_item:hover {
@@ -55,11 +56,12 @@
     background-color: var(--color-primary-text);
 }
 
+
 @media (max-width: 576px) {
     #navigation_bar {
         width: 100%;
-        padding: 2vh 0;
-        gap: 0.5vw;
+        padding: 2vh 2vw;
+        gap: 0;
 
         flex-direction: row;
         justify-content: center;
@@ -67,7 +69,7 @@
 
     #navigation_bar .nav_item {
         margin: 0;
-
+        text-wrap: wrap;
     }
 
     #navigation_bar .nav_item .dot {

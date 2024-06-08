@@ -6,3 +6,5 @@ Agregar link para descargar o ver pdf de resumen
 
 agregar Avenue a proyectos
 agregar link tablero y miro a proyectos
+
+Poner foto a los proyectos
