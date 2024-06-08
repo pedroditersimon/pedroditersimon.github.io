@@ -30,7 +30,7 @@ a.card > img.card_img {
     object-fit: cover;
     border-radius: inherit;
 }
-a.card > img.card_img:hover {
+a.card:hover > img.card_img {
     opacity: 0.8;
 }
 

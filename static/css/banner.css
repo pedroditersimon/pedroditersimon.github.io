@@ -4,8 +4,6 @@
 #banner {
     background-color: var(--color-accent-hover);
 
-    flex-grow: 1;
-    
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-between;
@@ -13,6 +11,8 @@
     background-image: url("../images/banner.png");
     background-repeat: no-repeat;
     background-size: cover;
+
+    padding: 2vh 6vw;
 }
 
 
@@ -21,12 +21,10 @@
 
     display: flex;
     flex-direction: column;
-
-    margin: 5vh 6vw;
+    gap: 1vh;
 }
 
 #banner .name {
-    flex-grow: 2;
     font-size: calc(2vh + 4vw);
 
     font-family: "Oswald", sans-serif;
@@ -35,10 +33,8 @@
     text-align: right;
 }
 #banner #tittle {
-    flex-grow: 1;
     font-size: calc(0.5vh + 1vw);
     
-    padding-top: 1vh;
     align-content: start;
     text-align: right;
 }
@@ -48,9 +44,8 @@
     width: calc(10vh + 12vw);
 
     align-self: center;
-    margin: 5vh 5vw;
 
     object-fit: cover;
-    border-radius: 40%;
-    border: calc(0.15vh + 0.15vw) solid var(--color-primary-text);
+    border-radius: 50%;
+    /* border: calc(0.15vh + 0.15vw) solid var(--color-primary-text); */
 }

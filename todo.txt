@@ -3,3 +3,6 @@ secciones de mecanicas ailadas y como las implente, que se muestre en formato ta
 Agregar certificaciones de linkedin
 
 Agregar link para descargar o ver pdf de resumen
+
+agregar Avenue a proyectos
+agregar link tablero y miro a proyectos

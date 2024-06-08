@@ -62,7 +62,6 @@ a.button > img {
     width: calc(1.0vh + 1.0vw);
 }
 
-
 @media (max-width: 576px) {
     a.button {
         padding: 0.8vh 1.5vw;
