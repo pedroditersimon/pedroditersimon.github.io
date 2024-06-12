@@ -8,3 +8,9 @@ agregar Avenue a proyectos
 agregar link tablero y miro a proyectos
 
 Poner foto a los proyectos
+
+Actualizacion de proyecto:
+- Mantener una vista publica tal cual un portfolio
+- Agregar un panel de admin, donde pueda editar el contenido y utilizar elementos preparados como cards, botones, secciones, paginas en el navbar etc.
+- Agregar un lugar donde pueda escribir mis notas y pendientes personales (no publico)
+- Una seccion donde pueda hacer notas y publicaciones abiertas al publico.

@@ -7,7 +7,7 @@
 
 /* Track */
 ::-webkit-scrollbar-track {
-    background-color: #ffffff00;
+    background-color: var(--color-primary);
     margin: 2vh;
 }
 

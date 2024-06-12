@@ -59,6 +59,8 @@
 
 @media (max-width: 576px) {
     #navigation_bar {
+        display: none;
+
         width: 100%;
         padding: 2vh 2vw;
         gap: 0;

@@ -74,21 +74,31 @@ body {
 
 /* ------- Page Content ------- */
 
-#page_content {
+.page_content {
     background-color: var(--color-primary);
 
     flex-grow: 1;
-
-    padding: calc(2.5vh + 2vw) calc(5vh + 5vw);
 
     overflow-y: scroll;
     overflow-x: hidden; /* Hide horizontal scrollbar */
 }
 
+.page_content > section {
+    background-color: var(--color-primary);
+    padding: calc(2.5vh + 2vw) calc(5vh + 5vw);
+}
 
-
-#page_content .button {
+.page_content .button {
     margin-right: 2vw;
+}
+
+.page_content .section_divider {
+    background-color: var(--color-secondary);
+
+    width: 100%;
+    height: 0;
+
+    border: solid  2px var(--color-secondary);
 }
 
 @media (max-width: 576px) {
@@ -96,7 +106,7 @@ body {
         flex-direction: column;
     }
 
-    #page_content {
+    .page_content > section {
         padding-left: calc(2vh + 2vw);
         padding-right: calc(2vh + 2vw);
     }
