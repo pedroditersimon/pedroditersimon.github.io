@@ -35,12 +35,12 @@
 /* ------- Texts ------- */
 .primary_text {
     color: var(--color-primary-text);
-    font-size: calc(1.5vh + 1vw);
+    font-size: var(--primary-text-size);
 }
 
 .secondary_text {
     color: var(--color-secondary-text);
-    font-size: calc(1vh + 1.0vw);
+    font-size: var(--secondary-text-size);
 }
 
 
@@ -56,7 +56,7 @@ a.button {
 
     font-weight: bolder;
     text-decoration: none;
-    font-size: calc(1.5vh + 0.5vw);
+    font-size: var(--secondary-text-size);
 }
 
 a.button:hover {

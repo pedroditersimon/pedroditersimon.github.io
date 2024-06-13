@@ -1,15 +1,13 @@
 
-secciones de mecanicas ailadas y como las implente, que se muestre en formato tarjetas y con shadow
-Agregar certificaciones de linkedin
+secciones de mecanicas aisladas y como las implente, que se muestre en formato tarjetas y con shadow
 
 Agregar link para descargar o ver pdf de resumen
 
 agregar Avenue a proyectos
 agregar link tablero y miro a proyectos
-
 Poner foto a los proyectos
 
-Actualizacion de proyecto:
+Actualizacion a futuro:
 - Mantener una vista publica tal cual un portfolio
 - Agregar un panel de admin, donde pueda editar el contenido y utilizar elementos preparados como cards, botones, secciones, paginas en el navbar etc.
 - Agregar un lugar donde pueda escribir mis notas y pendientes personales (no publico)

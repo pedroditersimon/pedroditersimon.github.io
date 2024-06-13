@@ -1,0 +1,13 @@
+.header {
+    background-color: var(--color-secondary);
+
+    flex-basis: 20vw;
+    flex-grow: 0;
+}
+
+
+@media (max-width: 576px) {
+    .header {
+        display: none;
+    }
+}

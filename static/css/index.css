@@ -1,0 +1,67 @@
+
+/* Fonts */
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+/*
+.oswald-<uniquifier> {
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+}
+*/
+
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+/*
+.nunito-sans-<uniquifier> {
+    font-family: "Nunito Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+    font-variation-settings:
+    "wdth" 100,
+    "YTLC" 500;
+}
+*/
+
+
+:root {
+    /* color pallete */
+    --color-primary-text: #f2f2f2;
+    --color-secondary-text: #858585;
+    
+    --color-primary: #161616;
+    --color-primary-hover:#141414;
+
+    --color-secondary: #1c1c1c;
+    --color-secondary-hover: #202020;
+
+    --color-accent: #414BB2;
+    --color-accent-hover: #3a43a3;
+
+    /* this define EM and REM size */
+    font-size: calc(1vh + 1vw); 
+    
+    /* some preset text sizes */
+    --primary-text-size: 1rem;
+    --secondary-text-size: 0.8rem;
+    --small-text-size: 0.7rem;
+    --border-radius: 0.3rem;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    height: 100%;
+
+    font-family: "Nunito Sans", sans-serif;
+
+
+    display: flex;
+    flex-direction: column;
+}
+

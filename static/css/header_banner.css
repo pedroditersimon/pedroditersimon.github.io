@@ -1,0 +1,61 @@
+
+
+/* ------- Header Banner ------- */
+
+#header_banner {
+    /*
+    background-color: var(--color-accent);
+
+    background-image: url("../images/banner.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+*/
+
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+
+    padding: 2vw 1vw;
+    padding-bottom: 0;
+    gap: 0.5vw;
+}
+
+/* Text */
+#header_banner .banner_text {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    text-decoration: none;
+}
+
+#header_banner .name {
+    color: var(--color-primary-text);
+
+    font-size: var(--secondary-text-size);
+    font-weight: bold;
+    
+    align-content: center;
+}
+#header_banner #tittle {
+    color: var(--color-secondary-text);
+    font-size: var(--small-text-size);
+    
+    align-content: center;
+}
+#header_banner .banner_text:hover {
+    background-color: var(--color-primary-hover);
+}
+
+/* Profile photo */
+#header_banner #profile_photo {
+    align-content: center;
+}
+
+#header_banner #profile_photo img {
+    height: calc(2vh + 2vw);
+    width: calc(2vh + 2vw);
+
+    object-fit: cover;
+    border-radius: 50%;
+    /* border: calc(0.15vh + 0.15vw) solid var(--color-primary-text); */
+}

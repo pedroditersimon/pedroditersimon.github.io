@@ -23,7 +23,7 @@ page_content.addEventListener('scroll', () => {
         let id = sec.getAttribute('id');
 
         // Adjust the offset for greater tolerance
-        offset -= 50;
+        offset -= 200;
 
         // console.log(`Section ${id} - Offset: ${offset}, Height: ${height}, scrollY: ${scrollY}`); // Section debugging
 

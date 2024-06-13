@@ -1,8 +1,6 @@
 /* ------- Navigation Bar ------- */
 
-#navigation_bar {
-    background-color: var(--color-secondary);
-
+#navbar {
     padding: 5vh 1vw;
 
     display: flex;
@@ -11,31 +9,33 @@
     gap: 2vh;
 }
 
-#navigation_bar .nav_item {
+#navbar .nav_item {
     /* 
     background-color: var(--color-primary);
     */
 
     width: max-content;
-    font-size: calc(1vh + 0.7vw);
+    font-size: var(--small-text-size);
     text-wrap: nowrap;
 
     text-align: center;
     align-content: center;
 }
-#navigation_bar .nav_item:hover {
+#navbar .nav_item:hover {
     background-color: var(--color-primary-hover);
 }
 
-#navigation_bar .nav_item.selected  {
+#navbar .nav_item.selected  {
     background-color: var(--color-accent);
     color: var(--color-primary-text);
 }
-#navigation_bar .nav_item.selected:hover  {
+#navbar .nav_item.selected:hover  {
     background-color: var(--color-accent-hover);
 }
 
-#navigation_bar .nav_item .dot {
+/* Dot */
+#navbar .nav_item::before {
+    content: "";
     background-color: var(--color-secondary-text);
     display: inline-block;
 
@@ -49,18 +49,16 @@
 
     border-radius: 50%;
 }
-#navigation_bar .nav_item.selected .dot {
+#navbar .nav_item.selected::before {
     background-color: var(--color-primary-text);
 }
-#navigation_bar .nav_item:hover .dot {
+#navbar .nav_item:hover::before {
     background-color: var(--color-primary-text);
 }
 
 
 @media (max-width: 576px) {
-    #navigation_bar {
-        display: none;
-
+    #navbar {
         width: 100%;
         padding: 2vh 2vw;
         gap: 0;
@@ -69,12 +67,12 @@
         justify-content: center;
     }
 
-    #navigation_bar .nav_item {
+    #navbar .nav_item {
         margin: 0;
         text-wrap: wrap;
     }
 
-    #navigation_bar .nav_item .dot {
+    #navbar .nav_item .dot {
         display: none;
     }
 }

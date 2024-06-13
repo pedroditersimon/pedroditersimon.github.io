@@ -1,7 +1,7 @@
 
-/* ------- Banner ------- */
+/* ------- Page Banner ------- */
 
-#banner {
+#page_banner {
     background-color: var(--color-accent-hover);
 
     display: flex;
@@ -16,32 +16,33 @@
 }
 
 
-#banner .banner_text {
+#page_banner .banner_text {
     color: var(--color-primary-text);
 
     display: flex;
     flex-direction: column;
     gap: 1vh;
+    justify-content: center;
+
+    text-align: right;
 }
 
-#banner .name {
-    font-size: calc(2vh + 4vw);
+#page_banner .name {
+    font-size: 3em;
 
     font-family: "Oswald", sans-serif;
 
     align-content: center;
-    text-align: right;
 }
-#banner #tittle {
-    font-size: calc(0.5vh + 1vw);
+#page_banner #tittle {
+    font-size: var(--secondary-text-size);
     
     align-content: start;
-    text-align: right;
 }
 
-#banner #profile_photo {
-    height: calc(10vh + 12vw);
-    width: calc(10vh + 12vw);
+#page_banner #profile_photo {
+    height: calc(10vh + 10vw);
+    width: calc(10vh + 10vw);
 
     align-self: center;
 

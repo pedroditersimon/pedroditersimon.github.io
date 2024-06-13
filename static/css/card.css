@@ -3,9 +3,10 @@
 a.card {
     background-color: var(--color-secondary);
 
-    --height-size: calc(10vh + 10vw);
-    height: var(--height-size);
-    width: calc(var(--height-size) * 1.4);
+    /* define a size, width is 1.4 bigger than height */
+    --size: calc(10vh + 10vw);
+    height: var(--size);
+    width: calc(var(--size) * 1.4);
 
     border-radius: var(--border-radius);
 
@@ -13,7 +14,7 @@ a.card {
     color: var(--color-secondary-text);
     font-weight: bolder;
     text-decoration: none;
-    font-size: calc(0.5vh + 1.0vw);
+    font-size: var(--small-text-size);
 
     /* childs */
     display: flex;

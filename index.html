@@ -4,36 +4,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./static/css/page.css">
-    <link rel="stylesheet" href="./static/css/banner.css">
-    <link rel="stylesheet" href="./static/css/generics.css">
-    <link rel="stylesheet" href="./static/css/navigation_bar.css">
-    <link rel="stylesheet" href="./static/css/scrollbar.css">
-    <link rel="stylesheet" href="./static/css/card.css">
 
-    <title>Document</title>
+    <link rel="stylesheet" href="./static/css/index.css">
+    <link rel="stylesheet" href="./static/css/generics.css">
+    <link rel="stylesheet" href="./static/css/scrollbar.css">
+    <link rel="stylesheet" href="./static/css/page.css">
+    
+    <link rel="stylesheet" href="./static/css/header.css">
+    <link rel="stylesheet" href="./static/css/header_banner.css">
+    <link rel="stylesheet" href="./static/css/navbar.css">
+
+    <link rel="stylesheet" href="./static/css/page_banner.css">
+    <link rel="stylesheet" href="./static/css/card.css">
+    <link rel="stylesheet" href="./static/css/timeline.css">
+
+    <title>Portfolio - Pedro Simon</title>
+    <link rel="icon" href="./static/images/me.jpg">
 </head>
 
 <body>
-    <div id="banner" class="inside_shadow">
-        <div class="banner_text">
-            <a class="name">PEDRO DITER<br>SIMÓN</a>
-            <a id="tittle">Programador de videojuegos en Unity C#</a>
-        </div>
-        
-        <img class="outside_shadow" src="./static/images/me.jpg" id="profile_photo">
-    </div>
     
     <div id="page">
+        <div class="header">
+            <div id="header_banner" class="">
+                <a href="index.html" class="banner_text button">
+                    <span class="name">Pedro Diter Simón</span>
+                    <span id="tittle">Programador de videojuegos en Unity C#</span>
+                </a>
+                <a id="profile_photo">
+                    <img class="outside_shadow" src="./static/images/me.jpg">
+                </a>
+            </div>
 
-        <div id="navigation_bar">
-            <a class="nav_item button selected" href="#about_me"><div class="dot"></div>Acerca de mí</a>
-            <a class="nav_item button" href="#experience"><div class="dot"></div>Experiencia y habilidades</a>
-            <a class="nav_item button" href="#projects"><div class="dot"></div>Proyectos</a>
-            <a class="nav_item button" href="#academical"><div class="dot"></div>Formacion academica</a>
+            <div id="navbar">
+                <a class="nav_item button selected" href="#about_me">Acerca de mí</a>
+                <a class="nav_item button" href="#experience">Experiencia y habilidades</a>
+                <a class="nav_item button" href="#projects">Proyectos</a>
+                <a class="nav_item button" href="#academical">Formacion academica</a>
+            </div>
         </div>
 
-        <div class="page_content">
+        <div class="page_content inside_shadow">
+            <div id="page_banner" class="inside_shadow">
+                <div class="banner_text">
+                    <a class="name">PEDRO DITER<br>SIMÓN</a>
+                    <a id="tittle">Programador de videojuegos en Unity C#</a>
+                </div>
+                
+                <img class="outside_shadow" src="./static/images/me.jpg" id="profile_photo">
+            </div>
+
             <section id="about_me" class="">
 
                 <div class="primary_text">
@@ -64,7 +84,7 @@
                 </div>
             </section>
 
-            <div class="section_divider"></div>
+            <hr class="section_divider">
 
             <section id="experience" class="">
 
@@ -128,7 +148,7 @@
                 </div>
             </section>
 
-            <div class="section_divider"></div>
+            <hr class="section_divider">
 
             <section id="projects" class="">
 
@@ -155,7 +175,7 @@
     
             </section>
 
-            <div class="section_divider"></div>
+            <hr class="section_divider">
 
             <section id="academical" class="">
 
@@ -163,27 +183,16 @@
                     Formacion academica
                 </div>
     
-                <div class="boxed space2">
-                    <div class="primary_text">
-                        Educación Secundaria
-                        <div class="horizontal_line"></div>
+                <div class="timeline space2">
+                    <div class="entry">
+                        <span class="date">2016-2021 Educación Secundaria</span>
+                        <span class="tittle">Técnico En Administración Y Gestión De Las Organizaciones</span>
+                        <span class="description">Escuela Provincial De Educación Técnica N°2 “Eva Duarte De Perón”.<br>Posadas-Misiones.  </span>
                     </div>
-                    <div class="secondary_text space2">
-                        Escuela Provincial De Educación Técnica N°2 “Eva Duarte De Perón” [Periodo: 2016-2021]. Posadas-Misiones.
-                        <br>
-                        Título “Técnico En Administración Y Gestión De Las Organizaciones”.
-                    </div>
-                </div>
-    
-                <div class="boxed space1">
-                    <div class="primary_text">
-                        Educación Superior
-                        <div class="horizontal_line"></div>
-                    </div>
-                    <div class="secondary_text space2">
-                        Instituto de Capacitación y Desarrollo Empresarial (I.N.C.A.D.E.). Posadas-Misiones.
-                        <br>
-                        Actualmente cursando 3er año de Tecnicatura superior en Gestión en Programación e Innovación Tecnológica y Digital
+                    <div class="entry">
+                        <span class="date">2022-x Educación Superior (Actualmente cursando 3er año)</span>
+                        <span class="tittle">Tecnicatura superior en Gestión en Programación e Innovación Tecnológica y Digital</span>
+                        <span class="description">Instituto de Capacitación y Desarrollo Empresarial (I.N.C.A.D.E.).<br>Posadas-Misiones.</span>
                     </div>
                 </div>
                 
