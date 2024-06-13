@@ -43,11 +43,14 @@
     font-size: var(--secondary-text-size);
 }
 
+.bold {
+    font-weight: bold;
+}
 
 /* ------- <a> Buttons ------- */
 a.button {
-    background-color: var(--color-secondary);
-    color: var(--color-secondary-text);
+    background-color: var(--color-accent);
+    color: var(--color-primary-text);
 
     display: inline-block;
 
@@ -95,5 +98,22 @@ a.button > img {
     .grid_container {
         grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
         padding: 0;
+    }
+}
+
+
+/* Hide and Show elements depending on the platform */
+
+/* Hide Desktop on Mobile */
+@media (max-width: 576px) {
+    .only_show_desktop {
+        display: none !important;
+    }
+}
+
+/* Hide Mobile on Desktop */
+@media (min-width: 577px) {
+    .only_show_mobile {
+        display: none !important;
     }
 }

@@ -1,5 +1,5 @@
 
-secciones de mecanicas aisladas y como las implente, que se muestre en formato tarjetas y con shadow
+secciones de mecanicas aisladas y como las implemente, que se muestre en formato tarjetas y con shadow
 
 Agregar link para descargar o ver pdf de resumen
 
@@ -12,3 +12,6 @@ Actualizacion a futuro:
 - Agregar un panel de admin, donde pueda editar el contenido y utilizar elementos preparados como cards, botones, secciones, paginas en el navbar etc.
 - Agregar un lugar donde pueda escribir mis notas y pendientes personales (no publico)
 - Una seccion donde pueda hacer notas y publicaciones abiertas al publico.
+
+
+Reestructurar header banner para que sea un "Avatar" o "Perfil", y asi funcione tambien fuera del navbar

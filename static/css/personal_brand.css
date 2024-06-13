@@ -1,0 +1,29 @@
+
+
+#personal_brand .brand_text {
+    color: var(--color-brand-text);
+}
+
+#personal_brand .button {
+    background-color: var(--color-brand);
+}
+#personal_brand .button:hover {
+    background-color: var(--color-brand-hover);
+}
+
+.brand_avatar {
+    max-width: fit-content;
+}
+
+.brand_avatar #header_banner .button {
+    background-color: unset;
+}
+.brand_avatar #header_banner .button:hover {
+    background-color: unset;
+}
+
+
+.brand_avatar #header_banner #profile_photo img {
+    height: calc(3vh + 3vw);
+    width: calc(3vh + 3vw);
+}

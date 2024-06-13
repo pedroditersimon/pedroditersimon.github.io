@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="./static/css/navbar.css">
 
     <link rel="stylesheet" href="./static/css/page_banner.css">
+    <link rel="stylesheet" href="./static/css/personal_brand.css">
     <link rel="stylesheet" href="./static/css/card.css">
     <link rel="stylesheet" href="./static/css/timeline.css">
 
@@ -24,6 +25,16 @@
 
 <body>
     
+    <!-- Only displayed on mobile devices-->
+    <div id="page_banner" class="inside_shadow only_show_mobile">
+        <div class="banner_text">
+            <a class="name">PEDRO DITER<br>SIMÓN</a>
+            <a id="tittle">Programador de videojuegos en Unity C#</a>
+        </div>
+        
+        <img class="outside_shadow" src="./static/images/me.jpg" id="profile_photo">
+    </div>
+
     <div id="page">
         <div class="header">
             <div id="header_banner" class="">
@@ -39,13 +50,16 @@
             <div id="navbar">
                 <a class="nav_item button selected" href="#about_me">Acerca de mí</a>
                 <a class="nav_item button" href="#experience">Experiencia y habilidades</a>
+                <a class="nav_item button" href="#personal_brand">Marca personal</a>
                 <a class="nav_item button" href="#projects">Proyectos</a>
                 <a class="nav_item button" href="#academical">Formacion academica</a>
             </div>
         </div>
 
         <div class="page_content inside_shadow">
-            <div id="page_banner" class="inside_shadow">
+
+            <!-- Only displayed on desktop devices-->
+            <div id="page_banner" class="inside_shadow only_show_desktop">
                 <div class="banner_text">
                     <a class="name">PEDRO DITER<br>SIMÓN</a>
                     <a id="tittle">Programador de videojuegos en Unity C#</a>
@@ -56,7 +70,7 @@
 
             <section id="about_me" class="">
 
-                <div class="primary_text">
+                <div class="primary_text bold">
                     Acerca de mí
                 </div>
 
@@ -66,14 +80,18 @@
                     Me especializo en el lenguaje de programación C# y el scripting API de Unity3D, como su manejo general. Desarrollando mecánicas, sistemas y herramientas para la implementación en videojuegos.
                 </div>
 
-
-
-                <div class="space1">
-                    <a class="button outside_shadow" href="https://www.linkedin.com/in/pedro-diter-simon/" target="_blank">LinkedIn <img src="./static/images/link.png"></a>
-                    <a class="button outside_shadow" href="https://github.com/pedroditersimon" target="_blank">GitHub <img src="./static/images/link.png"></a>
+                <div class="space2">
+                    <a class="button outside_shadow" href="https://www.linkedin.com/in/pedro-diter-simon/" target="_blank">
+                        LinkedIn
+                        <img src="./static/images/link.png">
+                    </a>
+                    <a class="button outside_shadow" href="https://github.com/pedroditersimon" target="_blank">
+                        GitHub
+                        <img src="./static/images/link.png">
+                    </a>
                 </div>  
 
-                <div class="primary_text space1">
+                <div class="primary_text space1 bold">
                     Historia
                 </div>
 
@@ -88,7 +106,7 @@
 
             <section id="experience" class="">
 
-                <div class="primary_text">
+                <div class="primary_text bold">
                     Experiencia y habilidades
                 </div>
 
@@ -113,7 +131,7 @@
                     </ul>
                 </div>
 
-                <div class="primary_text space1">
+                <div class="primary_text space1 bold">
                     Certificaciones
                 </div>
 
@@ -150,28 +168,87 @@
 
             <hr class="section_divider">
 
-            <section id="projects" class="">
+            <section id="personal_brand" class="">
 
-                <div class="primary_text">
-                    Proyectos
+                <div class="primary_text bold brand_text">
+                    Marca personal
                 </div>
     
+                <div class="secondary_text space2">
+                    Desarollé mi marca personal bajo el nombre de "<span class="brand_text">ChocoDark Studio</span>", por la cual doy a conocer mis videojuegos y sus avances
+                </div>
+
+                <div class="brand_avatar">
+                    <div id="header_banner" class="">
+                        <a class="banner_text button">
+                            <span class="name">ChocoDark Studio</span>
+                            <span id="tittle">Desarrollador de videojuegos indie</span>
+                        </a>
+                        <a id="profile_photo">
+                            <img class="outside_shadow" src="./static/images/brand-logo.png">
+                        </a>
+                    </div>
+                </div>
+
+
+                <div class="space2">
+                    <a class="button outside_shadow" href="https://x.com/ChocoDarkStudio" target="_blank">
+                        Twitter
+                        <img src="./static/images/link.png">
+                    </a>
+                    <a class="button outside_shadow" href="https://www.instagram.com/chocodark.studio/" target="_blank">
+                        Instagram
+                        <img src="./static/images/link.png">
+                    </a>
+                    <a class="button outside_shadow" href="https://linktr.ee/ChocodarkStudio" target="_blank">
+                        Linktree
+                        <img src="./static/images/link.png">
+                    </a>
+                </div>  
+    
+            </section>
+
+            <hr class="section_divider">
+
+            <section id="projects" class="">
+
+                <div class="primary_text bold">
+                    Proyectos
+                </div>
+
+                <div class="secondary_text space2">
+                    Videojuegos que desarollé y publiqué en tiendas y redes sociales por medio de mi marca personal.
+                </div>
+
                 <div class="boxed space2">
-                    <div class="primary_text">
+                    <div class="primary_text ">
                         Mini Room Painter
-                        <div class="horizontal_line"></div>
                     </div>
         
                     <div class="secondary_text space2">
-                        Diseñe en su totalidad un videojuego llamado “Mini Room Painter”, que se encuentra publicado en la tienda Google PlayStore para smartphones.
+                        Diseñé en su totalidad un videojuego llamado “Mini Room Painter”, que se encuentra publicado en la tienda Google PlayStore para smartphones.
                         <br>
-                        Desarrollando desde la programación, hasta el diseño de gráficos, UI, GameDesign, ilustraciones y animaciones.
+                        Desarrollando desde la programación, hasta el diseño de gráficos, Modelado3D, UI, GameDesign, ilustraciones y animaciones.
                         <div class="space2">
                             <a class="button outside_shadow" href="https://play.google.com/store/apps/details?id=com.ChocoDarkStudio.MiniRoomPainter" target="_blank">PlayStore <img src="./static/images/link.png"></a>
                         </div>
                     </div>
                 </div>
     
+                <div class="boxed space2">
+                    <div class="primary_text ">
+                        Avenue
+                    </div>
+        
+                    <div class="secondary_text space2">
+                        Diseñé en su totalidad un videojuego llamado “Avenue”, que se encuentra publicado en la tienda Itch.io para Windows.
+                        <br>
+                        Desarrollando desde la programación, hasta el diseño de gráficos, UI, GameDesign y animaciones.
+                        <div class="space2">
+                            <a class="button outside_shadow" href="https://chocodark-studio.itch.io/avenue" target="_blank">Itch.io <img src="./static/images/link.png"></a>
+                        </div>
+                    </div>
+                </div>
     
             </section>
 
@@ -179,7 +256,7 @@
 
             <section id="academical" class="">
 
-                <div class="primary_text">
+                <div class="primary_text bold">
                     Formacion academica
                 </div>
     
@@ -197,6 +274,8 @@
                 </div>
                 
             </section>
+
+            <hr class="section_divider">
         </div>
 
     </div>

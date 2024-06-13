@@ -22,8 +22,11 @@
 
 /* Text */
 #header_banner .banner_text {
+    background-color: unset;
+
     display: flex;
     flex-direction: column;
+
     text-align: left;
     text-decoration: none;
 }
