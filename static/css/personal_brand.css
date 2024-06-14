@@ -1,5 +1,5 @@
 
-
+/* personal_brand section */
 #personal_brand .brand_text {
     color: var(--color-brand-text);
 }
@@ -11,19 +11,24 @@
     background-color: var(--color-brand-hover);
 }
 
-.brand_avatar {
+
+/* personal_brand porfile card */
+#personal_brand.profile_card {
+    background-color: unset;
     max-width: fit-content;
-}
 
-.brand_avatar #header_banner .button {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+#personal_brand .profile_card.button {
     background-color: unset;
 }
-.brand_avatar #header_banner .button:hover {
+#personal_brand .profile_card.button:hover {
     background-color: unset;
 }
 
 
-.brand_avatar #header_banner #profile_photo img {
+#personal_brand .profile_card .profile_photo {
     height: calc(3vh + 3vw);
     width: calc(3vh + 3vw);
 }

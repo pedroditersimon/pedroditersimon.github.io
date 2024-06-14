@@ -3,9 +3,10 @@ secciones de mecanicas aisladas y como las implemente, que se muestre en formato
 
 Agregar link para descargar o ver pdf de resumen
 
-agregar Avenue a proyectos
 agregar link tablero y miro a proyectos
 Poner foto a los proyectos
+Poner los botones en la esquina superior derecha o la esquina inferior derecha
+Distrubuir mejor la informacion de duracion 
 
 Actualizacion a futuro:
 - Mantener una vista publica tal cual un portfolio
@@ -13,5 +14,4 @@ Actualizacion a futuro:
 - Agregar un lugar donde pueda escribir mis notas y pendientes personales (no publico)
 - Una seccion donde pueda hacer notas y publicaciones abiertas al publico.
 
-
-Reestructurar header banner para que sea un "Avatar" o "Perfil", y asi funcione tambien fuera del navbar
+Quitar el estilo embebido en la etiqueta de los botones de los proyectos, pasarlos a una clase .css

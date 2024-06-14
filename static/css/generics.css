@@ -47,6 +47,29 @@
     font-weight: bold;
 }
 
+.hint_text {
+    color: var(--color-accent);
+    
+    font-size: var(--small-text-size);
+    font-weight: bold;
+}
+
+/* Class to prevent images from being selected */
+.no_select {
+    user-select: none; /* Prevents text selection */
+    -webkit-user-drag: none; /* Prevents dragging in WebKit browsers (Chrome, Safari) */
+    -moz-user-select: none; /* Prevents text selection in Firefox */
+    -ms-user-select: none; /* Prevents text selection in IE/Edge */
+}
+
+.horizontal_flex {
+    display: flex;
+    flex-direction: row;
+    gap: 1vw;
+    
+    align-items: center;
+}
+
 /* ------- <a> Buttons ------- */
 a.button {
     background-color: var(--color-accent);

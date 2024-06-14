@@ -1,0 +1,63 @@
+
+
+/* ------- Profile Card button ------- */
+
+.profile_card.button {
+    background-color: unset;
+}
+
+.profile_card.button:hover{
+    background-color: var(--color-primary-hover);
+}
+
+
+/* ------- Profile Card ------- */
+
+.profile_card div {
+    max-width: fit-content;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    gap: 1vw;
+}
+
+/* Text */
+.profile_card .profile_text {
+    background-color: unset;
+
+    display: flex;
+    flex-direction: column;
+
+    text-align: left;
+    text-decoration: none;
+    gap: 0;
+
+    align-self: center;
+}
+
+.profile_card .profile_name {
+    color: var(--color-primary-text);
+
+    font-size: var(--secondary-text-size);
+    font-weight: bold;
+    
+}
+.profile_card .profile_tittle {
+    color: var(--color-secondary-text);
+    font-size: var(--small-text-size);
+}
+
+/* Profile photo */
+.profile_card .profile_photo {
+    align-self: center;
+
+    height: calc(2vh + 2vw);
+    width: calc(2vh + 2vw);
+
+    object-fit: cover;
+    border-radius: 50%;
+    /* border: calc(0.15vh + 0.15vw) solid var(--color-primary-text); */
+
+}

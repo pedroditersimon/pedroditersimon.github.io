@@ -11,7 +11,8 @@
     <link rel="stylesheet" href="./static/css/page.css">
     
     <link rel="stylesheet" href="./static/css/header.css">
-    <link rel="stylesheet" href="./static/css/header_banner.css">
+    <link rel="stylesheet" href="./static/css/profile_card.css">
+    <link rel="stylesheet" href="./static/css/nav_profile.css">
     <link rel="stylesheet" href="./static/css/navbar.css">
 
     <link rel="stylesheet" href="./static/css/page_banner.css">
@@ -32,20 +33,20 @@
             <a id="tittle">Programador de videojuegos en Unity C#</a>
         </div>
         
-        <img class="outside_shadow" src="./static/images/me.jpg" id="profile_photo">
+        <img class="outside_shadow no_select" src="./static/images/me.jpg" id="profile_photo">
     </div>
 
     <div id="page">
         <div class="header">
-            <div id="header_banner" class="">
-                <a href="index.html" class="banner_text button">
-                    <span class="name">Pedro Diter Simón</span>
-                    <span id="tittle">Programador de videojuegos en Unity C#</span>
-                </a>
-                <a id="profile_photo">
-                    <img class="outside_shadow" src="./static/images/me.jpg">
-                </a>
-            </div>
+            <a class="profile_card button space2" href="index.html">
+                <div>
+                    <img class="profile_photo outside_shadow no_select" src="./static/images/me.jpg">
+                    <div class="profile_text no_select">
+                        <span class="profile_name">Pedro Diter Simón</span>
+                        <span class="profile_tittle">Programador de videojuegos en Unity C#</span>
+                    </div>
+                </div>
+            </a>
 
             <div id="navbar">
                 <a class="nav_item button selected" href="#about_me">Acerca de mí</a>
@@ -65,7 +66,7 @@
                     <a id="tittle">Programador de videojuegos en Unity C#</a>
                 </div>
                 
-                <img class="outside_shadow" src="./static/images/me.jpg" id="profile_photo">
+                <img class="outside_shadow no_select" src="./static/images/me.jpg" id="profile_photo">
             </div>
 
             <section id="about_me" class="">
@@ -178,19 +179,16 @@
                     Desarollé mi marca personal bajo el nombre de "<span class="brand_text">ChocoDark Studio</span>", por la cual doy a conocer mis videojuegos y sus avances
                 </div>
 
-                <div class="brand_avatar">
-                    <div id="header_banner" class="">
-                        <a class="banner_text button">
-                            <span class="name">ChocoDark Studio</span>
-                            <span id="tittle">Desarrollador de videojuegos indie</span>
-                        </a>
-                        <a id="profile_photo">
-                            <img class="outside_shadow" src="./static/images/brand-logo.png">
-                        </a>
+                <a class="profile_card button brand_avatar space2" >
+                    <div>
+                        <img class="profile_photo outside_shadow no_select" src="./static/images/brand-logo.png">
+                        <div class="profile_text no_select">
+                            <span class="profile_name">ChocoDark Studio</span>
+                            <span class="profile_tittle">Desarrollador de videojuegos indie</span>
+                        </div>
                     </div>
-                </div>
-
-
+                </a>
+   
                 <div class="space2">
                     <a class="button outside_shadow" href="https://x.com/ChocoDarkStudio" target="_blank">
                         Twitter
@@ -198,6 +196,10 @@
                     </a>
                     <a class="button outside_shadow" href="https://www.instagram.com/chocodark.studio/" target="_blank">
                         Instagram
+                        <img src="./static/images/link.png">
+                    </a>
+                    <a class="button outside_shadow" href="https://github.com/chocodarkstudio" target="_blank">
+                        GitHub
                         <img src="./static/images/link.png">
                     </a>
                     <a class="button outside_shadow" href="https://linktr.ee/ChocodarkStudio" target="_blank">
@@ -229,9 +231,16 @@
                         Diseñé en su totalidad un videojuego llamado “Mini Room Painter”, que se encuentra publicado en la tienda Google PlayStore para smartphones.
                         <br>
                         Desarrollando desde la programación, hasta el diseño de gráficos, Modelado3D, UI, GameDesign, ilustraciones y animaciones.
-                        <div class="space2">
-                            <a class="button outside_shadow" href="https://play.google.com/store/apps/details?id=com.ChocoDarkStudio.MiniRoomPainter" target="_blank">PlayStore <img src="./static/images/link.png"></a>
+                    </div>
+
+                    <div class="horizontal_flex space2" style="">
+                        <div class="hint_text">
+                            Fecha de inicio: 14/12/2023
+                            <br>Fecha de lanzamiento: 18/04/2024
+                            <br>Duracion aproximada (con actualizaciones posteriores): 6 meses
                         </div>
+
+                        <a class="button outside_shadow" style="align-self: flex-end; margin-left: auto; margin-right: 0;" href="https://play.google.com/store/apps/details?id=com.ChocoDarkStudio.MiniRoomPainter" target="_blank">PlayStore <img src="./static/images/link.png"></a>
                     </div>
                 </div>
     
@@ -244,10 +253,18 @@
                         Diseñé en su totalidad un videojuego llamado “Avenue”, que se encuentra publicado en la tienda Itch.io para Windows.
                         <br>
                         Desarrollando desde la programación, hasta el diseño de gráficos, UI, GameDesign y animaciones.
-                        <div class="space2">
-                            <a class="button outside_shadow" href="https://chocodark-studio.itch.io/avenue" target="_blank">Itch.io <img src="./static/images/link.png"></a>
-                        </div>
                     </div>
+
+                    <div class="horizontal_flex space2">
+                        <div class="hint_text">
+                            Fecha de inicio: 26/04/2023
+                            <br>Fecha de lanzamiento: 26/08/2023
+                            <br>Duracion aproximada (con actualizaciones posteriores): 7 meses
+                        </div>
+                        
+                        <a class="button outside_shadow" style="align-self: flex-end; margin-left: auto; margin-right: 0;" href="https://chocodark-studio.itch.io/avenue" target="_blank">Itch.io <img src="./static/images/link.png"></a>
+                    </div>
+
                 </div>
     
             </section>
