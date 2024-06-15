@@ -62,20 +62,14 @@
     -ms-user-select: none; /* Prevents text selection in IE/Edge */
 }
 
-.horizontal_flex {
-    display: flex;
-    flex-direction: row;
-    gap: 1vw;
-    
-    align-items: center;
-}
 
 /* ------- <a> Buttons ------- */
 a.button {
     background-color: var(--color-accent);
     color: var(--color-primary-text);
 
-    display: inline-block;
+    display: inline-flex;
+    align-items: center;
 
     padding: 0.8vh 0.8vw;
     border-radius: var(--border-radius);
@@ -83,6 +77,8 @@ a.button {
     font-weight: bolder;
     text-decoration: none;
     font-size: var(--secondary-text-size);
+    
+    text-wrap: nowrap;
 }
 
 a.button:hover {
@@ -91,8 +87,16 @@ a.button:hover {
 }
 
 a.button > img {
-    padding-left: 0.5vw;
-    width: calc(1.0vh + 1.0vw);
+    margin-left: calc(0.5vh + 0.5vw);
+
+    width: calc(1vh + 1vw);
+    object-fit: scale-down; 
+}
+
+.button_list {
+    display: flex;
+    flex-direction: row;
+    gap: 2vw;
 }
 
 @media (max-width: 576px) {
@@ -104,7 +108,7 @@ a.button > img {
 
 /* Layouts */
 
-.grid_container {
+.grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
 
@@ -116,6 +120,24 @@ a.button > img {
     z-index: 10;
 }
 */
+
+.flex_row {
+    display: flex;
+    flex-direction: row;
+    gap: 1vw;
+}
+.flex_column {
+    display: flex;
+    flex-direction: column;
+    gap: 1vw;
+}
+.flex_start {
+    align-self: flex-end; 
+}
+.flex_end {
+    align-self: flex-end; 
+}
+
 
 @media (max-width: 576px) {
     .grid_container {

@@ -4,6 +4,7 @@
 
 .profile_card.button {
     background-color: unset;
+    text-wrap: wrap;
 }
 
 .profile_card.button:hover{

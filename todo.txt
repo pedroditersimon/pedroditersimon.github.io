@@ -5,8 +5,6 @@ Agregar link para descargar o ver pdf de resumen
 
 agregar link tablero y miro a proyectos
 Poner foto a los proyectos
-Poner los botones en la esquina superior derecha o la esquina inferior derecha
-Distrubuir mejor la informacion de duracion 
 
 Actualizacion a futuro:
 - Mantener una vista publica tal cual un portfolio
@@ -14,4 +12,3 @@ Actualizacion a futuro:
 - Agregar un lugar donde pueda escribir mis notas y pendientes personales (no publico)
 - Una seccion donde pueda hacer notas y publicaciones abiertas al publico.
 
-Quitar el estilo embebido en la etiqueta de los botones de los proyectos, pasarlos a una clase .css

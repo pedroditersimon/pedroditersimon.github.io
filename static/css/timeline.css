@@ -22,12 +22,6 @@
     margin-left: var(--entry-left);
 }
 
-.timeline .entry .date {
-    color: var(--color-accent);
-    
-    font-size: var(--small-text-size);
-    font-weight: bold;
-}
 
 .timeline .entry .tittle {
     color: var(--color-primary-text);
