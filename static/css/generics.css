@@ -43,14 +43,19 @@
     font-size: var(--secondary-text-size);
 }
 
-.bold {
-    font-weight: bold;
+.small_text {
+    color: var(--color-secondary-text);
+    font-size: var(--small-text-size);
 }
 
 .hint_text {
     color: var(--color-accent);
     
     font-size: var(--small-text-size);
+    font-weight: bold;
+}
+
+.bold {
     font-weight: bold;
 }
 
@@ -70,6 +75,7 @@ a.button {
 
     display: inline-flex;
     align-items: center;
+    gap: calc(0.5vh + 0.5vw);
 
     padding: 0.8vh 0.8vw;
     border-radius: var(--border-radius);
@@ -87,8 +93,6 @@ a.button:hover {
 }
 
 a.button > img {
-    margin-left: calc(0.5vh + 0.5vw);
-
     width: calc(1vh + 1vw);
     object-fit: scale-down; 
 }

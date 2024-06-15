@@ -1,5 +1,6 @@
 .project_card {
-
+    background-color: var(--color-secondary);
+    border: 2px solid var(--color-secondary-hover);
 }
 
 .project_card .card_bottom {

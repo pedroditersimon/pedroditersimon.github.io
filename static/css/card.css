@@ -1,10 +1,16 @@
 /* ------- Card ------- */
+.certificates {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+
+    gap: 5vw;
+}
 
 a.card {
     background-color: var(--color-secondary);
 
     /* define a size, width is 1.4 bigger than height */
-    --size: calc(10vh + 10vw);
+    --size: calc(8vh + 8vw);
     height: var(--size);
     width: calc(var(--size) * 1.4);
 
@@ -14,7 +20,6 @@ a.card {
     color: var(--color-secondary-text);
     font-weight: bolder;
     text-decoration: none;
-    font-size: var(--small-text-size);
 
     /* childs */
     display: flex;
