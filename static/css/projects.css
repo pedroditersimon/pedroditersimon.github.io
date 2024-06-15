@@ -1,13 +1,15 @@
+
+/*
 .project_card {
-    background-color: var(--color-secondary);
-    border: 2px solid var(--color-secondary-hover);
+
 }
+*/
 
 .project_card .card_bottom {
     display: flex;
     flex-direction: row;
-    gap: 1vw;
-    
+    gap: 2vh;
+
     align-items: center;
     justify-content: space-between;
 }
@@ -21,12 +23,3 @@
 }
 */
 
-
-@media (max-width: 576px) {
-    .project_card .card_bottom {
-        flex-direction: column;
-        align-items: start;
-
-        gap: 2vh;
-    }
-}

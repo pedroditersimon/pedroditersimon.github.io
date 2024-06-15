@@ -15,6 +15,7 @@ a.card {
     width: calc(var(--size) * 1.4);
 
     border-radius: var(--border-radius);
+    border: 2px solid var(--color-secondary-hover);
 
     /* text */
     color: var(--color-secondary-text);
@@ -28,6 +29,7 @@ a.card {
 a.card:hover {
     background-color: var(--color-accent);
     color: var(--color-primary-text);
+    border: 2px solid var(--color-accent-hover);
 }
 
 a.card > img.card_img {

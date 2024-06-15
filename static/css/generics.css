@@ -1,11 +1,19 @@
-/* ------- Generics ------- */
+
+/* Sizes and Spaces */
 
 .space1 {
-    margin-top: 5vh;
+    margin-top: calc(4vh + 0.5vw);
 }
 .space2 {
-    margin-top: 2vh;
+    margin-top: calc(1vh + 0.5vw);
 }
+
+.small_icon {
+    width: calc(1vh + 1vw);
+    object-fit: scale-down; 
+}
+
+/* ------- Generics ------- */
 
 .inside_shadow {
     /* inset | offset-x | offset-y | blur-radius | spread-radius | color */
@@ -27,9 +35,11 @@
 }
 
 .boxed {
-    background-color: var(--color-secondary);
-    padding: calc(1vh + 1.0vw);
     border-radius: var(--border-radius);
+    background-color: var(--color-secondary);
+    border: 2px solid var(--color-secondary-hover);
+
+    padding: calc(1vh + 0.5vw);
 }
 
 /* ------- Texts ------- */
@@ -97,12 +107,6 @@ a.button > img {
     object-fit: scale-down; 
 }
 
-.button_list {
-    display: flex;
-    flex-direction: row;
-    gap: 2vw;
-}
-
 @media (max-width: 576px) {
     a.button {
         padding: 0.8vh 1.5vw;
@@ -111,6 +115,12 @@ a.button > img {
 
 
 /* Layouts */
+
+.list {
+    display: flex;
+    flex-direction: row;
+    gap: 2vw;
+}
 
 .grid {
     display: grid;

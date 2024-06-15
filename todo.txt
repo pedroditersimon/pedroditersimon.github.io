@@ -3,7 +3,6 @@ secciones de mecanicas aisladas y como las implemente, que se muestre en formato
 
 Agregar link para descargar o ver pdf de resumen
 
-agregar link tablero y miro a proyectos
 Poner foto a los proyectos
 
 Actualizacion a futuro:
