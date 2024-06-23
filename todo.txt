@@ -1,9 +1,6 @@
 
-secciones de mecanicas aisladas y como las implemente, que se muestre en formato tarjetas y con shadow
-
-Agregar link para descargar o ver pdf de resumen
-
-Poner foto a los proyectos
+Ideas:
+- secciones de mecanicas aisladas y como las implemente, que se muestre en formato tarjetas y con shadow
 
 Actualizacion a futuro:
 - Mantener una vista publica tal cual un portfolio
@@ -11,3 +8,7 @@ Actualizacion a futuro:
 - Agregar un lugar donde pueda escribir mis notas y pendientes personales (no publico)
 - Una seccion donde pueda hacer notas y publicaciones abiertas al publico.
 
+TODO:
+- Agregar link para descargar o ver pdf de resumen
+- Poner foto a los proyectos
+- cambiar antiguedad de 5 años por algo mas certero con fechas y eso.
