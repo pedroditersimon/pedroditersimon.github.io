@@ -59,3 +59,11 @@ a.card > span {
 a.card:hover > span.small_text {
     color: var(--color-primary-text);
 }
+
+
+
+@media (max-width: 576px) {
+    a.card > img.card_img {
+        opacity: 1;
+    }
+}
