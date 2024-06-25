@@ -11,4 +11,4 @@ Actualizacion a futuro:
 TODO:
 - Agregar link para descargar o ver pdf de resumen
 - Poner foto a los proyectos
-- cambiar antiguedad de 5 años por algo mas certero con fechas y eso.
+- En la seccion de Historia, agregar sobre como empecé con pygame, game maker y luego unity

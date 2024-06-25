@@ -1,18 +1,20 @@
 /* ------- Card ------- */
 .certificates {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    /* define a card size, width is 1.4 bigger than height */
+    --h-size: calc(8vh + 8vw);
+    --w-size: calc(var(--h-size) * 1.4);
 
-    gap: 5vw;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, var(--w-size));
+    grid-gap: 2vw;
+    justify-content: space-evenly;
 }
 
 a.card {
     background-color: var(--color-secondary);
 
-    /* define a size, width is 1.4 bigger than height */
-    --size: calc(8vh + 8vw);
-    height: var(--size);
-    width: calc(var(--size) * 1.4);
+    width: var(--w-size);
+    height: var(--h-size);
 
     border-radius: var(--border-radius);
     border: 2px solid var(--color-secondary-hover);
@@ -38,9 +40,11 @@ a.card > img.card_img {
     object-fit: cover;
     object-position: top;
     border-radius: inherit;
+
+    opacity: 0.4;
 }
 a.card:hover > img.card_img {
-    opacity: 0.8;
+    opacity: 1;
 }
 
 
@@ -49,7 +53,9 @@ a.card > span {
     align-content: center;
 
     overflow: hidden;
-    padding: calc(0.5vh + 1.0vw);
 
     flex-grow: 1;
+}
+a.card:hover > span.small_text {
+    color: var(--color-primary-text);
 }

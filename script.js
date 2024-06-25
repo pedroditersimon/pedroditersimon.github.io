@@ -37,3 +37,29 @@ page_content.addEventListener('scroll', () => {
         }
     });
 });
+
+
+/* project card toggle hidden */
+
+const cards = [];
+
+// Agregar un evento de click al elemento de contenido
+document.querySelectorAll('.project_card').forEach((card) => {
+    const card_header = card.querySelector('.card_header');
+    cards.push(card);
+
+    card_header.addEventListener('click', () => toggleContentVisibility(card));
+});
+
+
+// Función para alternar la visibilidad del contenido
+function toggleContentVisibility(clickedCard) {
+    cards.forEach((card) => {
+        if (card === clickedCard) {
+            card.classList.toggle('visible');
+        } else {
+            card.classList.remove('visible');
+            card.classList.add('hidden');
+        }
+    });
+}

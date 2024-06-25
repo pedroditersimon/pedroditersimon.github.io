@@ -23,3 +23,45 @@
 }
 */
 
+.project_card .card_header {
+    cursor: pointer;
+}
+
+.project_card .card_content {
+    transition: opacity 0.3s ease, max-height 0.4s ease;
+}
+
+
+.project_card.hidden .card_content {
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
+}
+
+.project_card.visible .card_content {
+    opacity: 1;
+    max-height: 500px;
+}
+
+
+.project_card.visible {
+    border-color: var(--color-accent-hover);
+}
+
+.project_card .less_gap {
+    gap: 1vw;
+}
+
+.project_card .expand_arrow {
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 1vw;
+}
+
+.project_card.hidden .expand_arrow {
+    background-image: url('../images/arrow_right.png');
+}
+.project_card.visible .expand_arrow {
+    background-image: url('../images/arrow_down.png');
+}
