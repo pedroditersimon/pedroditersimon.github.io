@@ -13,6 +13,12 @@
     object-fit: scale-down; 
 }
 
+.icon {
+    width: calc(2vh + 2vw);
+    object-fit: contain;
+    border-radius: var(--border-radius); 
+}
+
 /* ------- Generics ------- */
 
 .inside_shadow {
@@ -123,16 +129,38 @@ a.button > img {
 
 /* Layouts */
 
-.list {
+.rows {
     display: flex;
     flex-direction: row;
-    gap: 2vw;
+    gap: 1vw;
 }
 
-.list_spaced {
+.rows_center {
     display: flex;
     flex-direction: row;
-    gap: 2vw;
+    gap: 1vw;
+
+    align-items: center;
+}
+
+.columns {
+    display: flex;
+    flex-direction: column;
+    gap: 1vw;
+}
+
+.columns_center {
+    display: flex;
+    flex-direction: column;
+    gap: 1vw;
+
+    align-items: center;
+}
+
+.rows_spaced {
+    display: flex;
+    flex-direction: row;
+    gap: 1vw;
 
     justify-content: space-between;
 }
@@ -150,16 +178,6 @@ a.button > img {
 }
 */
 
-.flex_row {
-    display: flex;
-    flex-direction: row;
-    gap: 1vw;
-}
-.flex_column {
-    display: flex;
-    flex-direction: column;
-    gap: 1vw;
-}
 .flex_start {
     align-self: flex-end; 
 }

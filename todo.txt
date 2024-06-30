@@ -9,6 +9,7 @@ Actualizacion a futuro:
 - Una seccion donde pueda hacer notas y publicaciones abiertas al publico.
 
 TODO:
+- Hacer responsive mobile del blog
 - Agregar link para descargar o ver pdf de resumen
-- Poner foto a los proyectos
 - En la seccion de Historia, agregar sobre como empecé con pygame, game maker y luego unity
+- Resumir mucho mas los textos, mostrar visuamente los lenguajes y teconologias que manejo. se nota mucho texto y no se hace apetecible leer, resaltar o resumir info con imagenes (comprobar viendo otros portafolios)

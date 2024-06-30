@@ -63,3 +63,6 @@ function toggleContentVisibility(clickedCard) {
         }
     });
 }
+
+if (cards.length > 0)
+    toggleContentVisibility(cards[0])

@@ -1,0 +1,703 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>Expresiones faciales a modelos 3D</title>
+	<link rel="stylesheet" href="../../static/css/index.css">
+	<link rel="stylesheet" href="../blog.css">
+	<link rel="stylesheet" href="../../static/css/scrollbar.css">
+<style>
+/* cspell:disable-file */
+/* webkit printing magic: print all background colors */
+html {
+	-webkit-print-color-adjust: exact;
+}
+* {
+	box-sizing: border-box;
+	-webkit-print-color-adjust: exact;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+@media only screen {
+	body {
+		margin: 2em auto;
+		max-width: 900px;
+		color: rgb(55, 53, 47);
+	}
+}
+
+body {
+	line-height: 1.5;
+	white-space: pre-wrap;
+}
+
+a,
+a.visited {
+	color: inherit;
+	text-decoration: underline;
+}
+
+.pdf-relative-link-path {
+	font-size: 80%;
+	color: #444;
+}
+
+h1,
+h2,
+h3 {
+	letter-spacing: -0.01em;
+	line-height: 1.2;
+	font-weight: 600;
+	margin-bottom: 0;
+}
+
+.page-title {
+	font-size: 2.5rem;
+	font-weight: 700;
+	margin-top: 0;
+	margin-bottom: 0.75em;
+}
+
+h1 {
+	font-size: 1.875rem;
+	margin-top: 1.875rem;
+}
+
+h2 {
+	font-size: 1.5rem;
+	margin-top: 1.5rem;
+}
+
+h3 {
+	font-size: 1.25rem;
+	margin-top: 1.25rem;
+}
+
+.source {
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	padding: 1.5em;
+	word-break: break-all;
+}
+
+.callout {
+	border-radius: 3px;
+	padding: 1rem;
+}
+
+figure {
+	margin: 1.25em 0;
+	page-break-inside: avoid;
+}
+
+figcaption {
+	opacity: 0.5;
+	font-size: 85%;
+	margin-top: 0.5em;
+}
+
+mark {
+	background-color: transparent;
+}
+
+.indented {
+	padding-left: 1.5em;
+}
+
+hr {
+	background: transparent;
+	display: block;
+	width: 100%;
+	height: 1px;
+	visibility: visible;
+	border: none;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+img {
+	max-width: 100%;
+}
+
+@media only print {
+	img {
+		max-height: 100vh;
+		object-fit: contain;
+	}
+}
+
+@page {
+	margin: 1in;
+}
+
+.collection-content {
+	font-size: 0.875rem;
+}
+
+.column-list {
+	display: flex;
+	justify-content: space-between;
+}
+
+.column {
+	padding: 0 1em;
+}
+
+.column:first-child {
+	padding-left: 0;
+}
+
+.column:last-child {
+	padding-right: 0;
+}
+
+.table_of_contents-item {
+	display: block;
+	font-size: 0.875rem;
+	line-height: 1.3;
+	padding: 0.125rem;
+}
+
+.table_of_contents-indent-1 {
+	margin-left: 1.5rem;
+}
+
+.table_of_contents-indent-2 {
+	margin-left: 3rem;
+}
+
+.table_of_contents-indent-3 {
+	margin-left: 4.5rem;
+}
+
+.table_of_contents-link {
+	text-decoration: none;
+	opacity: 0.7;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.18);
+}
+
+table,
+th,
+td {
+	border: 1px solid rgba(55, 53, 47, 0.09);
+	border-collapse: collapse;
+}
+
+table {
+	border-left: none;
+	border-right: none;
+}
+
+th,
+td {
+	font-weight: normal;
+	padding: 0.25em 0.5em;
+	line-height: 1.5;
+	min-height: 1.5em;
+	text-align: left;
+}
+
+th {
+	color: rgba(55, 53, 47, 0.6);
+}
+
+ol,
+ul {
+	margin: 0;
+	margin-block-start: 0.6em;
+	margin-block-end: 0.6em;
+}
+
+li > ol:first-child,
+li > ul:first-child {
+	margin-block-start: 0.6em;
+}
+
+ul > li {
+	list-style: disc;
+}
+
+ul.to-do-list {
+	padding-inline-start: 0;
+}
+
+ul.to-do-list > li {
+	list-style: none;
+}
+
+.to-do-children-checked {
+	text-decoration: line-through;
+	opacity: 0.375;
+}
+
+ul.toggle > li {
+	list-style: none;
+}
+
+ul {
+	padding-inline-start: 1.7em;
+}
+
+ul > li {
+	padding-left: 0.1em;
+}
+
+ol {
+	padding-inline-start: 1.6em;
+}
+
+ol > li {
+	padding-left: 0.2em;
+}
+
+.mono ol {
+	padding-inline-start: 2em;
+}
+
+.mono ol > li {
+	text-indent: -0.4em;
+}
+
+.toggle {
+	padding-inline-start: 0em;
+	list-style-type: none;
+}
+
+/* Indent toggle children */
+.toggle > li > details {
+	padding-left: 1.7em;
+}
+
+.toggle > li > details > summary {
+	margin-left: -1.1em;
+}
+
+.selected-value {
+	display: inline-block;
+	padding: 0 0.5em;
+	background: rgba(206, 205, 202, 0.5);
+	border-radius: 3px;
+	margin-right: 0.5em;
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+	white-space: nowrap;
+}
+
+.collection-title {
+	display: inline-block;
+	margin-right: 1em;
+}
+
+.page-description {
+    margin-bottom: 2em;
+}
+
+.simple-table {
+	margin-top: 1em;
+	font-size: 0.875rem;
+	empty-cells: show;
+}
+.simple-table td {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table th {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table-header-color {
+	background: rgb(247, 246, 243);
+	color: black;
+}
+.simple-table-header {
+	font-weight: 500;
+}
+
+time {
+	opacity: 0.5;
+}
+
+.icon {
+	display: inline-block;
+	max-width: 1.2em;
+	max-height: 1.2em;
+	text-decoration: none;
+	vertical-align: text-bottom;
+	margin-right: 0.5em;
+}
+
+img.icon {
+	border-radius: 3px;
+}
+
+.user-icon {
+	width: 1.5em;
+	height: 1.5em;
+	border-radius: 100%;
+	margin-right: 0.5rem;
+}
+
+.user-icon-inner {
+	font-size: 0.8em;
+}
+
+.text-icon {
+	border: 1px solid #000;
+	text-align: center;
+}
+
+.page-cover-image {
+	display: block;
+	object-fit: cover;
+	width: 100%;
+	max-height: 30vh;
+}
+
+.page-header-icon {
+	font-size: 3rem;
+	margin-bottom: 1rem;
+}
+
+.page-header-icon-with-cover {
+	margin-top: -0.72em;
+	margin-left: 0.07em;
+}
+
+.page-header-icon img {
+	border-radius: 3px;
+}
+
+.link-to-page {
+	margin: 1em 0;
+	padding: 0;
+	border: none;
+	font-weight: 500;
+}
+
+p > .user {
+	opacity: 0.5;
+}
+
+td > .user,
+td > time {
+	white-space: nowrap;
+}
+
+input[type="checkbox"] {
+	transform: scale(1.5);
+	margin-right: 0.6em;
+	vertical-align: middle;
+}
+
+p {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+.image {
+	border: none;
+	margin: 1.5em 0;
+	padding: 0;
+	border-radius: 0;
+	text-align: center;
+}
+
+.code,
+code {
+	background: rgba(135, 131, 120, 0.15);
+	border-radius: 3px;
+	padding: 0.2em 0.4em;
+	border-radius: 3px;
+	font-size: 85%;
+	tab-size: 2;
+}
+
+code {
+	color: #eb5757;
+}
+
+.code {
+	padding: 1.5em 1em;
+}
+
+.code-wrap {
+	white-space: pre-wrap;
+	word-break: break-all;
+}
+
+.code > code {
+	background: none;
+	padding: 0;
+	font-size: 100%;
+	color: inherit;
+}
+
+blockquote {
+	font-size: 1.25em;
+	margin: 1em 0;
+	padding-left: 1em;
+	border-left: 3px solid rgb(55, 53, 47);
+}
+
+.bookmark {
+	text-decoration: none;
+	max-height: 8em;
+	padding: 0;
+	display: flex;
+	width: 100%;
+	align-items: stretch;
+}
+
+.bookmark-title {
+	font-size: 0.85em;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	height: 1.75em;
+	white-space: nowrap;
+}
+
+.bookmark-text {
+	display: flex;
+	flex-direction: column;
+}
+
+.bookmark-info {
+	flex: 4 1 180px;
+	padding: 12px 14px 14px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.bookmark-image {
+	width: 33%;
+	flex: 1 1 180px;
+	display: block;
+	position: relative;
+	object-fit: cover;
+	border-radius: 1px;
+}
+
+.bookmark-description {
+	color: rgba(55, 53, 47, 0.6);
+	font-size: 0.75em;
+	overflow: hidden;
+	max-height: 4.5em;
+	word-break: break-word;
+}
+
+.bookmark-href {
+	font-size: 0.75em;
+	margin-top: 0.25em;
+}
+
+.sans { font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"; }
+.code { font-family: "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace; }
+.serif { font-family: Lyon-Text, Georgia, ui-serif, serif; }
+.mono { font-family: iawriter-mono, Nitti, Menlo, Courier, monospace; }
+.pdf .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK JP'; }
+.pdf:lang(zh-CN) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC'; }
+.pdf:lang(zh-TW) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK TC'; }
+.pdf:lang(ko-KR) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK KR'; }
+.pdf .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.pdf .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK JP'; }
+.pdf:lang(zh-CN) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK SC'; }
+.pdf:lang(zh-TW) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK TC'; }
+.pdf:lang(ko-KR) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK KR'; }
+.pdf .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.highlight-default {
+	color: rgba(55, 53, 47, 1);
+}
+.highlight-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.highlight-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.highlight-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.highlight-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.highlight-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.highlight-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.highlight-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.highlight-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.highlight-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.highlight-gray_background {
+	background: rgba(241, 241, 239, 1);
+}
+.highlight-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.highlight-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.highlight-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.highlight-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.highlight-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.highlight-purple_background {
+	background: rgba(244, 240, 247, 0.8);
+}
+.highlight-pink_background {
+	background: rgba(249, 238, 243, 0.8);
+}
+.highlight-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.block-color-default {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.block-color-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.block-color-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.block-color-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.block-color-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.block-color-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.block-color-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.block-color-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.block-color-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.block-color-gray_background {
+	background: rgba(241, 241, 239, 1);
+}
+.block-color-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.block-color-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.block-color-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.block-color-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.block-color-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.block-color-purple_background {
+	background: rgba(244, 240, 247, 0.8);
+}
+.block-color-pink_background {
+	background: rgba(249, 238, 243, 0.8);
+}
+.block-color-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.select-value-color-uiBlue { background-color: rgba(35, 131, 226, .07); }
+.select-value-color-pink { background-color: rgba(245, 224, 233, 1); }
+.select-value-color-purple { background-color: rgba(232, 222, 238, 1); }
+.select-value-color-green { background-color: rgba(219, 237, 219, 1); }
+.select-value-color-gray { background-color: rgba(227, 226, 224, 1); }
+.select-value-color-transparentGray { background-color: rgba(227, 226, 224, 0); }
+.select-value-color-translucentGray { background-color: rgba(0, 0, 0, 0.06); }
+.select-value-color-orange { background-color: rgba(250, 222, 201, 1); }
+.select-value-color-brown { background-color: rgba(238, 224, 218, 1); }
+.select-value-color-red { background-color: rgba(255, 226, 221, 1); }
+.select-value-color-yellow { background-color: rgba(253, 236, 200, 1); }
+.select-value-color-blue { background-color: rgba(211, 229, 239, 1); }
+.select-value-color-pageGlass { background-color: undefined; }
+.select-value-color-washGlass { background-color: undefined; }
+
+.checkbox {
+	display: inline-flex;
+	vertical-align: text-bottom;
+	width: 16;
+	height: 16;
+	background-size: 16px;
+	margin-left: 2px;
+	margin-right: 5px;
+}
+
+.checkbox-on {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%2358A9D7%22%2F%3E%0A%3Cpath%20d%3D%22M6.71429%2012.2852L14%204.9995L12.7143%203.71436L6.71429%209.71378L3.28571%206.2831L2%207.57092L6.71429%2012.2852Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+
+.checkbox-off {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+	
+</style></head><body><article id="b2fef78a-6dc2-4998-bad5-412c7b0380dd" class="page sans"><header><img class="page-cover-image" src="./10%201.png" style="object-position:center 24.529999999999998%"/><h1 class="page-title">Expresiones faciales a modelos 3D</h1><p class="page-description"></p></header><div class="page-body"><p id="68536035-d43a-420f-b1e4-b9103ec5f7fb" class="">¿Cómo agregar expresiones faciales 2D a un modelo 3D?.<br/>En esta pagina te explico como lo implementé en mi juego ‘Mini Room Painter’ 👇<br/></p><p id="756c974e-c1d0-46af-8c3a-c70b841256a0" class="">
+</p><p id="e6e7c717-dfb4-4838-8452-cd8e2f6282ed" class="">Índice:</p><ol type="1" id="22f6c920-04b5-4350-a299-cfb535c1909a" class="numbered-list" start="1"><li>Preparar el set de expresiones.</li></ol><ol type="1" id="affc3727-bbe7-4486-8c19-0c531c25c2a6" class="numbered-list" start="2"><li>Crear el material.</li></ol><ol type="1" id="2f718827-7810-434b-bffc-7280bc3073df" class="numbered-list" start="3"><li>Plano para proyectar las figuras.</li></ol><ol type="1" id="87c50ca3-618e-4adf-9cb4-c2749d037556" class="numbered-list" start="4"><li>Calcular el Tilling.</li></ol><ol type="1" id="84f3c15c-4da0-4bc9-bde3-9ac2e67c738c" class="numbered-list" start="5"><li>Posicionar el plano en el personaje.</li></ol><ol type="1" id="70b6ce4e-e36a-4cea-8668-9f68d97be855" class="numbered-list" start="6"><li>Crear un controlador.</li></ol><p id="480af481-5096-4e63-9963-734814295291" class="">
+</p><p id="79851b5f-638f-455d-8738-c16cfb26fde3" class="">El objetivo es agregar expresiones faciales a este modelo 3D, utilizando el motor de videojuegos Unity.</p><figure id="e56f4280-dd61-4a76-b0c2-9aabeba5cc90" class="image" style="text-align:center"><a href="./625a2c10-dd17-4dc9-b319-f2b7993175d5.png"><img style="width:288px" src="./625a2c10-dd17-4dc9-b319-f2b7993175d5.png"/></a></figure><p id="a0068c2c-5d00-40fa-b554-ef148019f906" class="">
+</p><h2 id="b175f63c-bb5f-40b1-a1bf-6045134fab4f" class="">1. Preparar el set de expresiones</h2><p id="d7f5156a-363e-4f33-bdb0-19a649993738" class="">Utilizaremos un set de expresiones 2D como este:</p><figure id="a3a3145c-8e84-4401-9884-d683489ef29f" class="image"><a href="https://img.freepik.com/free-vector/hand-drawn-kawaii-face-illustrations_23-2149422428.jpg?t=st=1719716725~exp=1719720325~hmac=4f48466fe17061c6f5cfcb4ff68a61929bc2bda7604701db121ed1bf68691159&amp;w=740"><img style="width:432px" src="https://img.freepik.com/free-vector/hand-drawn-kawaii-face-illustrations_23-2149422428.jpg?t=st=1719716725~exp=1719720325~hmac=4f48466fe17061c6f5cfcb4ff68a61929bc2bda7604701db121ed1bf68691159&amp;w=740"/></a><figcaption><a href="https://www.freepik.com/free-vector/hand-drawn-kawaii-face-illustrations_27256282.htm#query=kawaii%20face&amp;position=37&amp;from_view=keyword&amp;track=ais&amp;uuid=2a10424a-7c76-48d0-8d7c-81ff600de8d9">https://www.freepik.com/free-vector/hand-drawn-kawaii-face-illustrations_27256282.htm#query=kawaii face&amp;position=37&amp;from_view=keyword&amp;track=ais&amp;uuid=2a10424a-7c76-48d0-8d7c-81ff600de8d9</a></figcaption></figure><p id="2becf008-8305-43cc-a6d7-58d0d27f7441" class="">Necesitamos recortar y posicionar cada figura una detrás de la otra, procurando que todas tengan el mismo tamaño y un pequeño espacio entre cada una.</p><figure id="92ae6616-096f-4b2d-a790-521fc624f381" class="image"><a href="./75d90440-5da0-441d-85dc-743f8f9aa4f8.png"><img style="width:708px" src="./75d90440-5da0-441d-85dc-743f8f9aa4f8.png"/></a></figure><p id="65052513-5dfd-4d2f-bf44-4852c186b8c0" class="">El tamaño de las figuras deben ser iguales, aunque su contenido no ocupe totalmente el espacio. Esto debe ser así para luego cambiar entre figuras utilizando un desplazamiento fijo.</p><p id="c2d29234-d0bd-44f9-b328-06331dd0cc63" class="">No es necesario particionar las figuras en el Sprite Editor de Unity, ya que utilizaremos la imagen entera.</p><p id="538dfd55-e086-4464-a0a5-10ca2a93770e" class="">
+</p><h2 id="08df643a-d6c0-497e-9099-129f2b68d743" class="">2. Crear el material</h2><p id="f3992342-c6f9-4e89-bfcd-1e1a850a65f4" class="">Creamos un material, asignamos la textura a el BaseMap y configuramos la superficie como transparente.</p><figure id="30122399-3996-45b3-a58c-c3b090db1f83" class="image"><a href="./0.png"><img style="width:397px" src="./0.png"/></a></figure><figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex" id="f57b3f8e-0547-4d7e-9a35-c2622477dec8"><div style="font-size:1.5em"><span class="icon">💡</span></div><div style="width:100%">Recomiendo bajar un poco el Alpha del BaseMap (al 95% o más), para que se adecue mejor al modelo que tiene detrás.</div></figure><p id="14e0582b-4e0f-40eb-a48b-fd78b9a16410" class="">
+</p><h2 id="6b670a23-6adf-48f4-98ce-82f7603ed4e5" class="">3. Plano para proyectar las figuras</h2><p id="6e7e9a4e-7af5-4937-b5f4-90d818da589b" class="">Modelamos rápidamente un plano donde proyectar las figuras, podemos utilizar el típico ‘Plane&#x27; de Unity, o bien, hacer un modelo un poco curvo para adecuarse mejor al personaje.</p><p id="aa75e14e-8c33-4e4f-aa63-ae3ab23f6222" class="">La curva deformará la textura dando una sensación tridimensional a las expresiones. Esto viene muy bien cuando el personaje es visto de lado, ocultando una parte de la cara.</p><figure id="01f468dd-44fe-4c8f-96fc-21e6865978ce" class="image"><a href="./65c38b4e-7798-466a-91f5-70aed2edf251.png"><img style="width:480px" src="./65c38b4e-7798-466a-91f5-70aed2edf251.png"/></a></figure><p id="84e76e19-7b34-4db5-98a6-b88eb1570ffa" class="">Luego, asignamos el material que creamos. Además, desactivar la propiedad de CastShadow del Mesh para que no proyecte sombras sobre el entorno.</p><figure id="86a2f1be-9459-45ff-a3f5-8d055c661086" class="image"><a href="./1.png"><img style="width:384px" src="./1.png"/></a></figure><p id="58bdfd3b-5593-47f8-8f67-caedd1a45219" class="">
+</p><h2 id="5f66885f-b9ff-4f75-819e-8d9df0dd856f" class="">4. Calcular el Tilling</h2><p id="9452ae71-bf7a-4303-89f2-4bad6a1ed784" class="">Ahora necesitamos configurar el Tilling para que encaje con el tamaño de cada figura.</p><p id="5bafecc5-2885-4e1e-9985-5af87f2e47cf" class="">Podemos hacerlo a mano, cambiando el valor hasta que la figura se vea correctamente, o calcularla dividiendo el <span style="border-bottom:0.05em solid">ancho por figura</span> por el <span style="border-bottom:0.05em solid">ancho de textura</span>.</p><p id="5ca9cd01-2c79-4064-af99-02e6b33cdfec" class="">Si no sabemos cual es el <span style="border-bottom:0.05em solid">ancho por figura</span>, lo obtenemos dividiendo el <span style="border-bottom:0.05em solid">ancho de textura</span> por la <span style="border-bottom:0.05em solid">cantidad de figuras</span> que contiene la misma.</p><p id="c33a79b4-03ff-4df5-87ff-fd6fe72ea3a1" class="">En este caso, tenemos 16 figuras dentro de una imagen de 7907px de ancho. El <span style="border-bottom:0.05em solid">ancho por figura</span> es de 494px. Entonces calculamos el Tilling y nos da <strong>0.0625</strong>.</p><figure id="246a5bc1-5db5-49d9-84a8-f2d8c3d28e33" class="image"><a href="./f4ce84a4-e53c-4a91-8d3f-84d73d1bad3e.png"><img style="width:432px" src="./f4ce84a4-e53c-4a91-8d3f-84d73d1bad3e.png"/></a></figure><p id="f6a09143-a5ec-4a54-b8d0-cf367d468ff1" class="">Ahora se visualiza correctamente la figura en el plano.</p><figure id="b2a92c79-cd19-4c0a-af47-f7ef05a1d1a7" class="image"><a href="./dae0cc7d-f5a3-48de-beb3-206ef7645a01.png"><img style="width:480px" src="./dae0cc7d-f5a3-48de-beb3-206ef7645a01.png"/></a></figure><p id="7a4b9066-0a68-474f-8904-2fccb83bb48e" class="">
+</p><h2 id="a7719133-2e41-4219-b377-2443d6a0959a" class="">5. Posicionar el plano en el personaje</h2><p id="f8492a83-73a6-41f1-9e98-733dd955b4b9" class="">Posicionamos el plano que acabamos de crear sobre la superficie de el personaje, sobresaliendo de este.</p><div id="f3a7b5f6-d952-4982-9201-8d16d0085689" class="column-list"><div id="4f97eaea-f221-4d03-aa06-bf0d4f8ba705" style="width:50%" class="column"><figure id="30a2a295-bf10-4d5b-8d43-db0c8acdbf26" class="image"><a href="./09c5e116-acc6-4e68-8c30-19cf739fd67d.png"><img style="width:319.6774193548387px" src="./09c5e116-acc6-4e68-8c30-19cf739fd67d.png"/></a></figure></div><div id="44d2e5a2-a43d-48e2-a986-176e56eadb82" style="width:50%" class="column"><figure id="d6db400c-9232-45ec-a7f1-3fb4ed9159ff" class="image"><a href="./7443b200-f321-4e65-ae83-0cdd61405c81.png"><img style="width:319.67346938775506px" src="./7443b200-f321-4e65-ae83-0cdd61405c81.png"/></a></figure></div></div><p id="465724bd-e8ed-4f3a-b485-00579424d126" class="">
+</p><h2 id="78e02912-6fe0-4605-9d63-fd281cf26efe" class="">6. Crear un controlador</h2><p id="a81aceab-eb1e-4af8-83d7-3df81d6cb8a1" class="">Por ultimo, creamos un controlador que se encarga de cambiar el offset del material, en base a qué índice de figura queremos mostrar (<em>faceIndex</em>).</p><script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js" integrity="sha512-7Z9J3l1+EYfeaPKcGXu3MS/7T+w19WtKQY/n+xzmw4hZhJ9tyYmcUS+4QqAlzhicE5LAfMQSF3iFTK9bQdTxXg==" crossorigin="anonymous" referrerPolicy="no-referrer"></script><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.min.css" integrity="sha512-tN7Ec6zAFaVSG3TpNAKtk4DOHNpSwKHxxrsiw4GHKESGPs5njn/0sMCUMl2svV4wo4BK/rCP7juYz+zx+l6oeQ==" crossorigin="anonymous" referrerPolicy="no-referrer"/><pre id="7360c2ce-c815-4e6f-ae70-d275a6ca2cda" class="code"><code class="language-C#">public void SetMaterialOffsetByFace(int faceIndex, int textIndex = 0)
+{
+    // out of bounds or no renderer
+    if (faceIndex &lt; 0 || rend == null)
+        return;
+
+    // change texture index
+    if (textIndex &gt;= 0 &amp;&amp; textures != null &amp;&amp; textIndex &lt; textures.Length)
+        rend.sharedMaterial.mainTexture = textures[textIndex];
+
+    // change material offset
+    float offset = materialOffsetSize * faceIndex;
+    rend.sharedMaterial.mainTextureOffset = new Vector2(offset, 0);
+}</code></pre><p id="537cdd9a-cfde-4157-a6f4-3e4df4b5b61f" class="">Además, podemos crear una lista de texturas y ampliar la gama de expresiones.</p><figure id="64ee529b-0a1e-4232-80b8-85417c5a16a7" class="image"><a href="./897c4895-9646-4d9d-b6c7-ddef456d3a63.png"><img style="width:419.1150442477876px" src="./897c4895-9646-4d9d-b6c7-ddef456d3a63.png"/></a></figure><p id="5cc77fa1-441b-4875-9ff0-835f499fdcd3" class="">
+</p><h2 id="4b78b1db-2234-4769-ab14-7cd43f5a8c63" class="">Resultado</h2><p id="87313421-25f5-482d-895d-79acfca3852d" class="">Así es como implementamos expresiones faciales 2D a un modelo 3D, que se puede controlar y animar mediante código.</p><figure id="2f64423c-0185-45fc-8240-e5d8f6618c9f" class="image"><a href="./10.png"><img style="width:1157px" src="./10.png"/></a></figure></div></article><span class="sans" style="font-size:14px;padding-top:2em"></span></body></html>
