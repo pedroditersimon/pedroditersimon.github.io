@@ -5,8 +5,7 @@
     background-color: var(--color-accent-hover);
 
     display: flex;
-    flex-direction: row-reverse;
-    justify-content: space-between;
+    justify-content: center;
 
     background-image: url("../images/banner.png");
     background-repeat: no-repeat;
@@ -15,6 +14,14 @@
     padding: 2vh 6vw;
 }
 
+#page_banner .banner_content {
+    width: var(--max-page-width);
+    justify-content: space-evenly;
+}
+
+#page_banner.only_show_desktop {
+    border-radius: var(--border-radius);
+}
 
 #page_banner .banner_text {
     color: var(--color-primary-text);

@@ -38,6 +38,11 @@ page_content.addEventListener('scroll', () => {
     });
 });
 
+const header = document.querySelector(".header");
+document.querySelector(".hide_header").addEventListener('click',
+     () => {header.classList.toggle("hidden");}
+);
+
 
 /* project card toggle hidden */
 

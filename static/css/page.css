@@ -28,7 +28,7 @@
 .page_content > section {
     margin: 0 auto;
     padding: calc(2.5vh + 2vw);
-    max-width: 55vw;
+    max-width: var(--max-page-width);
 }
 
 .page_content .section_divider {
@@ -46,7 +46,6 @@
     .page_content > section {
         padding-left: calc(2vh + 2vw);
         padding-right: calc(2vh + 2vw);
-        max-width: unset;
     }
 
 }

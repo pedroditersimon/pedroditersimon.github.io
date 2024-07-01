@@ -98,6 +98,7 @@ a.button {
 
     display: inline-flex;
     align-items: center;
+    justify-content: center;
     gap: calc(0.5vh + 0.5vw);
 
     padding: 0.8vh 0.8vw;
@@ -113,6 +114,7 @@ a.button {
 a.button:hover {
     background-color: var(--color-accent-hover);
     color: var(--color-primary-text);
+    cursor: pointer;
 }
 
 a.button > img {

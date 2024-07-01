@@ -49,13 +49,15 @@
     --color-text-code: #79cbdd;
 
     /* this define EM and REM size */
-    font-size: calc(1vh + 1vw); 
+    font-size: calc(1vh + 1.1vw); 
     
     /* some preset text sizes */
     --primary-text-size: 1rem;
     --secondary-text-size: 0.8rem;
     --small-text-size: 0.7rem;
     --border-radius: 0.3rem;
+
+    --max-page-width: 55vw;
 }
 
 html, body {
@@ -68,8 +70,13 @@ body {
 
     font-family: "Nunito Sans", sans-serif;
 
-
     display: flex;
     flex-direction: column;
 }
 
+@media (max-width: 576px) {
+    :root {
+        --max-page-width: 100%;
+        font-size: calc(1vh + 1.4vw); 
+    }
+}
