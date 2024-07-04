@@ -44,8 +44,8 @@
     }
 
     .page_content > section {
-        padding-left: calc(2vh + 2vw);
-        padding-right: calc(2vh + 2vw);
+        padding-left: calc(1.5vh + 1.5vw);
+        padding-right: calc(1.5vh + 1.5vw);
     }
 
 }

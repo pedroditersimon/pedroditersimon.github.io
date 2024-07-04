@@ -30,7 +30,7 @@
     <!-- Only displayed on mobile devices-->
     <div id="page_banner" class="inside_shadow only_show_mobile">
         <div class="banner_content rows_center">
-            <img class="outside_shadow no_select" src="./static/images/me.jpg" id="profile_photo">    
+            <img class="outside_shadow unselectable" src="./static/images/me.jpg" id="profile_photo">    
 
             <div class="banner_text">
                 <a class="name">PEDRO DITER<br>SIMÓN</a>
@@ -41,15 +41,15 @@
 
     <div id="page">
         <!-- Only displayed on desktop devices-->
-        <a class="hide_header button outside_shadow no_select only_show_desktop">
+        <a class="hide_header button outside_shadow unselectable only_show_desktop">
             <img src="./static/images/arrow_left.png">
         </a>
         <!-- Only displayed on desktop devices-->
         <div class="header columns_center only_show_desktop">
             <a class="profile_card button" href="index.html">
                 <div>
-                    <img class="profile_photo outside_shadow no_select" src="./static/images/me.jpg">
-                    <div class="profile_text no_select">
+                    <img class="profile_photo outside_shadow unselectable" src="./static/images/me.jpg">
+                    <div class="profile_text unselectable">
                         <span class="profile_name">Pedro Diter Simón</span>
                         <span class="profile_tittle">Programador de videojuegos en Unity C#</span>
                     </div>
@@ -71,7 +71,7 @@
             <!-- Only displayed on desktop devices-->
             <div id="page_banner" class="inside_shadow only_show_desktop">
                 <div class="banner_content rows_center">
-                    <img class="outside_shadow no_select" src="./static/images/me.jpg" id="profile_photo">    
+                    <img class="outside_shadow unselectable" src="./static/images/me.jpg" id="profile_photo">    
 
                     <div class="banner_text">
                         <a class="name">PEDRO DITER<br>SIMÓN</a>
@@ -81,9 +81,13 @@
             </div>
 
             <section id="about_me" class="">
+                <div class="rows_spaced">
+                    <span class="primary_text bold">Acerca de mí</span>
 
-                <div class="primary_text bold">
-                    Acerca de mí
+                    <div class="rows_center unselectable">
+                        <img class="small_icon" src="./static/images/logos/csharp.png">
+                        <img class="small_icon" src="./static/images/logos/unity.png">
+                    </div>
                 </div>
 
                 <div class="secondary_text space2">
@@ -107,8 +111,14 @@
                     </a>
                 </div>  
 
-                <div class="primary_text space1 bold">
-                    Historia
+                <div class="rows_spaced space1">
+                    <span class="primary_text bold">Historia</span>
+
+                    <div class="rows_center unselectable">
+                        <img class="small_icon" src="./static/images/logos/python.png">
+                        <img class="small_icon" src="./static/images/logos/pygame.png">
+                        <img class="small_icon" src="./static/images/logos/gamemaker.png">
+                    </div>
                 </div>
 
                 <div class="secondary_text space2">
@@ -197,8 +207,8 @@
 
                 <a class="profile_card button brand_avatar space2" >
                     <div>
-                        <img class="profile_photo outside_shadow no_select" src="./static/images/brand-logo.png">
-                        <div class="profile_text no_select">
+                        <img class="profile_photo outside_shadow unselectable" src="./static/images/brand-logo.png">
+                        <div class="profile_text unselectable">
                             <span class="profile_name">ChocoDark Studio</span>
                             <span class="profile_tittle">Desarrollador de videojuegos indie</span>
                         </div>
@@ -260,21 +270,24 @@
                     </div>
                     <div class="card_content">
                         <div class="secondary_text space2">
-                            Publicado en <span class="bold">Google PlayStore</span>.
-                            <br>
                             <span class="bold">Mini Room Painter</span> es un juego de decoración de interiores, donde los jugadores combinan colores para pintar objetos y muebles en habitaciones con diversas temáticas. Además de cuidar un gatito que acompaña al jugador.
-                            <br>
-                            Desarrollé el juego desde la <span class="bold">programación</span>, hasta el diseño de <span class="bold">gráficos</span>, <span class="bold">modelado 3D</span>, <span class="bold">UI</span>, <span class="bold">GameDesign</span>, <span class="bold">ilustraciones</span> y <span class="bold">animaciones</span>.                            
                         </div>
                         
-                        <div class="hint_text space2">
+                        <div class="secondary_text space2">
+                            Desarrollé el juego desde la <span class="bold">programación</span>, hasta el diseño de <span class="bold">gráficos</span>, <span class="bold">modelado 3D</span>, <span class="bold">UI</span>, <span class="bold">GameDesign</span>, <span class="bold">ilustraciones</span> y <span class="bold">animaciones</span>.                            
+                        </div>
+
+                        <div class="small_text bold space2">
                             Inicio: 14/12/2023
                             <br>Lanzamiento: 18/04/2024
                             <br>Duración: 6 meses (incluidas actualizaciones)
                         </div>
 
                         <div class="card_bottom space2 rows_spaced">
-                            <div></div>
+                            <div class="rows_center unselectable">
+                                <img class="small_icon" src="./static/images/logos/csharp.png">
+                                <img class="small_icon" src="./static/images/logos/unity.png">
+                            </div>
                             <div class="rows_spaced">
                                 <a class="button outside_shadow"
                                 href="https://miro.com/app/board/uXjVNKtKegw=/?share_link_id=737298372577" 
@@ -315,18 +328,23 @@
                             <span class="bold">Avenue</span> es un juego de rompecabezas publicado en la tienda <span class="bold">Itch.io</span> para <span class="bold">Windows</span>.
                             <br>
                             Resuelve desafíos relacionados con caminos, autos y tráfico, gestionando los limitados recuros.
-                            <br>
+                        </div>
+
+                        <div class="secondary_text space2">
                             El desarrollo abarcó desde la <span class="bold">programación</span>, hasta el diseño de <span class="bold">gráficos</span>, <span class="bold">UI</span>, <span class="bold">GameDesign</span> y <span class="bold">animaciones</span>.
                         </div>
 
-                        <div class="hint_text space2">
+                        <div class="small_text bold space2">
                             Inicio: 26/04/2023
                             <br>Lanzamiento: 26/08/2023
                             <br>Duración: 7 meses (incluidas actualizaciones)
                         </div>
 
                         <div class="card_bottom space2 rows_spaced">
-                            <div></div>
+                            <div class="rows_center unselectable">
+                                <img class="small_icon" src="./static/images/logos/csharp.png">
+                                <img class="small_icon" src="./static/images/logos/unity.png">
+                            </div>
                             <div class="rows_spaced">
                                 <a class="button outside_shadow"
                                 href="https://miro.com/app/board/uXjVNZ1VJdA=/?share_link_id=663618610003" 
@@ -363,21 +381,24 @@
                     </div>
                     <div class="card_content">
                         <div class="secondary_text space2">
-                            Publicado en la tienda <span class="bold">Google PlayStore</span> para smartphones.
-                            <br>
-                            <span class="bold">Frutish</span>, Es un juego de combinar frutas, ganar puntos y obtener la corona dorada, peleando contra oponentes de todo el mundo.
-                            <br>
+                            <span class="bold">Frutish</span> es un juego de combinar frutas, ganar puntos y obtener la corona dorada, peleando contra oponentes de todo el mundo.
+                        </div>
+
+                        <div class="secondary_text space2">
                             Desarrollé todas las facetas del juego, desde la <span class="bold">programación</span>, hasta el diseño de <span class="bold">gráficos</span>, <span class="bold">animaciones</span>, <span class="bold">servidor online</span> y funcionalidades <span class="bold">multijugador</span>.
                         </div>
-    
-                        <div class="hint_text space2">
+
+                        <div class="small_text bold space2">
                             Inicio: 28/01/2020
                             <br>Lanzamiento: 13/05/2020
                             <br>Duración: 5 meses (incluidas actualizaciones)
                         </div>
     
                         <div class="card_bottom space2 rows_spaced">
-                            <div></div>
+                            <div class="rows_center unselectable">
+                                <img class="small_icon" src="./static/images/logos/csharp.png">
+                                <img class="small_icon" src="./static/images/logos/unity.png">
+                            </div>
                             <div class="rows_spaced">
                         </div>
     

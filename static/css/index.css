@@ -79,6 +79,6 @@ body {
 @media (max-width: 576px) {
     :root {
         --max-page-width: 100%;
-        font-size: calc(1vh + 1.4vw); 
+        font-size: calc(1vh + 1.6vw); 
     }
 }
