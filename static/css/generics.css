@@ -48,6 +48,18 @@
     padding: calc(1vh + 0.5vw);
 }
 
+.tag {
+    background-color: rgba(1, 1, 1, 0.15);
+    color: var(--color-accent);
+    border-radius: var(--border-radius);
+
+    display: inline-block;
+    padding: 4px 8px;
+
+    font-size: var(--small-text-size);
+    font-weight: bold;
+}
+
 /* ------- Texts ------- */
 .primary_text {
     color: var(--color-primary-text);
@@ -122,6 +134,7 @@ a.button > img {
     object-fit: scale-down; 
 }
 
+
 @media (max-width: 576px) {
     a.button {
         padding: 0.8vh 1.5vw;
@@ -130,6 +143,12 @@ a.button > img {
 
 
 /* Layouts */
+
+.less_gap, 
+.rows.less_gap, .rows_center.less_gap,
+.columns.less_gap, .columns_center.less_gap {
+    gap: 0.5vw;
+}
 
 .rows {
     display: flex;

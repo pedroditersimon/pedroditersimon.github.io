@@ -37,8 +37,10 @@
     --color-secondary: #1c1c1c;
     --color-secondary-hover: #202020;
 
-    --color-accent: #414BB2;
-    --color-accent-hover: #3a43a3;
+    --color-banner-background:#41A680;
+
+    --color-accent: #41A680;
+    --color-accent-hover:#368c6b;
 
     --color-warning: #ed4337;
 

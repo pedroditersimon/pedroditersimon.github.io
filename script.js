@@ -61,9 +61,8 @@ document.querySelectorAll('.project_card').forEach((card) => {
 function toggleContentVisibility(clickedCard) {
     cards.forEach((card) => {
         if (card === clickedCard) {
-            card.classList.toggle('visible');
+            card.classList.toggle('hidden');
         } else {
-            card.classList.remove('visible');
             card.classList.add('hidden');
         }
     });

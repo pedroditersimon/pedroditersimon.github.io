@@ -7,7 +7,7 @@
     padding-top: 2vw;
     gap: 2vw;
 
-    transition: max-width 0.2s ease;
+    transition: max-width 0.2s ease-in-out;
     max-width: 100%;
 }
 
@@ -17,7 +17,7 @@
 }
 
 .header.hidden > * {
-    transition: opacity 0.2s ease;
+    transition: opacity 0.2s ease-in-out;
     opacity: 0;
 }
 
@@ -36,7 +36,7 @@ a.button.hide_header:hover {
 
 a.button.hide_header > img {
     width: 1vw;
-    opacity: 0.5;
+    opacity: 0.1;
 }
 a.button.hide_header:hover > img  {
     opacity: 1;
