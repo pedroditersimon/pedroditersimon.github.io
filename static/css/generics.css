@@ -151,19 +151,19 @@ a.button > img {
 .less_gap, 
 .rows.less_gap, .rows_center.less_gap,
 .columns.less_gap, .columns_center.less_gap {
-    gap: 0.5vw;
+    gap: calc(0.5vh + 0.5vw);
 }
 
 .rows {
     display: flex;
     flex-direction: row;
-    gap: 1vw;
+    gap: calc(0.5vh + 1vw);
 }
 
 .rows_center {
     display: flex;
     flex-direction: row;
-    gap: 1vw;
+    gap: calc(0.5vh + 1vw);
 
     align-items: center;
 }
@@ -171,13 +171,13 @@ a.button > img {
 .columns {
     display: flex;
     flex-direction: column;
-    gap: 1vw;
+    gap: calc(0.5vh + 1vw);
 }
 
 .columns_center {
     display: flex;
     flex-direction: column;
-    gap: 1vw;
+    gap: calc(0.5vh + 1vw);
 
     align-items: center;
 }
@@ -185,7 +185,7 @@ a.button > img {
 .rows_spaced {
     display: flex;
     flex-direction: row;
-    gap: 1vw;
+    gap: calc(0.5vh + 1vw);
 
     justify-content: space-between;
 }
