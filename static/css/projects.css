@@ -27,7 +27,7 @@
     opacity: 1;
 }
 
-.project_card.hidden .card_header {
+.project_card.hidden:not(:hover) .card_header {
     opacity: 0.5;
 }
 
