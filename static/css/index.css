@@ -39,6 +39,7 @@
 
     --color-banner-background:#41A680;
 
+    /* accent is used on buttons and highlights text */
     --color-accent: #41A680;
     --color-accent-hover:#368c6b;
 
@@ -48,6 +49,7 @@
     --color-brand-hover: #44281D;
     --color-brand-text: #B97860;
 
+    /* color for programming code */
     --color-text-code: #79cbdd;
 
     /* this define EM and REM size */
