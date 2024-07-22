@@ -4,6 +4,8 @@ body {
 
 .page {
     box-sizing: unset !important;
+    max-width: var(--max-page-width);
+    margin: auto;
 }
 
 h1,
