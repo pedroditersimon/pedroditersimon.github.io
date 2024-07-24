@@ -1,10 +1,11 @@
 body {
 	background-color: var(--color-primary);
+  
 }
 
 .page {
     box-sizing: unset !important;
-    max-width: var(--max-page-width);
+
     margin: auto;
 }
 
@@ -54,4 +55,11 @@ pre code {
 pre::selection, code::selection {
     background-color: var(--color-secondary-text) !important;
     color: var(--color-secondary) !important;
+}
+
+
+@media (min-width: 1200px) {
+    .page {
+        max-width: var(--max-page-width);
+    }
 }
