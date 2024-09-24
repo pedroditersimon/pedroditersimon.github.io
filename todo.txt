@@ -10,3 +10,4 @@ Actualizacion a futuro:
 
 TODO:
 - En la seccion de Historia, agregar sobre como empecé con pygame, game maker y luego unity
+- Agregar un texto descripcion a los links de blog, cambiarlo a formato tarjeta
