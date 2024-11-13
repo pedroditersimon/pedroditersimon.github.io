@@ -1,0 +1,16 @@
+.title {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+
+.title .icons {
+    display: flex;
+    flex-direction: row;
+    gap: 1vw;
+}
+
+.title .icons img {
+    height: 100%;
+}

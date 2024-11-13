@@ -1,0 +1,65 @@
+/* ------- Page Banner ------- */
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+
+#banner {
+    background-color: var(--color-banner-background);
+
+    display: flex;
+    justify-content: center;
+
+    background-image: url("../assets/banner.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    padding: 2vh 6vw;
+}
+
+#banner .banner_content {
+    width: var(--max-page-width);
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+#banner.only_show_desktop {
+    border-radius: var(--border-radius);
+}
+
+#banner .banner_text {
+    color: var(--color-primary-text);
+
+    display: flex;
+    flex-direction: column;
+    gap: 1vh;
+    justify-content: center;
+
+    text-align: right;
+}
+
+#banner h1 {
+    font-size: 3em;
+    font-weight: 400;
+
+    font-family: "Oswald";
+
+    align-content: center;
+    max-width: 25vw;
+}
+
+#banner p {
+    font-size: var(--secondary-text-size);
+
+    align-content: start;
+}
+
+#banner img {
+    width: 15vw;
+
+    align-self: center;
+
+    object-fit: cover;
+    border-radius: 50%;
+    /* border: calc(0.15vh + 0.15vw) solid var(--color-primary-text); */
+}

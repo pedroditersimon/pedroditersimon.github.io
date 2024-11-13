@@ -1,0 +1,82 @@
+/* ------- Navigation Bar ------- */
+
+#navbar {
+    padding: 0 0.5vw;
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    gap: 1.5vh;
+}
+
+#navbar a {
+    background-color: unset;
+    color: var(--color-secondary-text);
+
+    width: max-content;
+    font-size: var(--small-text-size);
+    text-wrap: nowrap;
+    font-weight: bolder;
+
+    text-align: center;
+    align-content: center;
+
+    padding: 0.8vh 0.8vw;
+    border-radius: var(--border-radius);
+    text-decoration: none;
+}
+
+#navbar a:hover {
+    background-color: var(--color-primary-hover);
+    color: var(--color-primary-text);
+}
+
+#navbar a.selected {
+    background-color: var(--color-accent);
+    color: var(--color-primary-text);
+}
+
+#navbar a.selected:hover {
+    background-color: var(--color-accent-hover);
+}
+
+/* Dot */
+#navbar a::before {
+    content: "";
+    background-color: var(--color-secondary-text);
+    display: inline-block;
+
+    height: 0.5vw;
+    width: 0.5vw;
+
+    vertical-align: middle;
+
+    margin: 0 0.75vw 0 0;
+
+    border-radius: 50%;
+}
+
+#navbar a.selected::before {
+    background-color: var(--color-primary-text);
+}
+
+#navbar a:hover::before {
+    background-color: var(--color-primary-text);
+}
+
+
+@media (max-width: 576px) {
+    #navbar {
+        width: 100%;
+        padding: 2vh 2vw;
+        gap: 0;
+
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    #navbar a {
+        margin: 0;
+        text-wrap: wrap;
+    }
+}

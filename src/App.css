@@ -1,0 +1,146 @@
+/* Fonts */
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+/*
+.oswald-<uniquifier> {
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+}
+*/
+
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+/*
+.nunito-sans-<uniquifier> {
+    font-family: "Nunito Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+    font-variation-settings:
+    "wdth" 100,
+    "YTLC" 500;
+}
+*/
+
+:root {
+  /* color pallete */
+  --color-primary-text: #f2f2f2;
+  --color-secondary-text: #858585;
+
+  --color-primary: #161616;
+  --color-primary-hover: #141414;
+
+  --color-secondary: #1c1c1c;
+  --color-secondary-hover: #202020;
+
+  --color-banner-background: #41A680;
+
+  /* accent is used on buttons and highlights text */
+  --color-accent: #41A680;
+  --color-accent-hover: #368c6b;
+
+  --color-warning: #ed4337;
+
+  --color-brand: #4f2d20ff;
+  --color-brand-hover: #44281D;
+  --color-brand-text: #B97860;
+
+  /* color for programming code */
+  --color-text-code: #79cbdd;
+
+  /* this define EM and REM size */
+  font-size: calc(1vh + 1.1vw);
+
+  /* some preset text sizes */
+  --primary-text-size: 1rem;
+  --secondary-text-size: 0.8rem;
+  --small-text-size: 0.7rem;
+  --border-radius: 0.3rem;
+
+  --max-page-width: 55vw;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  height: 100%;
+
+  font-family: "Nunito Sans", sans-serif;
+
+  display: flex;
+  flex-direction: column;
+}
+
+/* Class to prevent images from being selected */
+.unselectable {
+  user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -webkit-user-drag: none;
+  -khtml-user-drag: none;
+  -moz-user-drag: none;
+  -o-user-drag: none;
+  pointer-events: none;
+}
+
+.inside_shadow {
+  /* inset | offset-x | offset-y | blur-radius | spread-radius | color */
+  box-shadow: inset 0 0 10px 0.1vw var(--color-primary-hover);
+}
+
+.outside_shadow {
+  /* inset | offset-x | offset-y | blur-radius | spread-radius | color */
+  box-shadow: 0 0 10px 0.1vw var(--color-primary-hover);
+}
+
+
+/* ------- Texts ------- */
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+
+.primary_text {
+  color: var(--color-primary-text);
+  font-size: var(--primary-text-size);
+}
+
+.secondary_text {
+  color: var(--color-secondary-text);
+  font-size: var(--secondary-text-size);
+}
+
+.small_text {
+  color: var(--color-secondary-text);
+  font-size: var(--small-text-size);
+}
+
+.hint_text {
+  color: var(--color-accent);
+
+  font-size: var(--small-text-size);
+  font-weight: bold;
+}
+
+.warning_text {
+  color: var(--color-warning);
+
+  font-size: var(--small-text-size);
+  font-weight: bold;
+}
+
+@media (max-width: 576px) {
+  :root {
+    --max-page-width: 100%;
+    font-size: calc(1vh + 1.6vw);
+  }
+}

@@ -1,0 +1,58 @@
+/* ------- Profile Card ------- */
+
+.profile_card {
+    background-color: unset;
+    border-radius: var(--border-radius);
+
+    padding: 0.5vw;
+
+    text-wrap: wrap;
+    max-width: fit-content;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 1vw;
+}
+
+.profile_card:hover {
+    background-color: var(--color-primary-hover);
+}
+
+/* Text */
+.profile_card .profile_text {
+    background-color: unset;
+
+    display: flex;
+    flex-direction: column;
+
+    text-align: left;
+    text-decoration: none;
+    gap: 0;
+
+    align-self: center;
+}
+
+.profile_card h2 {
+    color: var(--color-primary-text);
+
+    font-size: var(--secondary-text-size);
+}
+
+.profile_card p {
+    color: var(--color-secondary-text);
+    font-size: var(--small-text-size);
+}
+
+/* Profile photo */
+.profile_card img {
+    align-self: center;
+
+    height: calc(2vh + 2vw);
+    width: calc(2vh + 2vw);
+
+    object-fit: cover;
+    border-radius: 50%;
+    /* border: calc(0.15vh + 0.15vw) solid var(--color-primary-text); */
+
+}
