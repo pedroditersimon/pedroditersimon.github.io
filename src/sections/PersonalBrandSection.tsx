@@ -14,17 +14,23 @@ import linktree_logo from "../assets/logos/linktree.png";
 export default function PersonalBrandSection() {
 	return (
 		<Section id="personal_brand">
-			<Title icons={[]}>Marca personal</Title>
+			{/* Poner titulo en color marron brand */}
+			<Title title_color="var(--color-brand-text)">Marca personal</Title>
+			{/* Poner titulo en color marron brand */}
 			<p className="secondary_text">
 				Desarollé mi marca personal bajo el nombre de "
-				<span className="brand_text">ChocoDark Studio</span>", a través de la
-				cual comparto mis creaciones de videojuegos y sus progresos.
+				<span style={{ color: "var(--color-brand-text)" }}>
+					ChocoDark Studio
+				</span>
+				", a través de la cual comparto mis creaciones de videojuegos y sus
+				progresos.
 			</p>
 			<ProfileCard
 				icon={chocodark_logo}
 				name="ChocoDark Studio"
 				description="Desarrollador de videojuegos indie"
 			/>
+			{/* Poner botones en color marron brand */}
 			<div>
 				<Button
 					icon={github_logo}

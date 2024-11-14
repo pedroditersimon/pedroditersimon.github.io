@@ -1,10 +1,8 @@
-import ProfileCard from "../components/ProfileCard";
+import ProfileCard from "./ProfileCard";
 import Navbar from "./Navbar";
 import me_logo from "../assets/me.png";
 import arrow_left from "../assets/arrow_left.png";
 import "./Header.css";
-
-import { SmallIcon } from "../components/Icons";
 
 export default function Header() {
 	return (

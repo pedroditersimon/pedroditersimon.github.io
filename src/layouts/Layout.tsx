@@ -1,6 +1,6 @@
 import { ReactNode } from "react";
 import Banner from "../components/Banner";
-import Header from "./Header";
+import Header from "../components/Header";
 import "./Layout.css";
 
 export default function Layout({ children }) {

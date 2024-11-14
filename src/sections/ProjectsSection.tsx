@@ -1,6 +1,8 @@
 import Section from "../layouts/Section";
 
 import Title from "../components/Title";
+import ProjectCard from "../components/ProjectCard";
+import miro_logo from "../assets/logos/miro-color.png";
 
 export default function ProjectsSection() {
 	return (
@@ -10,7 +12,54 @@ export default function ProjectsSection() {
 				Presento una selección de videojuegos que he desarrollado y publicado a
 				través de mi marca personal en diversas tiendas y plataformas en línea.
 			</p>
+			<ProjectCard
+				title="Mini Room Painter"
+				icon="static/images/projects/miniroompainter_logo.png"
+				tags={["Pintura", "Mascota"]}
+				title_icon="./static/images/logos/android-white.png"
+				bottom_icons={[
+					"./static/images/logos/csharp.png",
+					"./static/images/logos/unity.png",
+				]}
+				bottom_buttons={[
+					{
+						text: "Miro",
+						icon: miro_logo,
+						href: "https://miro.com/app/board/uXjVNKtKegw=/?share_link_id=737298372577",
+					},
+					{
+						text: "Descargar en PlayStore",
+						icon: miro_logo,
+						href: "https://miro.com/app/board/uXjVNKtKegw=/?share_link_id=737298372577",
+					},
+				]}
+			>
+				<div className="secondary_text space2">
+					<span className="bold">Mini Room Painter</span> es un juego de
+					decoración de interiores, donde los jugadores combinan colores para
+					pintar objetos y muebles en habitaciones con diversas temáticas.
+					Además de cuidar un gatito que acompaña al jugador.
+				</div>
 
+				<div className="secondary_text space2">
+					Desarrollé el juego desde la{" "}
+					<span className="bold">programación</span>, hasta el diseño de{" "}
+					<span className="bold">gráficos</span>,{" "}
+					<span className="bold">modelado 3D</span>,{" "}
+					<span className="bold">UI</span>,{" "}
+					<span className="bold">GameDesign</span>,{" "}
+					<span className="bold">ilustraciones</span> y{" "}
+					<span className="bold">animaciones</span>.
+				</div>
+
+				<div className="small_text bold space2">
+					Inicio: 14/12/2023
+					<br />
+					Lanzamiento: 18/04/2024
+					<br />
+					Duración: 6 meses (incluidas actualizaciones)
+				</div>
+			</ProjectCard>
 			<div className="project_card boxed space2 hidden">
 				<div className="card_header primary_text rows_spaced">
 					<div className="rows_center">
