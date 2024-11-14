@@ -109,12 +109,16 @@ p {
   margin: 0;
 }
 
-.primary_text {
+.primary_text,
+h1 {
   color: var(--color-primary-text);
   font-size: var(--primary-text-size);
 }
 
-.secondary_text {
+
+
+.secondary_text,
+p {
   color: var(--color-secondary-text);
   font-size: var(--secondary-text-size);
 }

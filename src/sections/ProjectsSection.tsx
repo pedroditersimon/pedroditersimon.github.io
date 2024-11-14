@@ -8,7 +8,7 @@ export default function ProjectsSection() {
 	return (
 		<Section id="projects">
 			<Title icons={[]}>Proyectos</Title>
-			<p className="secondary_text">
+			<p>
 				Presento una selección de videojuegos que he desarrollado y publicado a
 				través de mi marca personal en diversas tiendas y plataformas en línea.
 			</p>
@@ -34,14 +34,14 @@ export default function ProjectsSection() {
 					},
 				]}
 			>
-				<div className="secondary_text space2">
+				<p className="space2">
 					<span className="bold">Mini Room Painter</span> es un juego de
 					decoración de interiores, donde los jugadores combinan colores para
 					pintar objetos y muebles en habitaciones con diversas temáticas.
 					Además de cuidar un gatito que acompaña al jugador.
-				</div>
+				</p>
 
-				<div className="secondary_text space2">
+				<p className=" space2">
 					Desarrollé el juego desde la{" "}
 					<span className="bold">programación</span>, hasta el diseño de{" "}
 					<span className="bold">gráficos</span>,{" "}
@@ -50,7 +50,7 @@ export default function ProjectsSection() {
 					<span className="bold">GameDesign</span>,{" "}
 					<span className="bold">ilustraciones</span> y{" "}
 					<span className="bold">animaciones</span>.
-				</div>
+				</p>
 
 				<div className="small_text bold space2">
 					Inicio: 14/12/2023
@@ -87,14 +87,14 @@ export default function ProjectsSection() {
 					</div>
 				</div>
 				<div className="card_content">
-					<div className="secondary_text space2">
+					<p className=" space2">
 						<span className="bold">Mini Room Painter</span> es un juego de
 						decoración de interiores, donde los jugadores combinan colores para
 						pintar objetos y muebles en habitaciones con diversas temáticas.
 						Además de cuidar un gatito que acompaña al jugador.
-					</div>
+					</p>
 
-					<div className="secondary_text space2">
+					<p className=" space2">
 						Desarrollé el juego desde la{" "}
 						<span className="bold">programación</span>, hasta el diseño de{" "}
 						<span className="bold">gráficos</span>,{" "}
@@ -103,7 +103,7 @@ export default function ProjectsSection() {
 						<span className="bold">GameDesign</span>,{" "}
 						<span className="bold">ilustraciones</span> y{" "}
 						<span className="bold">animaciones</span>.
-					</div>
+					</p>
 
 					<div className="small_text bold space2">
 						Inicio: 14/12/2023
@@ -177,23 +177,23 @@ export default function ProjectsSection() {
 					</div>
 				</div>
 				<div className="card_content">
-					<div className="secondary_text space2">
+					<p className=" space2">
 						<span className="bold">Avenue</span> es un juego de rompecabezas
 						publicado en la tienda <span className="bold">Itch.io</span> para{" "}
 						<span className="bold">Windows</span>.
 						<br />
 						Resuelve desafíos relacionados con caminos, autos y tráfico,
 						gestionando los limitados recuros.
-					</div>
+					</p>
 
-					<div className="secondary_text space2">
+					<p className=" space2">
 						El desarrollo abarcó desde la{" "}
 						<span className="bold">programación</span>, hasta el diseño de{" "}
 						<span className="bold">gráficos</span>,{" "}
 						<span className="bold">UI</span>,{" "}
 						<span className="bold">GameDesign</span> y{" "}
 						<span className="bold">animaciones</span>.
-					</div>
+					</p>
 
 					<div className="small_text bold space2">
 						Inicio: 26/04/2023
@@ -267,20 +267,20 @@ export default function ProjectsSection() {
 					</div>
 				</div>
 				<div className="card_content">
-					<div className="secondary_text space2">
+					<p className=" space2">
 						<span className="bold">Frutish</span> es un juego de combinar
 						frutas, ganar puntos y obtener la corona dorada, peleando contra
 						oponentes de todo el mundo.
-					</div>
+					</p>
 
-					<div className="secondary_text space2">
+					<p className=" space2">
 						Desarrollé todas las facetas del juego, desde la{" "}
 						<span className="bold">programación</span>, hasta el diseño de{" "}
 						<span className="bold">gráficos</span>,{" "}
 						<span className="bold">animaciones</span>,{" "}
 						<span className="bold">servidor online</span> y funcionalidades{" "}
 						<span className="bold">multijugador</span>.
-					</div>
+					</p>
 
 					<div className="small_text bold space2">
 						Inicio: 28/01/2020

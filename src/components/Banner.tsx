@@ -10,7 +10,7 @@ export default function Banner({ icon, name, description }: Profile) {
 
 				<div className="banner_text">
 					<h1>{name}</h1>
-					<p>{description}</p>
+					<p className="primary_text">{description}</p>
 				</div>
 			</div>
 		</div>

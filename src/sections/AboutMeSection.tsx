@@ -12,12 +12,13 @@ import Section from "../layouts/Section";
 
 import Title from "../components/Title";
 import Button from "../components/Button";
+import Space from "../components/Space";
 
 export default function AboutMeSection() {
 	return (
 		<Section id="about_me">
 			<Title icons={[csharp_logo, unity_logo]}>Acerca de mí</Title>
-			<p className="secondary_text">
+			<p>
 				Soy programador y desarrollador de videojuegos en Unity3D, con más de 4
 				años de experiencia.
 				<br />
@@ -27,29 +28,27 @@ export default function AboutMeSection() {
 			<div>
 				<Button
 					icon={linkedin_logo}
-					href="https://github.com/pedroditersimon"
+					href="https://www.linkedin.com/in/pedro-diter-simon/"
 					alt="LinkedIn logo"
-				>
-					LinkedIn
-				</Button>
+					text="LinkedIn"
+				/>
 				<Button
 					icon={github_logo}
 					href="https://github.com/pedroditersimon"
 					alt="GitHub logo"
-				>
-					GitHub
-				</Button>
+					text="GitHub"
+				/>
 				<Button
 					icon={link_logo}
 					href="./Programador CSharp Unity - Pedro Simón Resumen CV.pdf"
 					alt="Resumen CV button"
-				>
-					Resumen CV
-				</Button>
+					text="Resumen CV"
+				/>
 			</div>
 
+			<Space />
 			<Title icons={[python_logo, pygame_logo, gamemaker_logo]}>Historia</Title>
-			<p className="secondary_text">
+			<p>
 				A la edad de 12 años, descubrí los lenguajes de programación y sus
 				aplicaciones tecnológicas, lo que despertó mi interés y me impulsó a
 				aprender de manera autodidacta.

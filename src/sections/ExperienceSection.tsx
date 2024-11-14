@@ -23,12 +23,13 @@ import cert4 from "../assets/certificates/1678478948032.png";
 import cert5 from "../assets/certificates/1676682682729.png";
 
 import CertificationCard from "../components/CertificationCard";
+import Space from "../components/Space";
 
 export default function ExperienceSection() {
 	return (
 		<Section id="experience">
-			<Title icons={[]}>Experiencia y habilidades</Title>
-			<p className="secondary_text">
+			<Title>Experiencia y habilidades</Title>
+			<p>
 				Trabajé como FreeLancer en línea en la web Workana, finalizando con
 				éxito proyectos de clientes que se encuentran en distintas partes del
 				mundo (España, Ecuador, Uruguay, etc.).
@@ -47,7 +48,9 @@ export default function ExperienceSection() {
 				<br />
 				Cuento con buen nivel de comprensión lectora y escritura en inglés
 			</p>
-			<Title icons={[]}>Certificaciones</Title>
+
+			<Space />
+			<Title>Certificaciones</Title>
 			<div className="certificates">
 				<CertificationCard
 					img={cert1}

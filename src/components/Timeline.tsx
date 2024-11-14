@@ -12,7 +12,7 @@ interface Props {
 
 export default function Timeline({ entries }: Props) {
 	return (
-		<div className="timeline space2">
+		<div className="timeline">
 			{entries.map((entry) => (
 				<div className="entry">
 					<span className="date hint_text">{entry.date}</span>

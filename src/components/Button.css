@@ -28,3 +28,12 @@ a.button>img {
     width: calc(1vh + 1vw);
     object-fit: scale-down;
 }
+
+/* ------- Variants ------- */
+a.button.personal_brand {
+    background-color: var(--color-brand);
+}
+
+a.button.personal_brand:hover {
+    background-color: var(--color-brand-hover);
+}

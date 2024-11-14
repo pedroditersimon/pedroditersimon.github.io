@@ -5,6 +5,7 @@ export default function SectionDivider() {
 				width: "100%",
 				height: "0",
 				border: "dashed 2px var(--color-secondary)",
+				margin: "0",
 			}}
 		/>
 	);

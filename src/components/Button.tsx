@@ -1,14 +1,31 @@
 import "./Button.css";
-export default function Button({ children, icon, href, alt }) {
+
+export interface Props {
+	text: string;
+	href: string;
+	icon?: string;
+	alt?: string;
+	onClick?: () => void;
+	className?: string;
+}
+
+export default function Button({
+	text,
+	href,
+	icon,
+	alt,
+	onClick,
+	className,
+}: Props) {
 	return (
 		<a
-			className="button outside_shadow"
+			className={`button outside_shadow ${className}`}
 			href={href}
 			target="_blank"
 			rel="noreferrer"
 		>
-			<img src={icon} alt={alt} />
-			<span>{children}</span>
+			{icon && <img src={icon} alt={alt} />}
+			<span>{text}</span>
 		</a>
 	);
 }

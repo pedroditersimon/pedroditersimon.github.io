@@ -1,0 +1,8 @@
+Todo:
+- Utilizar etiquetas html comunes como <p>, <h1>, <h2>,
+    estilizar esas etiquetas, y no con clases.
+- Organizar los imports y dividirlos por css, icons, components etc.
+- Mover todos los css a una carpeta styles
+
+Done:
+-
