@@ -22,7 +22,7 @@ export function Icon({ className, icon, alt, border = "circle" }: Props) {
 	);
 }
 
-export function SmallIcon({ className, icon, alt }: Props) {
+export function SmallIcon({ className, icon, alt, border = "circle" }: Props) {
 	return (
 		<img
 			className={className}
@@ -31,6 +31,7 @@ export function SmallIcon({ className, icon, alt }: Props) {
 			style={{
 				width: "calc(1vh + 1vw)",
 				objectFit: "scale-down",
+				borderRadius: borders[border],
 			}}
 		/>
 	);

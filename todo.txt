@@ -5,6 +5,7 @@ Todo:
 - Mover todos los css a una carpeta styles
 - Link de home al header card
 - Seleccionar items del navbar al scrollear
+- Texto del timeline poner la etiqueta <br> enves de texto
 
 Done:
 -

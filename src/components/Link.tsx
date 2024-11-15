@@ -15,7 +15,10 @@ export default function Link({ children, href, icon }: Props) {
 			target="_blank"
 			className="hint_text"
 			rel="noreferrer"
-			style={{ display: "block" }}
+			style={{
+				display: "flex",
+				alignItems: "center",
+			}}
 		>
 			<SmallIcon icon={icon ? icon : link_logo} alt="" />
 			<span style={{ marginLeft: "0.5vw" }}>{children}</span>
