@@ -1,5 +1,10 @@
-import { ReactNode, useState } from "react";
+import { ReactNode, useEffect, useState } from "react";
 import "./ProjectCard.css";
+import Row from "../layouts/Row";
+import { Icon, SmallIcon } from "./Icons";
+import Badge from "./Badge";
+import Space from "./Space";
+import { colors } from "../consts";
 
 interface Button {
 	text: string;
@@ -7,14 +12,21 @@ interface Button {
 	href: string;
 }
 
+type Tag = {
+	text: string;
+	style?: keyof typeof colors;
+};
+
 interface Props {
 	children: ReactNode; // content - description
 	icon: string;
 	title: string;
-	tags: string[];
+	tags: Tag[];
 	title_icon: string;
 	bottom_icons: string[];
 	bottom_buttons?: Button[];
+	isHidden?: boolean;
+	onHiddenChange?: (value: boolean) => void;
 }
 
 export default function ProjectCard({
@@ -25,45 +37,52 @@ export default function ProjectCard({
 	title_icon,
 	bottom_icons,
 	bottom_buttons,
+	isHidden = true,
+	onHiddenChange,
 }: Props) {
-	const [hidden, setHidden] = useState(true);
+	const [hidden, setHidden] = useState(isHidden);
 
-	function toggleVisibility() {
-		setHidden((prev) => !prev);
+	useEffect(() => {
+		setHidden(isHidden);
+	}, [isHidden]);
+
+	function toggleHidde() {
+		const newValue = !hidden;
+		setHidden(newValue);
+		if (onHiddenChange) onHiddenChange(newValue);
 	}
 
 	return (
 		<div className={`project_card ${hidden && "hidden"}`}>
 			<div
-				onClick={toggleVisibility}
+				onClick={toggleHidde}
 				className="card_header primary_text rows_spaced"
 			>
-				<div className="rows_center">
-					<img className="icon" src={icon} alt="none" />
-					<span className="title bold">{title}</span>
-				</div>
-				<div className="rows_center">
-					<div className="rows_center less_gap">
-						{tags.map((tag) => (
-							<span className="tag">{tag}</span>
-						))}
-					</div>
-					<img alt="none" className="small_icon" src={title_icon} />
-					<span className="warning_text" style={{ display: "none;" }}>
-						Inactivo
+				<Row>
+					<Icon icon={icon} alt="none" border="round" />
+					<span className="title">
+						<strong>{title}</strong>
 					</span>
+				</Row>
+				<Row>
+					<Row className="less_gap">
+						{tags.map((tag) => (
+							<Badge text={tag.text} style={tag.style} />
+						))}
+					</Row>
+					<SmallIcon icon={title_icon} alt="none" />
 					<div className="expand_arrow" />
-				</div>
+				</Row>
 			</div>
 			<div className="card_content">
 				{children}
 				<div className="card_bottom space2">
-					<div className="rows_center unselectable">
+					<Row className="unselectable">
 						{bottom_icons.map((icon) => (
-							<img alt="none" className="small_icon" src={icon} />
+							<SmallIcon icon={icon} alt="none" />
 						))}
-					</div>
-					<div className="rows_spaced">
+					</Row>
+					<Row>
 						{bottom_buttons?.map((btn) => (
 							<a
 								className="button outside_shadow"
@@ -71,11 +90,11 @@ export default function ProjectCard({
 								target="_blank"
 								rel="noreferrer"
 							>
-								<img alt="none" src={btn.icon} />
+								<SmallIcon icon={btn.icon} alt="none" />
 								<span>{btn.text}</span>
 							</a>
 						))}
-					</div>
+					</Row>
 				</div>
 			</div>
 		</div>

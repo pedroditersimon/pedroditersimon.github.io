@@ -13,6 +13,7 @@ import Section from "../layouts/Section";
 import Title from "../components/Title";
 import Button from "../components/Button";
 import Space from "../components/Space";
+import Row from "../layouts/Row";
 
 export default function AboutMeSection() {
 	return (
@@ -25,7 +26,7 @@ export default function AboutMeSection() {
 				Me especializo en el lenguaje de programación C# y el scripting API de
 				Unity3D, como su manejo general.
 			</p>
-			<div>
+			<Row>
 				<Button
 					icon={linkedin_logo}
 					href="https://www.linkedin.com/in/pedro-diter-simon/"
@@ -44,7 +45,7 @@ export default function AboutMeSection() {
 					alt="Resumen CV button"
 					text="Resumen CV"
 				/>
-			</div>
+			</Row>
 
 			<Space />
 			<Title icons={[python_logo, pygame_logo, gamemaker_logo]}>Historia</Title>

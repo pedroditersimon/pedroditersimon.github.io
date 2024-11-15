@@ -10,6 +10,7 @@ import twitter_logo from "../assets/logos/twitter-white.png";
 import instagram_logo from "../assets/logos/instagram-white.png";
 import twitch_logo from "../assets/logos/twitch-white.png";
 import linktree_logo from "../assets/logos/linktree.png";
+import Row from "../layouts/Row";
 
 const buttons = [
 	{
@@ -66,11 +67,11 @@ export default function PersonalBrandSection() {
 				description="Desarrollador de videojuegos indie"
 			/>
 
-			<div>
+			<Row>
 				{buttons.map((btn) => (
 					<Button {...btn} className="personal_brand" />
 				))}
-			</div>
+			</Row>
 		</Section>
 	);
 }
