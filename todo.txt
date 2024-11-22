@@ -6,9 +6,10 @@ Todo:
 - Texto del timeline poner la etiqueta <br> enves de texto
 - Simplificar el manejo de estados de la seleccion de project cards
 - Arreglar link al resumen CV y blogs
-- Arreglar boton de Miro en project cards, deberia ser cuadrado
 - Fusionar el todo.txt del proyecto original con este
+- Separar todas las deficinoes de tipos y interfaces de los componentes
 
 Done:
 - Hacer link clickable del profile card en el header y que te lleve al home
 - Seleccionar items del navbar al scrollear
+- Arreglar boton de Miro en project cards, deberia ser cuadrado

@@ -36,15 +36,19 @@ export default function ProjectsSection() {
 				través de mi marca personal en diversas tiendas y plataformas en línea.
 			</p>
 			<ProjectCard
-				icon={miniroompainter_logo}
+				icon={{ icon: miniroompainter_logo, border: "round" }}
 				title="Mini Room Painter"
 				tags={[{ text: "Pintura" }, { text: "Mascota" }]}
-				title_icon={android_logo}
-				bottom_icons={[csharp_logo, unity_logo]}
+				title_icon={{ icon: android_logo, border: "square" }}
+				bottom_icons={[
+					{ icon: csharp_logo, border: "square" },
+					{ icon: unity_logo, border: "square" },
+				]}
 				bottom_buttons={[
 					{
 						text: "Miro",
 						icon: miro_logo,
+						icon_border: "square",
 						href: "https://miro.com/app/board/uXjVNKtKegw=/?share_link_id=737298372577",
 					},
 					{
@@ -83,15 +87,19 @@ export default function ProjectsSection() {
 				</p>
 			</ProjectCard>
 			<ProjectCard
-				icon={avenue_logo}
+				icon={{ icon: avenue_logo, border: "round" }}
 				title="Avenue"
 				tags={[{ text: "City Builder" }, { text: "Gestión de recursos" }]}
-				title_icon={windows_logo}
-				bottom_icons={[csharp_logo, unity_logo]}
+				title_icon={{ icon: windows_logo, border: "square" }}
+				bottom_icons={[
+					{ icon: csharp_logo, border: "square" },
+					{ icon: unity_logo, border: "square" },
+				]}
 				bottom_buttons={[
 					{
 						text: "Miro",
 						icon: miro_logo,
+						icon_border: "square",
 						href: "https://miro.com/app/board/uXjVNZ1VJdA=/?share_link_id=663618610003",
 					},
 					{
@@ -130,15 +138,18 @@ export default function ProjectsSection() {
 				</p>
 			</ProjectCard>
 			<ProjectCard
-				icon={frutish_logo}
+				icon={{ icon: frutish_logo, border: "square" }}
 				title="Frutish"
 				tags={[
 					{ text: "Ranking" },
 					{ text: "Combinación" },
 					//{ text: "Inactivo", style: "red" },
 				]}
-				title_icon={android_logo}
-				bottom_icons={[csharp_logo, unity_logo]}
+				title_icon={{ icon: android_logo, border: "square" }}
+				bottom_icons={[
+					{ icon: csharp_logo, border: "square" },
+					{ icon: unity_logo, border: "square" },
+				]}
 				bottom_buttons={[]}
 				isHidden={activeProjectCard !== "Frutish"}
 				onHiddenChange={(newValue) =>

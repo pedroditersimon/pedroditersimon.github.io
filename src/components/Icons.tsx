@@ -1,10 +1,8 @@
 import { borders } from "../consts";
+import type { IconType } from "../types";
 
-interface Props {
+interface Props extends IconType {
 	className?: string;
-	icon: string;
-	alt: string;
-	border?: keyof typeof borders;
 }
 
 export function Icon({ className, icon, alt, border = "circle" }: Props) {

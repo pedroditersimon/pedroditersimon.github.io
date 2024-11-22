@@ -4,11 +4,13 @@ import Row from "../layouts/Row";
 import { Icon, SmallIcon } from "./Icons";
 import Badge from "./Badge";
 import Space from "./Space";
-import { colors } from "../consts";
+import { borders, colors } from "../consts";
+import type { IconType } from "../types";
 
 interface Button {
 	text: string;
 	icon: string;
+	icon_border?: keyof typeof borders;
 	href: string;
 }
 
@@ -19,11 +21,11 @@ type Tag = {
 
 interface Props {
 	children: ReactNode; // content - description
-	icon: string;
+	icon: IconType;
 	title: string;
 	tags: Tag[];
-	title_icon: string;
-	bottom_icons: string[];
+	title_icon: IconType;
+	bottom_icons: IconType[];
 	bottom_buttons?: Button[];
 	isHidden?: boolean;
 	onHiddenChange?: (value: boolean) => void;
@@ -59,7 +61,7 @@ export default function ProjectCard({
 				className="card_header primary_text rows_spaced"
 			>
 				<Row>
-					<Icon icon={icon} alt="none" border="round" />
+					<Icon {...icon} />
 					<span className="title">
 						<strong>{title}</strong>
 					</span>
@@ -70,7 +72,7 @@ export default function ProjectCard({
 							<Badge text={tag.text} style={tag.style} />
 						))}
 					</Row>
-					<SmallIcon icon={title_icon} alt="none" />
+					<SmallIcon {...title_icon} />
 					<div className="expand_arrow" />
 				</Row>
 			</div>
@@ -79,7 +81,7 @@ export default function ProjectCard({
 				<div className="card_bottom space2">
 					<Row className="unselectable">
 						{bottom_icons.map((icon) => (
-							<SmallIcon icon={icon} alt="none" />
+							<SmallIcon {...icon} />
 						))}
 					</Row>
 					<Row>
@@ -90,7 +92,11 @@ export default function ProjectCard({
 								target="_blank"
 								rel="noreferrer"
 							>
-								<SmallIcon icon={btn.icon} alt="none" />
+								<SmallIcon
+									icon={btn.icon}
+									alt="none"
+									border={btn.icon_border}
+								/>
 								<span>{btn.text}</span>
 							</a>
 						))}
