@@ -16,7 +16,6 @@ import ProjectsSection from "./sections/ProjectsSection";
 import SectionDivider from "./components/SectionDivider";
 import AcademicalSection from "./sections/AcademicalSection";
 import BlogSection from "./sections/BlogSection";
-import Button from "./components/Button";
 
 function App() {
 	return (
