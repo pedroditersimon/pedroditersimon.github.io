@@ -4,9 +4,13 @@ import type { Profile } from "../types";
 
 import { Icon } from "./Icons";
 
-export default function ProfileCard({ icon, name, description }: Profile) {
+interface Props extends Profile {
+	href?: string;
+}
+
+export default function ProfileCard({ icon, name, description, href }: Props) {
 	return (
-		<div className="profile_card">
+		<a className="profile_card" href={href}>
 			<Icon
 				className="outside_shadow unselectable"
 				icon={icon}
@@ -18,6 +22,6 @@ export default function ProfileCard({ icon, name, description }: Profile) {
 					<strong>{description}</strong>
 				</p>
 			</div>
-		</div>
+		</a>
 	);
 }

@@ -16,6 +16,7 @@ export default function Header() {
 					icon={me_logo}
 					name="Pedro Diter Simón"
 					description="Programador de videojuegos en Unity C#"
+					href=""
 				/>
 
 				<Navbar />

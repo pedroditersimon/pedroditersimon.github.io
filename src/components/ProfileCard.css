@@ -3,6 +3,7 @@
 .profile_card {
     background-color: unset;
     border-radius: var(--border-radius);
+    text-decoration: none;
 
     padding: 0.5vw;
 
