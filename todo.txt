@@ -5,7 +5,6 @@ Todo:
 - Mover todos los css a una carpeta styles
 - Texto del timeline poner la etiqueta <br> enves de texto
 - Simplificar el manejo de estados de la seleccion de project cards
-- Separar todas las deficinoes de tipos y interfaces de los componentes
 - Usar paths absolutos con @
 
 - En la seccion de Historia, agregar sobre como empecé con pygame, game maker y luego unity
@@ -20,6 +19,7 @@ Done:
 - La barra para ocultar el navbar no funciona?
 - Arreglar link al resumen CV y blogs
 - Responsive mobile
+- Separar todas las deficinoes de tipos y interfaces de los componentes
 
 Ideas:
 - secciones de mecanicas aisladas y como las implemente, que se muestre en formato tarjetas y con shadow

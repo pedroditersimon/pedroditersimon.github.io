@@ -2,8 +2,10 @@ import { ReactNode } from "react";
 import Banner from "../components/Banner";
 import Header from "../components/Header";
 import "./Layout.css";
+
 // icons
 import me_logo from "../assets/me.png";
+
 export default function Layout({ children }) {
 	return (
 		<div className="layout">

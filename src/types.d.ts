@@ -1,4 +1,7 @@
-import { borders } from "./consts";
+import { borders, colors } from "./consts";
+
+export type Colors = keyof typeof colors;
+export type BorderStyle = keyof typeof borders;
 
 export interface Profile {
 	icon: string;
@@ -14,5 +17,18 @@ export interface Section {
 export interface IconType {
 	icon: string;
 	alt?: string;
-	border?: keyof typeof borders;
+	border?: BorderStyle;
 }
+
+interface Button {
+	text: string;
+	icon?: string;
+	icon_border?: BorderStyle;
+	href?: string;
+	alt?: string;
+}
+
+type Tag = {
+	text: string;
+	style?: Colors;
+};

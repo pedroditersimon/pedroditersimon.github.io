@@ -11,8 +11,9 @@ import instagram_logo from "../assets/logos/instagram-white.png";
 import twitch_logo from "../assets/logos/twitch-white.png";
 import linktree_logo from "../assets/logos/linktree.png";
 import Row from "../layouts/Row";
+import type { Button as ButtonType } from "../types";
 
-const buttons = [
+const buttons: ButtonType[] = [
 	{
 		text: "GitHub",
 		icon: github_logo,

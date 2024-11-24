@@ -1,5 +1,6 @@
 import "./Title.css";
 import { SmallIcon } from "./Icons";
+
 interface Props {
 	children: string;
 	title_color?: string;

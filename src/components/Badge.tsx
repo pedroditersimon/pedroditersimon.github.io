@@ -1,8 +1,9 @@
 import { colors } from "../consts";
+import { Colors } from "../types";
 
 interface Props {
 	text: string;
-	style?: keyof typeof colors;
+	style?: Colors;
 }
 
 export default function Badge({ text, style }: Props) {

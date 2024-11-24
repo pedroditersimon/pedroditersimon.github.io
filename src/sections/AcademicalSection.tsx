@@ -5,7 +5,7 @@ import Section from "../layouts/Section";
 export default function AcademicalSection() {
 	return (
 		<Section id="academical">
-			<Title icons={[]}>Formacion academica</Title>
+			<Title>Formacion academica</Title>
 			<Timeline
 				entries={[
 					{

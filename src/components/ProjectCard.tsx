@@ -5,19 +5,7 @@ import { Icon, SmallIcon } from "./Icons";
 import Badge from "./Badge";
 import Space from "./Space";
 import { borders, colors } from "../consts";
-import type { IconType } from "../types";
-
-interface Button {
-	text: string;
-	icon: string;
-	icon_border?: keyof typeof borders;
-	href: string;
-}
-
-type Tag = {
-	text: string;
-	style?: keyof typeof colors;
-};
+import type { IconType, Tag, Button } from "../types";
 
 interface Props {
 	children: ReactNode; // content - description
