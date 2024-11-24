@@ -17,10 +17,14 @@ export default function BlogSection() {
 
 			<Space />
 			<Title>Artículos</Title>
-			<Link href="./blog/Expresiones faciales a modelos 3D/page.html">
+			<Link
+				href={`${process.env.PUBLIC_URL}/blog/Expresiones faciales a modelos 3D/page.html`}
+			>
 				Expresiones faciales a modelos 3D
 			</Link>
-			<Link href="./blog/Exportar Sprites a Unity/page.html">
+			<Link
+				href={`${process.env.PUBLIC_URL}/blog/Exportar Sprites a Unity/page.html`}
+			>
 				Exportar Sprites a Unity
 			</Link>
 

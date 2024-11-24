@@ -5,7 +5,6 @@ Todo:
 - Mover todos los css a una carpeta styles
 - Texto del timeline poner la etiqueta <br> enves de texto
 - Simplificar el manejo de estados de la seleccion de project cards
-- Arreglar link al resumen CV y blogs
 - Separar todas las deficinoes de tipos y interfaces de los componentes
 - Responsive mobile
 
@@ -19,6 +18,7 @@ Done:
 - Arreglar boton de Miro en project cards, deberia ser cuadrado
 - Fusionar el todo.txt del proyecto original con este
 - La barra para ocultar el navbar no funciona?
+- Arreglar link al resumen CV y blogs
 
 Ideas:
 - secciones de mecanicas aisladas y como las implemente, que se muestre en formato tarjetas y con shadow

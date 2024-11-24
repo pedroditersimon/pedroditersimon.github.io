@@ -41,7 +41,7 @@ export default function AboutMeSection() {
 				/>
 				<Button
 					icon={link_logo}
-					href="./Programador CSharp Unity - Pedro Simón Resumen CV.pdf"
+					href={`${process.env.PUBLIC_URL}/cv/Programador CSharp Unity - Pedro Simón Resumen CV.pdf`}
 					alt="Resumen CV button"
 					text="Resumen CV"
 				/>
