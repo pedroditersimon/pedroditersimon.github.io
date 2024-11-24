@@ -2,12 +2,29 @@ import { ReactNode } from "react";
 import Banner from "../components/Banner";
 import Header from "../components/Header";
 import "./Layout.css";
-
+// icons
+import me_logo from "../assets/me.png";
 export default function Layout({ children }) {
 	return (
 		<div className="layout">
 			<Header />
-			<div className="layout_content inside_shadow">{children}</div>
+			<Banner
+				icon={me_logo}
+				name="PEDRO DITER"
+				secondName="SIMÓN"
+				description="Programador de videojuegos en Unity C#"
+				className="only_show_mobile"
+			/>
+			<div className="layout_content inside_shadow">
+				<Banner
+					icon={me_logo}
+					name="PEDRO DITER"
+					secondName="SIMÓN"
+					description="Programador de videojuegos en Unity C#"
+					className="only_show_desktop"
+				/>
+				{children}
+			</div>
 		</div>
 	);
 }

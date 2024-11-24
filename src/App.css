@@ -148,3 +148,19 @@ p {
     font-size: calc(1vh + 1.6vw);
   }
 }
+
+
+
+/* Hide and Show elements depending on the platform */
+
+@media (max-width: 576px) {
+  .only_show_desktop {
+    display: none !important;
+  }
+}
+
+@media (min-width: 577px) {
+  .only_show_mobile {
+    display: none !important;
+  }
+}

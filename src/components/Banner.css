@@ -45,7 +45,6 @@
     font-family: "Oswald";
 
     align-content: center;
-    max-width: 25vw;
 }
 
 #banner p {
@@ -62,4 +61,12 @@
     object-fit: cover;
     border-radius: 50%;
     /* border: calc(0.15vh + 0.15vw) solid var(--color-primary-text); */
+}
+
+
+@media (max-width: 800px) {
+
+    #banner img {
+        width: 30vw;
+    }
 }

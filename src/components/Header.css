@@ -66,7 +66,7 @@ header {
 
 
 @media (max-width: 800px) {
-    a.toggle_header {
+    header {
         display: none;
     }
 }

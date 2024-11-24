@@ -25,6 +25,10 @@
         flex-direction: column;
     }
 
+    .layout_content {
+        padding-bottom: 10vh;
+    }
+
     .layout_content>section {
         padding-left: calc(1.5vh + 1.5vw);
         padding-right: calc(1.5vh + 1.5vw);

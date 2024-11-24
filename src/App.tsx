@@ -1,9 +1,6 @@
 import Banner from "./components/Banner";
 import Layout from "./layouts/Layout";
 
-// icons
-import me_logo from "./assets/me.png";
-
 // css
 import "./App.css";
 import "./scrollbar.css";
@@ -19,30 +16,26 @@ import BlogSection from "./sections/BlogSection";
 
 function App() {
 	return (
-		<Layout>
-			<Banner
-				icon={me_logo}
-				name="PEDRO DITER SIMÓN"
-				description="Programador de videojuegos en Unity C#"
-			/>
+		<>
+			<Layout>
+				<AboutMeSection />
 
-			<AboutMeSection />
+				<SectionDivider />
+				<ExperienceSection />
 
-			<SectionDivider />
-			<ExperienceSection />
+				<SectionDivider />
+				<PersonalBrand />
 
-			<SectionDivider />
-			<PersonalBrand />
+				<SectionDivider />
+				<ProjectsSection />
 
-			<SectionDivider />
-			<ProjectsSection />
+				<SectionDivider />
+				<AcademicalSection />
 
-			<SectionDivider />
-			<AcademicalSection />
-
-			<SectionDivider />
-			<BlogSection />
-		</Layout>
+				<SectionDivider />
+				<BlogSection />
+			</Layout>
+		</>
 	);
 }
 
