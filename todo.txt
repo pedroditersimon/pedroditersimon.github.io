@@ -6,6 +6,7 @@ Todo:
 - Texto del timeline poner la etiqueta <br> enves de texto
 - Simplificar el manejo de estados de la seleccion de project cards
 - Separar todas las deficinoes de tipos y interfaces de los componentes
+- Usar paths absolutos con @
 
 - En la seccion de Historia, agregar sobre como empecé con pygame, game maker y luego unity
 - Agregar un texto descripcion a los links de blog, cambiarlo a formato tarjeta
