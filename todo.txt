@@ -8,7 +8,6 @@ Todo:
 - Arreglar link al resumen CV y blogs
 - Separar todas las deficinoes de tipos y interfaces de los componentes
 - Responsive mobile
-- La barra para ocultar el navbar no funciona?
 
 - En la seccion de Historia, agregar sobre como empecé con pygame, game maker y luego unity
 - Agregar un texto descripcion a los links de blog, cambiarlo a formato tarjeta
@@ -19,7 +18,7 @@ Done:
 - Seleccionar items del navbar al scrollear
 - Arreglar boton de Miro en project cards, deberia ser cuadrado
 - Fusionar el todo.txt del proyecto original con este
-
+- La barra para ocultar el navbar no funciona?
 
 Ideas:
 - secciones de mecanicas aisladas y como las implemente, que se muestre en formato tarjetas y con shadow

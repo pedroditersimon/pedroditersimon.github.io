@@ -1,8 +1,9 @@
+import { ReactNode } from "react";
 import "./Button.css";
 
 export interface Props {
 	text: string;
-	href: string;
+	href?: string;
 	icon?: string;
 	alt?: string;
 	onClick?: () => void;

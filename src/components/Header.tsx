@@ -3,15 +3,27 @@ import Navbar from "./Navbar";
 import me_logo from "../assets/me.png";
 import arrow_left from "../assets/arrow_left.png";
 import "./Header.css";
+import { useState } from "react";
+import Button from "./Button";
 
 export default function Header() {
+	const [hidden, setHidden] = useState(false);
+
+	const handleToggleHeader = () => {
+		setHidden((prev) => !prev);
+	};
+
 	return (
 		<header>
-			<a className="toggle_header" href="asd">
+			<button
+				type="button"
+				className="toggle_header"
+				onClick={handleToggleHeader}
+			>
 				<img src={arrow_left} alt="toggle header" />
-			</a>
+			</button>
 
-			<div className="header_content">
+			<div className={`header_content ${hidden && "hidden"}`}>
 				<ProfileCard
 					icon={me_logo}
 					name="Pedro Diter Simón"

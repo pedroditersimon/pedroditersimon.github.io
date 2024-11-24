@@ -1,7 +1,6 @@
 header {
     background-color: var(--color-secondary);
 
-    flex-basis: 20vw;
     flex-grow: 0;
 
     display: flex;
@@ -11,8 +10,9 @@ header {
 .header_content {
     padding: 2vw 0.5vw;
 
-    transition: max-width 0.2s ease-in-out;
-    max-width: 100%;
+    transition: opacity 0.2s ease-in 0.15s, max-width 0.2s ease-in-out;
+    max-width: 20vw;
+    opacity: 1;
 
     display: flex;
     flex-direction: column;
@@ -21,16 +21,21 @@ header {
 
 .header_content.hidden {
     max-width: 0;
+    opacity: 0;
+    padding: 0;
     overflow: hidden;
 }
 
+.header_content>* {
+    opacity: 1;
+}
+
 .header_content.hidden>* {
-    transition: opacity 0.2s ease-in-out;
     opacity: 0;
 }
 
 /* hide header button */
-a.toggle_header {
+.toggle_header {
     background-color: var(--color-secondary);
 
     display: inline-flex;
@@ -40,19 +45,22 @@ a.toggle_header {
 
     width: 1.5vw;
     padding: 0.1vw;
+    outline: inherit;
+    border: inherit;
 }
 
-a.toggle_header:hover {
+.toggle_header:hover {
     background-color: var(--color-secondary-hover);
+    cursor: pointer;
 }
 
-a.toggle_header>img {
+.toggle_header>img {
     width: 100%;
     opacity: 0.1;
     align-content: center;
 }
 
-a.toggle_header:hover>img {
+.toggle_header:hover>img {
     opacity: 1;
 }
 
