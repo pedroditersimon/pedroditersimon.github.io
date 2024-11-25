@@ -21,6 +21,14 @@ Done:
 - Mover todos los css a una carpeta styles
 - Organizar los imports y dividirlos por css, icons, components etc.
 
+
+
+-------------------------------------------------
+La carpeta 'docs' se esta utilizando para hostear la pagina en Github Pages
+    ya que no tiene la opcion de utilizar directamente la carpeta 'build'
+
+
+
 -------------------------------------------------
 Ideas:
 - secciones de mecanicas aisladas y como las implemente, que se muestre en formato tarjetas y con shadow
