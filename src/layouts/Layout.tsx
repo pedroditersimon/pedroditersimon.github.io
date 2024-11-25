@@ -1,6 +1,10 @@
 import { ReactNode } from "react";
+
+// components
 import Banner from "src/components/Banner";
 import Header from "src/components/Header";
+
+// styles
 import "src/styles/Layout.css";
 
 // icons

@@ -1,10 +1,15 @@
-import ProfileCard from "./ProfileCard";
-import Navbar from "./Navbar";
+import { useState } from "react";
+
+// components
+import ProfileCard from "src/components/ProfileCard";
+import Navbar from "src/components/Navbar";
+
+// Icons
 import me_logo from "src/assets/me.png";
 import arrow_left from "src/assets/arrow_left.png";
+
+// styles
 import "src/styles/Header.css";
-import { useState } from "react";
-import Button from "./Button";
 
 export default function Header() {
 	const [hidden, setHidden] = useState(false);

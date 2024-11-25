@@ -1,29 +1,15 @@
-import csharp_logo from "src/assets/logos/csharp.png";
-import unity_logo from "src/assets/logos/unity.png";
-import linkedin_logo from "src/assets/logos/linkedin-white.png";
-import github_logo from "src/assets/logos/github.png";
-import link_logo from "src/assets/link.png";
-
-import python_logo from "src/assets/logos/python.png";
-import pygame_logo from "src/assets/logos/pygame.png";
-import gamemaker_logo from "src/assets/logos/gamemaker.png";
-
+// components
 import Section from "src/layouts/Section";
-
 import Title from "src/components/Title";
-import Button from "src/components/Button";
+import CertificationCard from "src/components/CertificationCard";
+import Space from "src/components/Space";
 
-import type { Section as SectionType } from "src/types";
-import Card from "src/components/CertificationCard";
-
+// images
 import cert1 from "src/assets/certificates/UC-LV2POPKJ.jpg";
 import cert2 from "src/assets/certificates/Introducción al control de versiones con Git - Microsoft Learn.png";
 import cert3 from "src/assets/certificates/1677122274760.png";
 import cert4 from "src/assets/certificates/1678478948032.png";
 import cert5 from "src/assets/certificates/1676682682729.png";
-
-import CertificationCard from "src/components/CertificationCard";
-import Space from "src/components/Space";
 
 export default function ExperienceSection() {
 	return (

@@ -1,6 +1,7 @@
-import "src/styles/Section.css";
-
 import { ReactNode } from "react";
+
+// styles
+import "src/styles/Section.css";
 
 interface Props {
 	id: string;

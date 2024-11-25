@@ -1,3 +1,4 @@
+// components
 import Timeline from "src/components/Timeline";
 import Title from "src/components/Title";
 import Section from "src/layouts/Section";

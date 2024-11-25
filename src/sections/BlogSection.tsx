@@ -1,7 +1,6 @@
-import { ReactNode } from "react";
+// components
 import Title from "src/components/Title";
 import Section from "src/layouts/Section";
-
 import Link from "src/components/Link";
 import Space from "src/components/Space";
 

@@ -1,3 +1,11 @@
+// components
+import Section from "src/layouts/Section";
+import Title from "src/components/Title";
+import Button from "src/components/Button";
+import Space from "src/components/Space";
+import Row from "src/layouts/Row";
+
+// icons
 import csharp_logo from "src/assets/logos/csharp.png";
 import unity_logo from "src/assets/logos/unity.png";
 import linkedin_logo from "src/assets/logos/linkedin-white.png";
@@ -7,13 +15,6 @@ import link_logo from "src/assets/link.png";
 import python_logo from "src/assets/logos/python.png";
 import pygame_logo from "src/assets/logos/pygame.png";
 import gamemaker_logo from "src/assets/logos/gamemaker.png";
-
-import Section from "src/layouts/Section";
-
-import Title from "src/components/Title";
-import Button from "src/components/Button";
-import Space from "src/components/Space";
-import Row from "src/layouts/Row";
 
 export default function AboutMeSection() {
 	return (

@@ -1,5 +1,8 @@
+// components
+import { SmallIcon } from "src/components/Icons";
+
+// styles
 import "src/styles/Title.css";
-import { SmallIcon } from "./Icons";
 
 interface Props {
 	children: string;

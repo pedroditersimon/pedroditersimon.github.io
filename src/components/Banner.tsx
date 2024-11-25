@@ -1,5 +1,7 @@
-import me_logo from "src/assets/me.png";
+// types
 import { Profile } from "src/types";
+
+// styles
 import "src/styles/Banner.css";
 
 interface Props extends Profile {

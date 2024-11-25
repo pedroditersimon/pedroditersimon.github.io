@@ -1,6 +1,10 @@
 import { ReactNode } from "react";
+
+// components
+import { SmallIcon } from "src/components/Icons";
+
+// icons
 import link_logo from "src/assets/link.png";
-import { SmallIcon } from "./Icons";
 
 interface Props {
 	children: ReactNode;

@@ -1,11 +1,15 @@
 import { ReactNode, useEffect, useState } from "react";
+
+// types
+import type { IconType, Tag, Button } from "src/types";
+
+// components
+import Badge from "src/components/Badge";
+import { Icon, SmallIcon } from "src/components/Icons";
+import Row from "src/layouts/Row";
+
+// styles
 import "src/styles/ProjectCard.css";
-import Row from "src//layouts/Row";
-import { Icon, SmallIcon } from "./Icons";
-import Badge from "./Badge";
-import Space from "./Space";
-import { borders, colors } from "src//consts";
-import type { IconType, Tag, Button } from "src//types";
 
 interface Props {
 	children: ReactNode; // content - description

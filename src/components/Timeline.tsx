@@ -1,3 +1,4 @@
+// styles
 import "src/styles/Timeline.css";
 
 interface Entry {

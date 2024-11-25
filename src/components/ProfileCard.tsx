@@ -1,8 +1,11 @@
-import React from "react";
-import "src/styles/ProfileCard.css";
+// components
+import { Icon } from "src/components/Icons";
+
+// types
 import type { Profile } from "src/types";
 
-import { Icon } from "./Icons";
+// styles
+import "src/styles/ProfileCard.css";
 
 interface Props extends Profile {
 	href?: string;

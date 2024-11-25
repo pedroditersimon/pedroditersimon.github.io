@@ -1,7 +1,11 @@
-import Section from "src/layouts/Section";
+import { useState } from "react";
 
+// components
+import Section from "src/layouts/Section";
 import Title from "src/components/Title";
 import ProjectCard from "src/components/ProjectCard";
+
+// icons
 import miro_logo from "src/assets/logos/miro-color.png";
 import playstore_logo from "src/assets/logos/playstore.png";
 import itchio_logo from "src/assets/logos/itchio.png";
@@ -14,7 +18,6 @@ import csharp_logo from "src/assets/logos/csharp.png";
 import unity_logo from "src/assets/logos/unity.png";
 import android_logo from "src/assets/logos/android-white.png";
 import windows_logo from "src/assets/logos/windows-white.png";
-import { useState } from "react";
 
 export default function ProjectsSection() {
 	const [activeProjectCard, setActiveProjectCard] =
