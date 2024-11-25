@@ -1,0 +1,106 @@
+:root {
+    /* color pallete */
+    --color-primary-text: #f2f2f2;
+    --color-secondary-text: #858585;
+
+    --color-primary: #161616;
+    --color-primary-hover: #141414;
+
+    --color-secondary: #1c1c1c;
+    --color-secondary-hover: #202020;
+
+    --color-banner-background: #41A680;
+
+    /* accent is used on buttons and highlights text */
+    --color-accent: #41A680;
+    --color-accent-hover: #368c6b;
+
+    --color-warning: #ed4337;
+
+    --color-brand: #4f2d20ff;
+    --color-brand-hover: #44281D;
+    --color-brand-text: #B97860;
+
+    /* color for programming code */
+    --color-text-code: #79cbdd;
+
+    /* this define EM and REM size */
+    font-size: calc(1vh + 1.1vw);
+
+    /* some preset text sizes */
+    --primary-text-size: 1rem;
+    --secondary-text-size: 0.8rem;
+    --small-text-size: 0.7rem;
+    --border-radius: 0.3rem;
+
+    --max-page-width: 55vw;
+}
+
+body {
+    background-color: var(--color-primary);
+
+}
+
+.page {
+    box-sizing: unset !important;
+
+    margin: auto;
+}
+
+h1,
+h2,
+h3 {
+    color: var(--color-primary-text);
+}
+
+p,
+li {
+    color: var(--color-secondary-text);
+}
+
+img {
+    border-radius: var(--border-radius);
+}
+
+figure.callout {
+    background-color: var(--color-secondary);
+    color: var(--color-secondary-text);
+}
+
+figcaption a {
+    color: var(--color-accent);
+    font-size: var(--small-text-size);
+}
+
+pre,
+code {
+    background-color: var(--color-secondary) !important;
+    color: var(--color-text-code) !important;
+    border-radius: 4px !important;
+    padding: 5px 10px !important;
+    font-family: monospace !important;
+    font-size: 14px !important;
+    line-height: 1.5 !important;
+    text-align: none !important;
+}
+
+pre code {
+    background-color: inherit !important;
+    color: inherit !important;
+    padding: 0 !important;
+    text-shadow: none !important;
+}
+
+
+pre::selection,
+code::selection {
+    background-color: var(--color-secondary-text) !important;
+    color: var(--color-secondary) !important;
+}
+
+
+@media (min-width: 1200px) {
+    .page {
+        max-width: var(--max-page-width);
+    }
+}

@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/static/css/main.f019ae1c.css",
+    "main.js": "/static/js/main.92e23e5f.js",
+    "static/media/UC-LV2POPKJ.jpg": "/static/media/UC-LV2POPKJ.0f8ef8dd28d217ba3287.jpg",
+    "static/media/me.png": "/static/media/me.f5f6b6c0842b02e0e35b.png",
+    "static/media/brand-logo.png": "/static/media/brand-logo.d82f02387e0f2b31afb1.png",
+    "static/media/1676682682729.png": "/static/media/1676682682729.ab1ddef522fee55572df.png",
+    "static/media/1678478948032.png": "/static/media/1678478948032.f4ca910ecf7c5e465bc7.png",
+    "static/media/1677122274760.png": "/static/media/1677122274760.8483013e889ed91630e9.png",
+    "static/media/Introducción al control de versiones con Git - Microsoft Learn.png": "/static/media/Introducción al control de versiones con Git - Microsoft Learn.2fdd829bd932c05d735b.png",
+    "static/media/miniroompainter_logo.png": "/static/media/miniroompainter_logo.0e9d85cc8105793fd827.png",
+    "static/media/pygame.png": "/static/media/pygame.0ffd0cd567d2883c3ef9.png",
+    "static/media/playstore.png": "/static/media/playstore.36e2386340a7bf66e6ba.png",
+    "static/media/avenue_logo.png": "/static/media/avenue_logo.66a259517a2ec5220e6d.png",
+    "index.html": "/index.html",
+    "main.f019ae1c.css.map": "/static/css/main.f019ae1c.css.map",
+    "main.92e23e5f.js.map": "/static/js/main.92e23e5f.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f019ae1c.css",
+    "static/js/main.92e23e5f.js"
+  ]
+}
