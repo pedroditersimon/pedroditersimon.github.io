@@ -4,11 +4,8 @@ Todo:
 - Organizar los imports y dividirlos por css, icons, components etc.
 - Mover todos los css a una carpeta styles
 - Simplificar el manejo de estados de la seleccion de project cards
-- Agregar pequeño relieve o sombra oscura en el borde inferior de los botones
-
 - En la seccion de Historia, agregar sobre como empecé con pygame, game maker y luego unity
 - Agregar un texto descripcion a los links de blog, cambiarlo a formato tarjeta
-
 
 Done:
 - Hacer link clickable del profile card en el header y que te lleve al home
@@ -22,7 +19,11 @@ Done:
 - Usar paths absolutos
 - Texto del timeline poner la etiqueta <br> enves de texto
 - Usar etiqueta p y h1 en timeline
+- Agregar pequeño relieve o sombra oscura en el borde inferior de los botones
 
+
+
+-------------------------------------------------
 Ideas:
 - secciones de mecanicas aisladas y como las implemente, que se muestre en formato tarjetas y con shadow
 

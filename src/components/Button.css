@@ -1,7 +1,22 @@
+.button-wrapper {
+    border-radius: var(--border-radius);
+    margin-bottom: 1vh;
+}
+
+.button-wrapper.pressed {
+    margin-bottom: 0;
+    margin-top: 1vh;
+}
+
+.button-wrapper.pressed>* {
+    box-shadow: none !important;
+}
+
 /* ------- <a> Buttons ------- */
 a.button {
     background-color: var(--color-accent);
     color: var(--color-primary-text);
+    box-shadow: 0 0.7vh rgb(from var(--color-accent) r g b / 0.85);
 
     display: inline-flex;
     align-items: center;
@@ -21,6 +36,8 @@ a.button {
 a.button:hover {
     background-color: var(--color-accent-hover);
     color: var(--color-primary-text);
+    box-shadow: 0 0.7vh rgb(from var(--color-accent-hover) r g b / 0.85);
+
     cursor: pointer;
 }
 
@@ -32,8 +49,10 @@ a.button>img {
 /* ------- Variants ------- */
 a.button.personal_brand {
     background-color: var(--color-brand);
+    box-shadow: 0 0.7vh rgb(from var(--color-brand) r g b / 0.85);
 }
 
 a.button.personal_brand:hover {
     background-color: var(--color-brand-hover);
+    box-shadow: 0 0.7vh rgb(from var(--color-brand-hover) r g b / 0.85);
 }

@@ -1,4 +1,4 @@
-import { ReactNode } from "react";
+import { ReactNode, useState } from "react";
 import "./Button.css";
 
 export interface Props {
@@ -18,15 +18,24 @@ export default function Button({
 	onClick,
 	className,
 }: Props) {
+	const [isPressed, setIsPressed] = useState(false);
+
 	return (
-		<a
-			className={`button outside_shadow ${className}`}
-			href={href}
-			target="_blank"
-			rel="noreferrer"
+		<div
+			className={`button-wrapper ${isPressed && "pressed"} outside_shadow`}
+			onMouseDown={() => setIsPressed(true)}
+			onMouseUp={() => setIsPressed(false)}
+			onMouseLeave={() => setIsPressed(false)}
 		>
-			{icon && <img src={icon} alt={alt} />}
-			<span>{text}</span>
-		</a>
+			<a
+				className={`button ${className}`}
+				href={href}
+				target="_blank"
+				rel="noreferrer"
+			>
+				{icon && <img src={icon} alt={alt} />}
+				<span>{text}</span>
+			</a>
+		</div>
 	);
 }
