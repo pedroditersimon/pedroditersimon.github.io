@@ -1,19 +1,19 @@
-import Section from "../layouts/Section";
+import Section from "src/layouts/Section";
 
-import Title from "../components/Title";
-import ProjectCard from "../components/ProjectCard";
-import miro_logo from "../assets/logos/miro-color.png";
-import playstore_logo from "../assets/logos/playstore.png";
-import itchio_logo from "../assets/logos/itchio.png";
+import Title from "src/components/Title";
+import ProjectCard from "src/components/ProjectCard";
+import miro_logo from "src/assets/logos/miro-color.png";
+import playstore_logo from "src/assets/logos/playstore.png";
+import itchio_logo from "src/assets/logos/itchio.png";
 
-import miniroompainter_logo from "../assets/projects/miniroompainter_logo.png";
-import avenue_logo from "../assets/projects/avenue_logo.png";
-import frutish_logo from "../assets/projects/frutish.png";
+import miniroompainter_logo from "src/assets/projects/miniroompainter_logo.png";
+import avenue_logo from "src/assets/projects/avenue_logo.png";
+import frutish_logo from "src/assets/projects/frutish.png";
 
-import csharp_logo from "../assets/logos/csharp.png";
-import unity_logo from "../assets/logos/unity.png";
-import android_logo from "../assets/logos/android-white.png";
-import windows_logo from "../assets/logos/windows-white.png";
+import csharp_logo from "src/assets/logos/csharp.png";
+import unity_logo from "src/assets/logos/unity.png";
+import android_logo from "src/assets/logos/android-white.png";
+import windows_logo from "src/assets/logos/windows-white.png";
 import { useState } from "react";
 
 export default function ProjectsSection() {

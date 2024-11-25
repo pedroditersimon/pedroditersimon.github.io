@@ -1,17 +1,17 @@
-import Section from "../layouts/Section";
+import Section from "src/layouts/Section";
 
-import Title from "../components/Title";
-import Button from "../components/Button";
-import ProfileCard from "../components/ProfileCard";
+import Title from "src/components/Title";
+import Button from "src/components/Button";
+import ProfileCard from "src/components/ProfileCard";
 
-import chocodark_logo from "../assets/brand-logo.png";
-import github_logo from "../assets/logos/github.png";
-import twitter_logo from "../assets/logos/twitter-white.png";
-import instagram_logo from "../assets/logos/instagram-white.png";
-import twitch_logo from "../assets/logos/twitch-white.png";
-import linktree_logo from "../assets/logos/linktree.png";
-import Row from "../layouts/Row";
-import type { Button as ButtonType } from "../types";
+import chocodark_logo from "src/assets/brand-logo.png";
+import github_logo from "src/assets/logos/github.png";
+import twitter_logo from "src/assets/logos/twitter-white.png";
+import instagram_logo from "src/assets/logos/instagram-white.png";
+import twitch_logo from "src/assets/logos/twitch-white.png";
+import linktree_logo from "src/assets/logos/linktree.png";
+import Row from "src/layouts/Row";
+import type { Button as ButtonType } from "src/types";
 
 const buttons: ButtonType[] = [
 	{

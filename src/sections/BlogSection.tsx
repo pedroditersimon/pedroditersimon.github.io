@@ -1,9 +1,9 @@
 import { ReactNode } from "react";
-import Title from "../components/Title";
-import Section from "../layouts/Section";
+import Title from "src/components/Title";
+import Section from "src/layouts/Section";
 
-import Link from "../components/Link";
-import Space from "../components/Space";
+import Link from "src/components/Link";
+import Space from "src/components/Space";
 
 export default function BlogSection() {
 	return (

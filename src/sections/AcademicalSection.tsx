@@ -1,6 +1,6 @@
-import Timeline from "../components/Timeline";
-import Title from "../components/Title";
-import Section from "../layouts/Section";
+import Timeline from "src/components/Timeline";
+import Title from "src/components/Title";
+import Section from "src/layouts/Section";
 
 export default function AcademicalSection() {
 	return (

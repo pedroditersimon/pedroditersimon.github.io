@@ -1,5 +1,5 @@
-import { borders } from "../consts";
-import type { IconType } from "../types";
+import { borders } from "src/consts";
+import type { IconType } from "src/types";
 
 interface Props extends IconType {
 	className?: string;

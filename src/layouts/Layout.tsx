@@ -1,10 +1,10 @@
 import { ReactNode } from "react";
-import Banner from "../components/Banner";
-import Header from "../components/Header";
+import Banner from "src//components/Banner";
+import Header from "src//components/Header";
 import "./Layout.css";
 
 // icons
-import me_logo from "../assets/me.png";
+import me_logo from "src//assets/me.png";
 
 export default function Layout({ children }) {
 	return (

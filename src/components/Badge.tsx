@@ -1,5 +1,5 @@
-import { colors } from "../consts";
-import { Colors } from "../types";
+import { colors } from "src/consts";
+import { Colors } from "src/types";
 
 interface Props {
 	text: string;

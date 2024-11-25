@@ -1,11 +1,11 @@
 import { ReactNode, useEffect, useState } from "react";
 import "./ProjectCard.css";
-import Row from "../layouts/Row";
+import Row from "src//layouts/Row";
 import { Icon, SmallIcon } from "./Icons";
 import Badge from "./Badge";
 import Space from "./Space";
-import { borders, colors } from "../consts";
-import type { IconType, Tag, Button } from "../types";
+import { borders, colors } from "src//consts";
+import type { IconType, Tag, Button } from "src//types";
 
 interface Props {
 	children: ReactNode; // content - description
@@ -80,11 +80,13 @@ export default function ProjectCard({
 								target="_blank"
 								rel="noreferrer"
 							>
-								<SmallIcon
-									icon={btn.icon}
-									alt="none"
-									border={btn.icon_border}
-								/>
+								{btn.icon && (
+									<SmallIcon
+										icon={btn.icon}
+										alt="none"
+										border={btn.icon_border}
+									/>
+								)}
 								<span>{btn.text}</span>
 							</a>
 						))}

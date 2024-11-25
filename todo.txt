@@ -5,7 +5,7 @@ Todo:
 - Mover todos los css a una carpeta styles
 - Texto del timeline poner la etiqueta <br> enves de texto
 - Simplificar el manejo de estados de la seleccion de project cards
-- Usar paths absolutos con @
+- Agregar pequeño relieve o sombra oscura en el borde inferior de los botones
 
 - En la seccion de Historia, agregar sobre como empecé con pygame, game maker y luego unity
 - Agregar un texto descripcion a los links de blog, cambiarlo a formato tarjeta
@@ -20,6 +20,7 @@ Done:
 - Arreglar link al resumen CV y blogs
 - Responsive mobile
 - Separar todas las deficinoes de tipos y interfaces de los componentes
+- Usar paths absolutos
 
 Ideas:
 - secciones de mecanicas aisladas y como las implemente, que se muestre en formato tarjetas y con shadow

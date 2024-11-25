@@ -1,5 +1,5 @@
 import { ReactNode } from "react";
-import link_logo from "../assets/link.png";
+import link_logo from "src/assets/link.png";
 import { SmallIcon } from "./Icons";
 
 interface Props {

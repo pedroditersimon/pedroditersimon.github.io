@@ -1,7 +1,7 @@
 import ProfileCard from "./ProfileCard";
 import Navbar from "./Navbar";
-import me_logo from "../assets/me.png";
-import arrow_left from "../assets/arrow_left.png";
+import me_logo from "src/assets/me.png";
+import arrow_left from "src/assets/arrow_left.png";
 import "./Header.css";
 import { useState } from "react";
 import Button from "./Button";
