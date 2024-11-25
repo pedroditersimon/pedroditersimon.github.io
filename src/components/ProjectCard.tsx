@@ -1,12 +1,13 @@
 import { ReactNode, useEffect, useState } from "react";
 
 // types
-import type { IconType, Tag, Button } from "src/types";
+import type { IconType, Tag, Button as ButtonType } from "src/types";
 
 // components
 import Badge from "src/components/Badge";
 import { Icon, SmallIcon } from "src/components/Icons";
 import Row from "src/layouts/Row";
+import Button from "src/components/Button";
 
 // styles
 import "src/styles/ProjectCard.css";
@@ -18,7 +19,7 @@ interface Props {
 	tags: Tag[];
 	title_icon: IconType;
 	bottom_icons: IconType[];
-	bottom_buttons?: Button[];
+	bottom_buttons?: ButtonType[];
 	isHidden?: boolean;
 	onHiddenChange?: (value: boolean) => void;
 }
@@ -78,21 +79,7 @@ export default function ProjectCard({
 					</Row>
 					<Row>
 						{bottom_buttons?.map((btn) => (
-							<a
-								className="button outside_shadow"
-								href={btn.href}
-								target="_blank"
-								rel="noreferrer"
-							>
-								{btn.icon && (
-									<SmallIcon
-										icon={btn.icon}
-										alt="none"
-										border={btn.icon_border}
-									/>
-								)}
-								<span>{btn.text}</span>
-							</a>
+							<Button {...btn} />
 						))}
 					</Row>
 				</div>

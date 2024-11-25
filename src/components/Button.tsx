@@ -1,5 +1,11 @@
 import { ReactNode, useState } from "react";
 
+// components
+import { SmallIcon } from "src/components/Icons";
+
+// types
+import { BorderStyle } from "src/types";
+
 // styles
 import "src/styles/Button.css";
 
@@ -7,6 +13,7 @@ export interface Props {
 	text: string;
 	href?: string;
 	icon?: string;
+	icon_border?: BorderStyle;
 	alt?: string;
 	onClick?: () => void;
 	className?: string;
@@ -16,6 +23,7 @@ export default function Button({
 	text,
 	href,
 	icon,
+	icon_border,
 	alt,
 	onClick,
 	className,
@@ -35,7 +43,7 @@ export default function Button({
 				target="_blank"
 				rel="noreferrer"
 			>
-				{icon && <img src={icon} alt={alt} />}
+				{icon && <SmallIcon icon={icon} alt={alt} border={icon_border} />}
 				<span>{text}</span>
 			</a>
 		</div>
