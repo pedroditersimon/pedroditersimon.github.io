@@ -25,7 +25,6 @@
 
 .timeline .entry .tittle {
     color: var(--color-primary-text);
-    font-size: var(--primary-text-size);
 }
 
 .timeline .entry .description {

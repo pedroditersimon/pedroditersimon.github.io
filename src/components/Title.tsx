@@ -10,7 +10,7 @@ interface Props {
 export default function Title({ children, title_color, icons }: Props) {
 	return (
 		<div className="title">
-			<h1 style={{ color: title_color }}>{children}</h1>
+			<h3 style={{ color: title_color }}>{children}</h3>
 
 			<div className="icons unselectable">
 				{icons?.map((icon) => (

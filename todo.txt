@@ -5,7 +5,6 @@ Todo:
 - Mover todos los css a una carpeta styles
 - Simplificar el manejo de estados de la seleccion de project cards
 - Agregar pequeño relieve o sombra oscura en el borde inferior de los botones
-- Usar etiqueta p y h1 en timeline
 
 - En la seccion de Historia, agregar sobre como empecé con pygame, game maker y luego unity
 - Agregar un texto descripcion a los links de blog, cambiarlo a formato tarjeta
@@ -22,6 +21,7 @@ Done:
 - Separar todas las deficinoes de tipos y interfaces de los componentes
 - Usar paths absolutos
 - Texto del timeline poner la etiqueta <br> enves de texto
+- Usar etiqueta p y h1 en timeline
 
 Ideas:
 - secciones de mecanicas aisladas y como las implemente, que se muestre en formato tarjetas y con shadow

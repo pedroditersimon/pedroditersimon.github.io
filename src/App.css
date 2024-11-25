@@ -105,17 +105,23 @@ body {
 h1,
 h2,
 h3,
+h4,
 p {
   margin: 0;
 }
 
+
 .primary_text,
-h1 {
+h1,
+h2,
+h3,
+h4 {
   color: var(--color-primary-text);
-  font-size: var(--primary-text-size);
 }
 
-
+.primary_text {
+  font-size: var(--primary-text-size);
+}
 
 .secondary_text,
 p {
