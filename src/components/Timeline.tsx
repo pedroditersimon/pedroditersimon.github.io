@@ -17,7 +17,10 @@ export default function Timeline({ entries }: Props) {
 				<div className="entry">
 					<span className="date hint_text">{entry.date}</span>
 					<span className="tittle">{entry.title}</span>
-					<span className="description">{entry.description}</span>
+					{/*Split descriptions breaklines into elements */}
+					{entry.description.split("\n").map((description) => (
+						<span className="description">{description}</span>
+					))}
 				</div>
 			))}
 		</div>
