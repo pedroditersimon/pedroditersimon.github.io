@@ -1,6 +1,6 @@
 import me_logo from "src/assets/me.png";
 import { Profile } from "src/types";
-import "./Banner.css";
+import "src/styles/Banner.css";
 
 interface Props extends Profile {
 	secondName?: string;

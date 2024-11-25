@@ -1,5 +1,5 @@
 import { ReactNode, useEffect, useState } from "react";
-import "./ProjectCard.css";
+import "src/styles/ProjectCard.css";
 import Row from "src//layouts/Row";
 import { Icon, SmallIcon } from "./Icons";
 import Badge from "./Badge";

@@ -1,6 +1,6 @@
 import React from "react";
-import "./ProfileCard.css";
-import type { Profile } from "src//types";
+import "src/styles/ProfileCard.css";
+import type { Profile } from "src/types";
 
 import { Icon } from "./Icons";
 

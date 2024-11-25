@@ -1,4 +1,4 @@
-import "./Title.css";
+import "src/styles/Title.css";
 import { SmallIcon } from "./Icons";
 
 interface Props {

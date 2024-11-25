@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import "./Navbar.css";
+import "src/styles/Navbar.css";
 import type { Section as SectionType } from "src//types";
 
 const sections: SectionType[] = [

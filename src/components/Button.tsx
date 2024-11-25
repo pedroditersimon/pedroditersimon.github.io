@@ -1,5 +1,5 @@
 import { ReactNode, useState } from "react";
-import "./Button.css";
+import "src/styles/Button.css";
 
 export interface Props {
 	text: string;

@@ -1,4 +1,4 @@
-import "./CertificationCard.css";
+import "src/styles/CertificationCard.css";
 
 export default function CertificationCard({ children, href, img }) {
 	return (

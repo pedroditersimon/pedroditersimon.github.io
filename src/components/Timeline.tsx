@@ -1,4 +1,4 @@
-import "./Timeline.css";
+import "src/styles/Timeline.css";
 
 interface Entry {
 	date: string;
