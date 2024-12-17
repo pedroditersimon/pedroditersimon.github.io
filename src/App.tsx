@@ -2,7 +2,7 @@ import Layout from "./layouts/Layout";
 
 // css
 import "./App.css";
-import "./scrollbar.css";
+import "./styles/scrollbar.css";
 
 // Sections
 import AboutMeSection from "./sections/AboutMeSection";
