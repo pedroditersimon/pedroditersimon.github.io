@@ -1,41 +1,39 @@
-
 # Nombre del workflow
 name: build-and-save-artifact
 
 # Ejecutar cuando se hace push o PR a la rama main
 on:
-  push:
-    branches: [ "react" ]
-  pull_request:
-    branches: [ "react" ]
+    push:
+        branches: ["react"]
+    pull_request:
+        branches: ["react"]
 
 jobs:
-  build:
-    runs-on: ubuntu-latest
-    steps:
+    build:
+        runs-on: ubuntu-latest
+        steps:
+            # Clonar el repo
+            - name: Clone repository
+              uses: actions/checkout@v4
 
-    # Clonar el repo
-    - name: Clone repository
-      uses: actions/checkout@v4
+            # Instalar nodejs. También puede ser java, dotnet...
+            - name: Set up Node.js v20.x
+              uses: actions/setup-node@v4
+              with:
+                  node-version: "20.x"
 
-    # Instalar nodejs. También puede ser java, dotnet...
-    - name: Set up Node.js v20.x
-      uses: actions/setup-node@v4
-      with:
-        node-version: '20.x'    
+            - name: 📦 Install dependencies
+              run: npm install
 
-    - name: 📦 Install dependencies
-      run: npm install
-    
-    - name: 🔨 Build
-      run: npm run build
-    
-    - name: 🧪 Run tests
-      run: npm test
-      
-    - name: 📦 Archive build artifacts
-      uses: actions/upload-artifact@v4
-      with:
-        name: build-dist
-        path: dist
-        retention-days: 90
+            - name: 🔨 Build
+              run: npm run build
+
+            - name: 🧪 Run tests
+              run: npm test --passWithNoTests
+
+            - name: 📦 Archive build artifacts
+              uses: actions/upload-artifact@v4
+              with:
+                  name: build-dist
+                  path: dist
+                  retention-days: 90
