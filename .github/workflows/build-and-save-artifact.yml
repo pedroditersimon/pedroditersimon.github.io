@@ -21,6 +21,8 @@ jobs:
               uses: actions/setup-node@v4
               with:
                   node-version: "20.x"
+                  # cache necesita un archivo 'package-lock.json' para funcionar
+                  # cache: 'npm'
 
             # 'npm ci' necesita un archivo 'package-lock.json', de otro modo usar 'npm install'
             - name: 📦 Install dependencies
@@ -36,5 +38,6 @@ jobs:
               uses: actions/upload-artifact@v4
               with:
                   name: build-artifact
-                  path: build # 'build' para CRA, 'dist' para Vite, 'out' para Next.js.
+                  # 'build' para CRA, 'dist' para Vite, 'out' para Next.js.
+                  path: build
                   retention-days: 90
