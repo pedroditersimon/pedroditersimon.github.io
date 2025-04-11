@@ -35,6 +35,6 @@ jobs:
             - name: 📦 Archive build artifacts
               uses: actions/upload-artifact@v4
               with:
-                  name: build-dist
-                  path: dist
+                  name: build-artifact
+                  path: build # 'build' para CRA, 'dist' para Vite, 'out' para Next.js.
                   retention-days: 90
