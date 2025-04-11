@@ -16,7 +16,7 @@ export default function AcademicalSection() {
 							"Escuela Provincial De Educación Técnica N°2 “Eva Duarte De Perón”.\nPosadas-Misiones.",
 					},
 					{
-						date: "2022-x Educación Superior (Actualmente cursando 3er año)",
+						date: "2022-2024 Educación Superior",
 						title:
 							"Tecnicatura superior en Gestión en Programación e Innovación Tecnológica y Digital",
 						description:
