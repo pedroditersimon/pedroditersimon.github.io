@@ -1,24 +1,28 @@
 {
   "files": {
-    "main.css": "/static/css/main.ff3e1efa.css",
-    "main.js": "/static/js/main.92e23e5f.js",
+    "main.css": "/static/css/main.50dc78be.css",
+    "main.js": "/static/js/main.036f6e1f.js",
+    "static/media/web-white.png": "/static/media/web-white.9e5140ce5cf7522f297d.png",
     "static/media/UC-LV2POPKJ.jpg": "/static/media/UC-LV2POPKJ.0f8ef8dd28d217ba3287.jpg",
     "static/media/me.png": "/static/media/me.f5f6b6c0842b02e0e35b.png",
+    "static/media/veggie_shop_logo.png": "/static/media/veggie_shop_logo.7d71df06a5239517d24a.png",
     "static/media/brand-logo.png": "/static/media/brand-logo.d82f02387e0f2b31afb1.png",
     "static/media/1676682682729.png": "/static/media/1676682682729.ab1ddef522fee55572df.png",
     "static/media/1678478948032.png": "/static/media/1678478948032.f4ca910ecf7c5e465bc7.png",
     "static/media/1677122274760.png": "/static/media/1677122274760.8483013e889ed91630e9.png",
     "static/media/Introducción al control de versiones con Git - Microsoft Learn.png": "/static/media/Introducción al control de versiones con Git - Microsoft Learn.2fdd829bd932c05d735b.png",
     "static/media/miniroompainter_logo.png": "/static/media/miniroompainter_logo.0e9d85cc8105793fd827.png",
-    "static/media/pygame.png": "/static/media/pygame.0ffd0cd567d2883c3ef9.png",
     "static/media/playstore.png": "/static/media/playstore.36e2386340a7bf66e6ba.png",
+    "static/media/react.png": "/static/media/react.a32f0f599693ab40bac4.png",
     "static/media/avenue_logo.png": "/static/media/avenue_logo.66a259517a2ec5220e6d.png",
+    "static/media/javascript.png": "/static/media/javascript.266bd9fb2663dcc057b4.png",
+    "static/media/angular.png": "/static/media/angular.e0a8b5c82da70d2ebb97.png",
     "index.html": "/index.html",
-    "main.ff3e1efa.css.map": "/static/css/main.ff3e1efa.css.map",
-    "main.92e23e5f.js.map": "/static/js/main.92e23e5f.js.map"
+    "main.50dc78be.css.map": "/static/css/main.50dc78be.css.map",
+    "main.036f6e1f.js.map": "/static/js/main.036f6e1f.js.map"
   },
   "entrypoints": [
-    "static/css/main.ff3e1efa.css",
-    "static/js/main.92e23e5f.js"
+    "static/css/main.50dc78be.css",
+    "static/js/main.036f6e1f.js"
   ]
 }
