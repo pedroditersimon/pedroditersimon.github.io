@@ -19,7 +19,7 @@ export default function Banner({
 	return (
 		<div id="banner" className={`inside_shadow ${className}`}>
 			<div className="banner_content">
-				<img className="outside_shadow unselectable" src={icon} alt="Profile" />
+				<img className="banner_avatar unselectable" src={icon} alt="Profile" />
 
 				<div className="banner_text">
 					<h1>{name}</h1>

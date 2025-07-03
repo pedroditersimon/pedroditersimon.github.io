@@ -14,7 +14,7 @@ export default function Badge({ text, style }: Props) {
 				color: colors[style ? style : "normal"],
 				backgroundColor: "rgba(1,1,1, 0.15)",
 				borderRadius: "var(--border-radius)",
-				fontSize: "15px",
+				fontSize: "0.65rem",
 				fontWeight: "bold",
 			}}
 			className="badge"

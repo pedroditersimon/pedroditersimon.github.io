@@ -18,7 +18,7 @@ export default function Layout({ children }) {
 				icon={me_logo}
 				name="PEDRO DITER"
 				secondName="SIMÓN"
-				description="Programador de videojuegos en Unity C#"
+				description="Programador web y videojuegos"
 				className="only_show_mobile"
 			/>
 			<div className="layout_content inside_shadow">
@@ -26,7 +26,7 @@ export default function Layout({ children }) {
 					icon={me_logo}
 					name="PEDRO DITER"
 					secondName="SIMÓN"
-					description="Programador de videojuegos en Unity C#"
+					description="Programador web y videojuegos"
 					className="only_show_desktop"
 				/>
 				{children}

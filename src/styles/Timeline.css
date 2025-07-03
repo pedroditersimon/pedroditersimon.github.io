@@ -10,7 +10,7 @@
     /* sizes and spacing */
     --entry-left: calc(1vh + 2vw);
     --ruler-size: calc(0.5vh + 0.25vw);
-    --circle-size: calc(var(--ruler-size)*2);
+    --circle-size: calc(var(--ruler-size) * 2);
 }
 
 .timeline .entry {
@@ -22,7 +22,6 @@
     margin-left: var(--entry-left);
 }
 
-
 .timeline .entry .tittle {
     color: var(--color-primary-text);
 }
@@ -32,10 +31,9 @@
     font-size: var(--secondary-text-size);
 }
 
-
 /* The actual timeline (the vertical ruler) */
 .timeline::before {
-    content: '';
+    content: "";
     position: absolute;
 
     background-color: var(--color-secondary);
@@ -49,7 +47,7 @@
 
 /* The circles on the timeline */
 .timeline .entry::before {
-    content: '';
+    content: "";
     position: absolute;
 
     background-color: var(--color-accent);
@@ -59,7 +57,7 @@
 
     /* Align vertically with the title */
     top: calc(var(--circle-size) * 0.25);
-    transform: translateY(calc(2 * var(--circle-size)));
+    transform: translateY(calc(1.8 * var(--circle-size)));
 
     /* Align horizontally with the ruler */
     left: calc(-1 * var(--entry-left) - var(--circle-size) * 0.25);

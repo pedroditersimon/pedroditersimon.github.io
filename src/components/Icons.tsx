@@ -5,7 +5,7 @@ interface Props extends IconType {
 	className?: string;
 }
 
-export function Icon({ className, icon, alt, border = "circle" }: Props) {
+export function Icon({ className, icon, alt, border = "square" }: Props) {
 	return (
 		<img
 			className={className}
@@ -13,6 +13,7 @@ export function Icon({ className, icon, alt, border = "circle" }: Props) {
 			alt={alt}
 			style={{
 				width: "calc(2vh + 2vw)",
+				height: "calc(2vh + 2vw)",
 				objectFit: "contain",
 				borderRadius: borders[border],
 			}}
@@ -20,7 +21,7 @@ export function Icon({ className, icon, alt, border = "circle" }: Props) {
 	);
 }
 
-export function SmallIcon({ className, icon, alt, border = "circle" }: Props) {
+export function SmallIcon({ className, icon, alt, border = "square" }: Props) {
 	return (
 		<img
 			className={className}

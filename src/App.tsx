@@ -6,12 +6,13 @@ import "./styles/scrollbar.css";
 
 // Sections
 import AboutMeSection from "./sections/AboutMeSection";
-import ExperienceSection from "./sections/ExperienceSection";
+import KnowledgeSection from "./sections/KnowledgeSection";
 import PersonalBrand from "./sections/PersonalBrandSection";
 import ProjectsSection from "./sections/ProjectsSection";
 import SectionDivider from "./components/SectionDivider";
-import AcademicalSection from "./sections/AcademicalSection";
+import TrajectorySection from "./sections/TrajectorySection";
 import BlogSection from "./sections/BlogSection";
+import CertificationsSection from "src/sections/CertificationsSections";
 
 function App() {
 	return (
@@ -20,7 +21,7 @@ function App() {
 				<AboutMeSection />
 
 				<SectionDivider />
-				<ExperienceSection />
+				<KnowledgeSection />
 
 				<SectionDivider />
 				<PersonalBrand />
@@ -29,7 +30,10 @@ function App() {
 				<ProjectsSection />
 
 				<SectionDivider />
-				<AcademicalSection />
+				<TrajectorySection />
+
+				<SectionDivider />
+				<CertificationsSection />
 
 				<SectionDivider />
 				<BlogSection />

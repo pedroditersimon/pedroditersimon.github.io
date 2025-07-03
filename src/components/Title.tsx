@@ -17,7 +17,7 @@ export default function Title({ children, title_color, icons }: Props) {
 
 			<div className="icons unselectable">
 				{icons?.map((icon) => (
-					<SmallIcon icon={icon} alt={`${children} icon`} />
+					<SmallIcon icon={icon} alt={`${children} icon`} border="square" />
 				))}
 			</div>
 		</div>

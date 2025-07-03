@@ -12,8 +12,8 @@ const sections: SectionType[] = [
 		title: "Acerca de mí",
 	},
 	{
-		id: "experience",
-		title: "Experiencia y habilidades",
+		id: "knowledge",
+		title: "Conocimientos",
 	},
 	{
 		id: "personal_brand",
@@ -24,8 +24,12 @@ const sections: SectionType[] = [
 		title: "Proyectos",
 	},
 	{
-		id: "academical",
-		title: "Formación académica",
+		id: "trajectory",
+		title: "Trayectoria",
+	},
+	{
+		id: "certifications",
+		title: "Certificaciones",
 	},
 	{
 		id: "blog",

@@ -18,6 +18,7 @@ export default function ProfileCard({ icon, name, description, href }: Props) {
 				className="outside_shadow unselectable"
 				icon={icon}
 				alt="profile card"
+				border="circle"
 			/>
 			<div className="profile_text unselectable">
 				<h2>{name}</h2>

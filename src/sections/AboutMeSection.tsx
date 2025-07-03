@@ -11,6 +11,8 @@ import unity_logo from "src/assets/logos/unity.png";
 import linkedin_logo from "src/assets/logos/linkedin-white.png";
 import github_logo from "src/assets/logos/github.png";
 import link_logo from "src/assets/link.png";
+import web_logo from "src/assets/logos/web-white.png";
+import javascript_logo from "src/assets/logos/javascript.png";
 
 import python_logo from "src/assets/logos/python.png";
 import pygame_logo from "src/assets/logos/pygame.png";
@@ -19,13 +21,11 @@ import gamemaker_logo from "src/assets/logos/gamemaker.png";
 export default function AboutMeSection() {
 	return (
 		<Section id="about_me">
-			<Title icons={[csharp_logo, unity_logo]}>Acerca de mí</Title>
+			<Title>Acerca de mí</Title>
 			<p>
-				Soy programador y desarrollador de videojuegos en Unity3D, con más de 4
-				años de experiencia.
-				<br />
-				Me especializo en el lenguaje de programación C# y el scripting API de
-				Unity3D, como su manejo general.
+				Me especializo en el desarrollo de aplicaciones web y videojuegos;
+				actualmente trabajo como programador frontend con React y Angular,
+				y cuento con casi 4 años de experiencia creando videojuegos en Unity3D.
 			</p>
 			<Row>
 				<Button
@@ -49,16 +49,15 @@ export default function AboutMeSection() {
 			</Row>
 
 			<Space />
-			<Title icons={[python_logo, pygame_logo, gamemaker_logo]}>Historia</Title>
+			<Title icons={[python_logo, csharp_logo, javascript_logo]}>Historia</Title>
 			<p>
-				A la edad de 12 años, descubrí los lenguajes de programación y sus
-				aplicaciones tecnológicas, lo que despertó mi interés y me impulsó a
+				A los 12 años, descubrí los lenguajes de programación y sus
+				aplicaciones a través de los videojuegos, lo que despertó mi interés y me impulsó a
 				aprender de manera autodidacta.
 				<br />
-				Comencé estudiando y practicando el lenguaje de programación Python en
-				conjunto con la biblioteca PyGame. Adquiriendo una sólida base que me
-				facilitó el aprendizaje de otros lenguajes, como C# y el uso del motor
-				de videojuegos Unity3D.
+				Comencé con Python y PyGame, lo que me proporcionó una base sólida para expandir mis conocimientos hacia C# y Unity3D, desarrollando y publicando varios proyectos de videojuegos.
+				<br />
+				Posteriormente, amplié mi experiencia hacia el desarrollo web, adquiriendo habilidades en backend con C# y ASP.NET, así como en frontend con React y Angular.
 			</p>
 		</Section>
 	);

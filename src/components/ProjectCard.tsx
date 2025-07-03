@@ -21,7 +21,7 @@ interface Props {
 	bottom_icons: IconType[];
 	bottom_buttons?: ButtonType[];
 	isHidden?: boolean;
-	onHiddenChange?: (value: boolean) => void;
+	onHeaderClick?: () => void;
 }
 
 export default function ProjectCard({
@@ -33,7 +33,7 @@ export default function ProjectCard({
 	bottom_icons,
 	bottom_buttons,
 	isHidden = true,
-	onHiddenChange,
+	onHeaderClick,
 }: Props) {
 	const [hidden, setHidden] = useState(isHidden);
 
@@ -41,16 +41,16 @@ export default function ProjectCard({
 		setHidden(isHidden);
 	}, [isHidden]);
 
-	function toggleHidde() {
-		const newValue = !hidden;
-		setHidden(newValue);
-		if (onHiddenChange) onHiddenChange(newValue);
+	function handleHeaderClick() {
+		const value = !hidden;
+		setHidden(value);
+		if (onHeaderClick) onHeaderClick();
 	}
 
 	return (
 		<div className={`project_card ${hidden && "hidden"}`}>
 			<div
-				onClick={toggleHidde}
+				onClick={handleHeaderClick}
 				className="card_header primary_text rows_spaced"
 			>
 				<Row>
