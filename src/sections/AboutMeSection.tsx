@@ -42,7 +42,7 @@ export default function AboutMeSection() {
 				/>
 				<Button
 					icon={link_logo}
-					href={`${process.env.PUBLIC_URL}/cv/Programador CSharp Unity - Pedro Simón Resumen CV.pdf`}
+					href={`${process.env.PUBLIC_URL}/cv/Programador web y videojuegos - Pedro Simón Resumen CV.pdf`}
 					alt="Resumen CV button"
 					text="Resumen CV"
 				/>
@@ -51,13 +51,13 @@ export default function AboutMeSection() {
 			<Space />
 			<Title icons={[python_logo, csharp_logo, javascript_logo]}>Historia</Title>
 			<p>
-				A los 12 años, descubrí los lenguajes de programación y sus
+				A los 12 años, descubrí los lenguajes de <strong>programación</strong> y sus
 				aplicaciones a través de los videojuegos, lo que despertó mi interés y me impulsó a
-				aprender de manera autodidacta.
+				aprender de manera <strong>autodidacta</strong>.
 				<br />
-				Comencé con Python y PyGame, lo que me proporcionó una base sólida para expandir mis conocimientos hacia C# y Unity3D, desarrollando y publicando varios proyectos de videojuegos.
+				Comencé con <strong>Python</strong> y PyGame, lo que me proporcionó una base sólida para expandir mis conocimientos hacia <strong>C# y Unity3D</strong>, desarrollando y publicando varios proyectos de videojuegos.
 				<br />
-				Posteriormente, amplié mi experiencia hacia el desarrollo web, adquiriendo habilidades en backend con C# y ASP.NET, así como en frontend con React y Angular.
+				Posteriormente, amplié mi experiencia hacia el desarrollo web, adquiriendo habilidades en backend con <strong>C# y ASP.NET</strong>, así como en frontend con <strong>React y Angular</strong>.
 			</p>
 		</Section>
 	);

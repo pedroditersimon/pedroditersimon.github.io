@@ -14,7 +14,7 @@ export default function KnowledgeSection() {
 				<strong>Desarrollo Web</strong>
 				<ul>
 					<li>Frontend: HTML, CSS, JavaScript, TypeScript, React, Angular (PrimeNG, RxJs), tailwindcss.</li>
-					<li>Backend: C# con ASP.NET.</li>
+					<li>Backend: C# con ASP.NET y EntityFramework, NodeJS.</li>
 					<li>Bases de datos: PostgreSQL, MongoDB.</li>
 				</ul>
 			</p>
@@ -37,6 +37,17 @@ export default function KnowledgeSection() {
 					<li>Arquitecturas: Hexagonal arquitecture, Clean arquitecture, DDD.</li>
 					<li>Patrones de diseño: MVC, MVVM, Repository, Unit of Work, Singleton, Strategy, Railway programming.</li>
 					<li>Estructuras de proyecto: Atomic design system, Feature oriented.</li>
+				</ul>
+			</p>
+
+			<p>
+				<strong>Habilidades blandas</strong>
+				<ul>
+					<li>Organizado.</li>
+					<li>Atención al detalle.</li>
+					<li>Comunicación: informo avances y bloqueos claramente en reuniones diarias.</li>
+					<li>Trabajo en equipo: Colaboro con equipos de diseño, frontend, backend y testing.</li>
+					<li>Metodologías ágiles: Kanban, Scrum.</li>
 				</ul>
 			</p>
 
