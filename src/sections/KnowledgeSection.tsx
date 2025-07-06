@@ -22,9 +22,8 @@ export default function KnowledgeSection() {
 			<p>
 				<strong>Desarrollo de Videojuegos</strong>
 				<ul>
-					<li>Programación C# y Scripting API de Unity3D</li>
-					<li>Diseño UI y integración de interfaz en Unity3D</li>
-					<li>Desarrollo y manejo general del motor Unity3D</li>
+					<li>Programación C# con el Scripting API de Unity3D</li>
+					<li>Diseño UI y manejo general del motor Unity3D</li>
 					<li>Modelado 3D en Blender</li>
 					<li>Ilustración con vectores</li>
 				</ul>
@@ -36,17 +35,7 @@ export default function KnowledgeSection() {
 					<li>Principios SOLID.</li>
 					<li>Arquitecturas: Hexagonal arquitecture, Clean arquitecture, DDD.</li>
 					<li>Patrones de diseño: MVC, MVVM, Repository, Unit of Work, Singleton, Strategy, Railway programming.</li>
-					<li>Estructuras de proyecto: Atomic design system, Feature oriented.</li>
-				</ul>
-			</p>
-
-			<p>
-				<strong>Habilidades blandas</strong>
-				<ul>
-					<li>Organizado.</li>
-					<li>Atención al detalle.</li>
-					<li>Comunicación: informo avances y bloqueos claramente en reuniones diarias.</li>
-					<li>Trabajo en equipo: Colaboro con equipos de diseño, frontend, backend y testing.</li>
+					<li>Estructuras de proyecto: Atomic design, Feature oriented.</li>
 					<li>Metodologías ágiles: Kanban, Scrum.</li>
 				</ul>
 			</p>
@@ -61,10 +50,28 @@ export default function KnowledgeSection() {
 			</p>
 
 			<p>
-				Trabajé como Freelancer en línea en la web Workana, finalizando con
-				éxito proyectos de clientes que se encuentran en distintas partes del
-				mundo (España, Ecuador, Uruguay, etc.).
-				<br /> <br />
+				<strong>Experiencias</strong>
+				<ul>
+					<li>
+						Trabajé como Freelancer en línea en la web Workana, finalizando con
+						éxito proyectos de clientes que se encuentran en distintas partes del
+						mundo (España, Ecuador, Uruguay, etc.).
+					</li>
+					<li>
+						Participé en una GameJam (Competencia de videojuegos),
+						donde junto a un equipo, desarrollamos un videojuego en 5 días.
+						Logrando el puesto <strong>#19</strong> entre otros 39 participantes.
+						<a
+							target="_blank"
+							href="https://sr-almond.itch.io/chef-hunters"
+							style={{ textDecoration: "none", color: "inherit", fontWeight: "bold" }}
+							children=" Ver Chef Hunters"
+						/>
+					</li>
+				</ul>
+			</p>
+
+			<p>
 				Mi lengua materna es el castellano.
 				<br />
 				Cuento con buen nivel de comprensión lectora y escritura en inglés

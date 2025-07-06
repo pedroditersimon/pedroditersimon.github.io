@@ -23,9 +23,10 @@ export default function AboutMeSection() {
 		<Section id="about_me">
 			<Title>Acerca de mí</Title>
 			<p>
-				Me especializo en el desarrollo de aplicaciones web y videojuegos;
-				actualmente trabajo como programador frontend con React y Angular,
-				y cuento con casi 4 años de experiencia creando videojuegos en Unity3D.
+				Me especializo en el desarrollo de aplicaciones web y
+				videojuegos; actualmente trabajo como programador
+				frontend con React y Angular; Soy empático, honesto,
+				comprometido y proactivo.
 			</p>
 			<Row>
 				<Button
@@ -42,7 +43,7 @@ export default function AboutMeSection() {
 				/>
 				<Button
 					icon={link_logo}
-					href={`${process.env.PUBLIC_URL}/cv/Programador web y videojuegos - Pedro Simón Resumen CV.pdf`}
+					href={`${process.env.PUBLIC_URL}/cv/Programador web - Pedro Simón Resumen CV.pdf`}
 					alt="Resumen CV button"
 					text="Resumen CV"
 				/>
