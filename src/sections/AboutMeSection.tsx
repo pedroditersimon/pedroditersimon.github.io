@@ -23,10 +23,9 @@ export default function AboutMeSection() {
 		<Section id="about_me">
 			<Title>Acerca de mí</Title>
 			<p>
-				Me especializo en el desarrollo de aplicaciones web y
-				videojuegos; actualmente trabajo como programador
-				frontend con React y Angular; Soy empático, honesto,
-				comprometido y proactivo.
+				Me especializo en el desarrollo de aplicaciones web;
+				actualmente trabajo como programador frontend con React y Angular;
+				Soy empático, honesto, comprometido y proactivo.
 			</p>
 			<Row>
 				<Button
