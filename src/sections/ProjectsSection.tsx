@@ -39,7 +39,7 @@ import tailwindcss_logo from "src/assets/logos/tailwindcss.png";
 // project img
 import cronomate_img from "src/assets/projects/cronomate.png";
 import miniroompainter_img from "src/assets/projects/miniroompainter.png";
-
+import chefhunters_img from "src/assets/projects/chef-hunters.png";
 
 
 export default function ProjectsSection() {
@@ -122,34 +122,6 @@ export default function ProjectsSection() {
 					]}
 				/>
 
-				<ProjectCardV2
-					title="Mini Room Painter"
-					description="Juego de decoración de interiores, donde los jugadores combinan colores para pintar objetos y muebles en habitaciones con diversas temáticas. Además de cuidar un gatito que acompaña al jugador."
-					img={miniroompainter_img}
-					icons={[
-						{ icon: android_logo, },
-						{ icon: unity_logo, },
-						{ icon: csharp_logo, }
-					]}
-					tags={[
-						{ text: "Pintura" },
-						{ text: "Mobile" },
-						{ text: "Gatos" }
-					]}
-					buttons={[
-						{
-							text: "Tablero Miro",
-							icon: miro_logo,
-							icon_border: "square",
-							href: "https://miro.com/app/board/uXjVNKtKegw=/?share_link_id=737298372577",
-						},
-						// {
-						// 	text: "PlayStore",
-						// 	icon: playstore_logo,
-						// 	href: "https://play.google.com/store/apps/details?id=com.ChocoDarkStudio.MiniRoomPainter",
-						// },
-					]}
-				/>
 
 
 				<ProjectCardV2
@@ -182,6 +154,57 @@ export default function ProjectsSection() {
 				/>
 
 
+				<ProjectCardV2
+					title="Chef Hunters"
+					description="Participé en una competencia de videojuegos, donde junto a un equipo desarrollamos un videojuego en 5 días. Logrando el puesto #19 entre otros 39 participantes."
+					img={chefhunters_img}
+					icons={[
+						{ icon: windows_logo, },
+						{ icon: unity_logo, },
+						{ icon: csharp_logo, }
+					]}
+					tags={[
+						{ text: "Windows" },
+						{ text: "GameJam" },
+						{ text: "#19" },
+					]}
+					buttons={[
+						{
+							text: "Itch.io",
+							icon: itchio_logo,
+							href: "https://sr-almond.itch.io/chef-hunters",
+						},
+					]}
+				/>
+
+				<ProjectCardV2
+					title="Mini Room Painter"
+					description="Juego de decoración de interiores, donde los jugadores combinan colores para pintar objetos y muebles en habitaciones con diversas temáticas. Además de cuidar un gatito que acompaña al jugador."
+					img={miniroompainter_img}
+					icons={[
+						{ icon: android_logo, },
+						{ icon: unity_logo, },
+						{ icon: csharp_logo, }
+					]}
+					tags={[
+						{ text: "Pintura" },
+						{ text: "Mobile" },
+						{ text: "Gatos" }
+					]}
+					buttons={[
+						{
+							text: "Tablero Miro",
+							icon: miro_logo,
+							icon_border: "square",
+							href: "https://miro.com/app/board/uXjVNKtKegw=/?share_link_id=737298372577",
+						},
+						// {
+						// 	text: "PlayStore",
+						// 	icon: playstore_logo,
+						// 	href: "https://play.google.com/store/apps/details?id=com.ChocoDarkStudio.MiniRoomPainter",
+						// },
+					]}
+				/>
 
 				<ProjectCardV2
 					title="Frutish"
