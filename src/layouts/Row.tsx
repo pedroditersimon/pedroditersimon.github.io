@@ -14,6 +14,7 @@ export default function Row({ children, className }: Props) {
 				flexDirection: "row",
 				gap: "1vw",
 				alignItems: "center",
+				flexWrap: "wrap",
 			}}
 		>
 			{children}

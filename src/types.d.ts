@@ -32,3 +32,8 @@ type Tag = {
 	text: string;
 	style?: Colors;
 };
+
+export type Badge = {
+	text: string;
+	icon?: string;
+}

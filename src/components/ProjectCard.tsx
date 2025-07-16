@@ -12,6 +12,9 @@ import Button from "src/components/Button";
 // styles
 import "src/styles/ProjectCard.css";
 
+// icons
+import folder_icon from "src/assets/folder.svg";
+
 interface Props {
 	children: ReactNode; // content - description
 	icon: IconType;
@@ -54,7 +57,7 @@ export default function ProjectCard({
 				className="card_header primary_text rows_spaced"
 			>
 				<Row>
-					<Icon {...icon} />
+					<Icon icon={folder_icon} />
 					<span className="title">
 						<strong>{title}</strong>
 					</span>

@@ -1,4 +1,6 @@
 .badge {
+    width: fit-content;
+
     display: flex;
     gap: 0.1rem;
     align-items: center;
