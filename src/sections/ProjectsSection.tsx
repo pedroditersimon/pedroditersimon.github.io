@@ -64,7 +64,7 @@ export default function ProjectsSection() {
 				través de mi marca personal en diversas tiendas y plataformas en línea.
 			</p> */}
 
-			<Row className="projects-section-row" >
+			<Row className="projects-cards" >
 
 				<ProjectCardV2
 					title="Cronomate"

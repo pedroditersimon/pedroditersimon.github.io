@@ -1,3 +1,4 @@
-.projects-section-row {
+.projects-cards {
     align-items: stretch !important;
+    justify-content: center;
 }

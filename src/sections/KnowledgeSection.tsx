@@ -87,25 +87,9 @@ export default function KnowledgeSection() {
 			</BadgeGroup>
 
 			<p>
-				<strong>Experiencias</strong>
-				<ul>
-					<li>
-						Trabajé como Freelancer en línea en la web Workana, finalizando con
-						éxito proyectos de clientes que se encuentran en distintas partes del
-						mundo (España, Ecuador, Uruguay, etc.).
-					</li>
-					<li>
-						Participé en una GameJam (Competencia de videojuegos),
-						donde junto a un equipo, desarrollamos un videojuego en 5 días.
-						Logrando el puesto <strong>#19</strong> entre otros 39 participantes.
-						<a
-							target="_blank"
-							href="https://sr-almond.itch.io/chef-hunters"
-							style={{ textDecoration: "none", color: "inherit", fontWeight: "bold" }}
-							children=" Ver Chef Hunters"
-						/>
-					</li>
-				</ul>
+				Trabajé como Freelancer en línea en la web Workana, finalizando con
+				éxito proyectos de clientes que se encuentran en distintas partes del
+				mundo (España, Ecuador, Uruguay, etc.).
 			</p>
 
 			<p>
