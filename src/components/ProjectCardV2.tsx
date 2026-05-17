@@ -49,10 +49,10 @@ export default function ProjectCardV2({
 		<div className="project-card-v2">
 			<Row className="project-card-header" >
 				<Row className="less_gap">
-					<SmallIcon
+					{/* <SmallIcon
 						icon={project_icon}
 						border="square"
-					/>
+					/> */}
 					<h3 >{title}</h3>
 				</Row>
 
@@ -84,7 +84,7 @@ export default function ProjectCardV2({
 
 			<p className="project-card-description">{description}</p>
 
-			<Row >
+			<Row className="buttons">
 				{buttons &&
 					buttons.map((btn) => (
 						<Button {...btn} />

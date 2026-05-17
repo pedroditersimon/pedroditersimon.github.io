@@ -13,6 +13,10 @@
     transition: border-color 0.2s ease-in-out;
 }
 
+.project-card-v2 .buttons {
+    margin-top: auto;
+}
+
 /* .project-card-v2:not(.hidden) { */
 .project-card-v2:hover {
     border-color: var(--color-accent-hover);
@@ -24,7 +28,7 @@
 }
 
 .project-card-header img {
-    width: 0.8rem !important;
+    width: 0.65rem !important;
 }
 
 .project-card-v2 .project-card-description {
