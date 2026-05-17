@@ -19,6 +19,7 @@ import link_img from "src/assets/link.png";
 import cronomate_logo from "src/assets/logos/web-white.png";
 import golden_start from "src/assets/golden-star.png";
 import hearth_icon from "src/assets/heart-icon.png";
+import html_icon from "src/assets/logos/html.webp";
 
 import veggie_shop_logo from "src/assets/projects/veggie_shop_logo.png";
 import miniroompainter_logo from "src/assets/projects/miniroompainter_logo.png";
@@ -40,6 +41,7 @@ import tailwindcss_logo from "src/assets/logos/tailwindcss.png";
 import cronomate_img from "src/assets/projects/cronomate.png";
 import miniroompainter_img from "src/assets/projects/miniroompainter.png";
 import chefhunters_img from "src/assets/projects/chef-hunters.png";
+import obrapaw_img from "src/assets/projects/obrapaw_shot.png"
 
 
 export default function ProjectsSection() {
@@ -65,6 +67,32 @@ export default function ProjectsSection() {
 			</p> */}
 
 			<Row className="projects-cards" >
+
+				<ProjectCardV2
+					title="Obra Paw"
+					description="Pagina web sobre prepaga personalizada para mascotas."
+					img={obrapaw_img}
+					icons={[
+						{ icon: html_icon, },
+					]}
+					tags={[
+						{ text: "LandingPage" },
+						{ text: "Marketing" },
+					]}
+					buttons={[
+						{
+							text: "Repositorio GitHub",
+							icon: github_logo,
+							icon_border: "square",
+							href: "https://github.com/pedroditersimon/obrapaw",
+						},
+						{
+							text: "Visitar",
+							icon: link_img,
+							href: "https://obrapaw.vercel.app",
+						},
+					]}
+				/>
 
 				<ProjectCardV2
 					title="Cronomate"
