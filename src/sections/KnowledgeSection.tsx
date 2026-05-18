@@ -4,6 +4,7 @@ import Title from "src/components/Title";
 import Badge from "src/components/Badge";
 import { BadgeGroup } from "src/components/BadgeGroup";
 import { BadgeGroupDivider } from "src/components/BadgeGroupDivider";
+import { BadgeGroupNewLine } from "src/components/BadgeGroupNewLine";
 
 // icons
 import unity_logo from "src/assets/logos/unity.png";
@@ -21,14 +22,25 @@ import mongodb_logo from "src/assets/logos/mongodb.svg";
 import html_logo from "src/assets/logos/html.webp";
 import css_logo from "src/assets/logos/css.png";
 import blender_logo from "src/assets/logos/blender.png";
+import mysql_logo from "src/assets/logos/mysql-logo.png";
+import java_logo from "src/assets/logos/java-logo.png";
+import springboot_logo from "src/assets/logos/spring-boot-logo.png";
+
 
 export default function KnowledgeSection() {
 	return (
 		<Section id="knowledge">
 			<Title>Conocimientos</Title>
 
-
 			<BadgeGroup title="Desarrollo Web">
+				<Badge icon={java_logo} text="Java" />
+				<Badge icon={springboot_logo} text="SpringBoot" />
+				<Badge icon={csharp_logo} text="C# ASP.NET" />
+				<Badge text="EntityFramework" />
+				<Badge icon={nodejs_logo} text="NodeJS" />
+
+				<BadgeGroupDivider />
+
 				<Badge icon={html_logo} text="HTML" />
 				<Badge icon={css_logo} text="CSS" />
 				<Badge icon={javascript_logo} text="JavaScript" />
@@ -36,18 +48,14 @@ export default function KnowledgeSection() {
 				<Badge icon={react_logo} text="React" />
 				<Badge icon={angular_logo} text="Angular (PrimeNG, RxJs)" />
 				<Badge icon={tailwind_logo} text="tailwindcss" />
-
-				<BadgeGroupDivider />
-				<Badge icon={csharp_logo} text="C# ASP.NET" />
-				<Badge text="EntityFramework" />
-				<Badge icon={nodejs_logo} text="NodeJS" />
 			</BadgeGroup>
 
+
 			<BadgeGroup title="Base de Datos">
+				<Badge icon={mysql_logo} text="MySQL" />
 				<Badge icon={postgresql_logo} text="PostgreSQL" />
 				<Badge icon={mongodb_logo} text="MongoDB" />
 			</BadgeGroup>
-
 
 
 			<BadgeGroup title="Desarrollo de Videojuegos">
@@ -56,6 +64,7 @@ export default function KnowledgeSection() {
 				<Badge text="Diseño UI" />
 				<Badge text="Ilustración con vectores" />
 			</BadgeGroup>
+
 
 			<BadgeGroup title="Ingeniería de Software">
 				<Badge text="SOLID" />
