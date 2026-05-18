@@ -1,14 +1,17 @@
 {
   "files": {
-    "main.css": "/static/css/main.eea665c5.css",
-    "main.js": "/static/js/main.11328aee.js",
+    "main.css": "/static/css/main.a6ba137d.css",
+    "main.js": "/static/js/main.b63f2c17.js",
+    "static/media/OPI 2025.jpg": "/static/media/OPI 2025.33678e14a2b9f836363b.jpg",
     "static/media/miniroompainter.png": "/static/media/miniroompainter.4617b9a0218dd0ae1209.png",
+    "static/media/obrapaw_shot.png": "/static/media/obrapaw_shot.18142c889fa492bb5348.png",
     "static/media/chef-hunters.png": "/static/media/chef-hunters.5ced6cf3275827e2feb4.png",
     "static/media/UC-LV2POPKJ.jpg": "/static/media/UC-LV2POPKJ.0f8ef8dd28d217ba3287.jpg",
     "static/media/me.png": "/static/media/me.f5f6b6c0842b02e0e35b.png",
     "static/media/veggie_shop_logo.png": "/static/media/veggie_shop_logo.7d71df06a5239517d24a.png",
     "static/media/cronomate.png": "/static/media/cronomate.e28af7cfc393b6328c06.png",
     "static/media/brand-logo.png": "/static/media/brand-logo.d82f02387e0f2b31afb1.png",
+    "static/media/mysql-logo.png": "/static/media/mysql-logo.3bcb6acddddc91bca35f.png",
     "static/media/1676682682729.png": "/static/media/1676682682729.ab1ddef522fee55572df.png",
     "static/media/postgresql.png": "/static/media/postgresql.519a271ad6537a824c0c.png",
     "static/media/1678478948032.png": "/static/media/1678478948032.f4ca910ecf7c5e465bc7.png",
@@ -18,17 +21,18 @@
     "static/media/tailwindcss.png": "/static/media/tailwindcss.5244e663848d99ee0291.png",
     "static/media/blender.png": "/static/media/blender.06a1c61bcc9e7bbe1ab5.png",
     "static/media/typescript.png": "/static/media/typescript.16b157ea18cd87601675.png",
+    "static/media/java-logo.png": "/static/media/java-logo.f5dd86c3ef6ef3f85acf.png",
     "static/media/react.png": "/static/media/react.a32f0f599693ab40bac4.png",
     "static/media/javascript.png": "/static/media/javascript.266bd9fb2663dcc057b4.png",
     "static/media/angular.png": "/static/media/angular.e0a8b5c82da70d2ebb97.png",
     "static/media/html.webp": "/static/media/html.de3b4c4187db7e7992eb.webp",
-    "static/media/mongodb.svg": "/static/media/mongodb.1f548d0ac32c2d0e9addddd03051f491.svg",
+    "static/media/mongodb.svg": "/static/media/mongodb.42c7731b62be8e054aac7818d3068793.svg",
     "index.html": "/index.html",
-    "main.eea665c5.css.map": "/static/css/main.eea665c5.css.map",
-    "main.11328aee.js.map": "/static/js/main.11328aee.js.map"
+    "main.a6ba137d.css.map": "/static/css/main.a6ba137d.css.map",
+    "main.b63f2c17.js.map": "/static/js/main.b63f2c17.js.map"
   },
   "entrypoints": [
-    "static/css/main.eea665c5.css",
-    "static/js/main.11328aee.js"
+    "static/css/main.a6ba137d.css",
+    "static/js/main.b63f2c17.js"
   ]
 }
