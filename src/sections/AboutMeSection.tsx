@@ -24,7 +24,7 @@ export default function AboutMeSection() {
 			<Title>Acerca de mí</Title>
 			<p>
 				Me especializo en el desarrollo de aplicaciones web;
-				actualmente trabajo como programador frontend con React y Angular;
+				actualmente trabajo como programador fullstack con Angular y Java;
 				Soy empático, honesto, comprometido y proactivo.
 			</p>
 			<Row>
@@ -57,7 +57,7 @@ export default function AboutMeSection() {
 				<br />
 				Comencé con <strong>Python</strong> y PyGame, lo que me proporcionó una base sólida para expandir mis conocimientos hacia <strong>C# y Unity3D</strong>, desarrollando y publicando varios proyectos de videojuegos.
 				<br />
-				Posteriormente, amplié mi experiencia hacia el desarrollo web, adquiriendo habilidades en backend con <strong>C# y ASP.NET</strong>, así como en frontend con <strong>React y Angular</strong>.
+				Posteriormente, amplié mi experiencia hacia el desarrollo web, adquiriendo habilidades en backend con <strong>C#/ASP.NET y Java</strong>, así como en frontend con <strong>React y Angular</strong>.
 			</p>
 		</Section>
 	);

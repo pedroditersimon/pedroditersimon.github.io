@@ -12,6 +12,7 @@ import cert2 from "src/assets/certificates/Introducción al control de versiones
 import cert3 from "src/assets/certificates/1677122274760.png";
 import cert4 from "src/assets/certificates/1678478948032.png";
 import cert5 from "src/assets/certificates/1676682682729.png";
+import cert_opi from "src/assets/certificates/OPI 2025.jpg";
 
 export default function CertificationsSection() {
 	return (
@@ -19,6 +20,13 @@ export default function CertificationsSection() {
 			<Title>Certificaciones</Title>
 
 			<div className="certificates">
+				<CertificationCard
+					img={cert_opi}
+					href="https://www.linkedin.com/posts/pedro-diter-simon_no-es-el-final-es-el-comienzo-franco-share-7382772453300678656-WT-I"
+				>
+					OPI: Formacion de oratoria impartida por Franco Pisso
+				</CertificationCard>
+
 				<CertificationCard
 					img={cert1}
 					href="https://www.udemy.com/certificate/UC-LV2POPKJ/"
