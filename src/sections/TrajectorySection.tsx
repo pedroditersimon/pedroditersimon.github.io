@@ -10,11 +10,11 @@ export default function TrajectorySection() {
 			<Timeline
 				entries={[
 					{
-						date: "Diciembre 2024 – Presente",
+						date: "Diciembre 2024 - Presente",
 						title:
 							"Desarrollador Frontend en Chango Consultora",
 						description:
-							"Lidero el desarrollo de aplicaciones web con React y Angular en un entorno remoto full-time;\nImplementé pipelines de CI/CD con GitHub Actions que redujeron los tiempos de despliegue;\nColaboro con equipos de diseño, frontend, backend y testing;\nConfiguré entornos de desarrollo y producción en VPS con Nginx."
+							"Lidero el desarrollo de aplicaciones web con React, Angular, Java/Springboot en un entorno remoto full-time;\nImplementé pipelines de CI/CD con GitHub Actions que redujeron los tiempos de despliegue;\nColaboro con equipos de diseño, frontend, backend y testing;\nConfiguré entornos de desarrollo y producción en VPS con Nginx."
 					},
 					{
 						date: "2022-2024 Educación Superior",
