@@ -57,12 +57,11 @@ export default function PersonalBrandSection() {
 		<Section id="personal_brand">
 			<Title title_color="var(--color-brand-text)">Marca personal</Title>
 			<p>
-				Desarollé mi marca personal bajo el nombre de "
+				Desarrollé mi marca personal bajo el nombre de "
 				<span style={{ color: "var(--color-brand-text)" }}>
 					ChocoDark Studio
 				</span>
-				", a través de la cual comparto mis creaciones de videojuegos y sus
-				progresos.
+				", donde publiqué mis proyectos indie de videojuegos.
 			</p>
 
 			<ProfileCard

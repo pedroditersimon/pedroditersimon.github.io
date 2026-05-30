@@ -97,17 +97,6 @@ export default function KnowledgeSection() {
 			</BadgeGroup>
 			</div>
 
-			<p>
-				Trabajé como Freelancer en línea en la web Workana, finalizando con
-				éxito proyectos de clientes que se encuentran en distintas partes del
-				mundo (España, Ecuador, Uruguay, etc.).
-			</p>
-
-			<p>
-				Mi lengua materna es el castellano.
-				<br />
-				Cuento con buen nivel de comprensión lectora y escritura en inglés
-			</p>
 		</Section>
 	);
 }

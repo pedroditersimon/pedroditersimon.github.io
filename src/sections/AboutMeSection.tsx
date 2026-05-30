@@ -23,9 +23,7 @@ export default function AboutMeSection() {
 		<Section id="about_me">
 			<Title>Acerca de mí</Title>
 			<p>
-				Me especializo en el desarrollo de aplicaciones web;
-				actualmente trabajo como programador fullstack con Angular y Java;
-				Soy empático, honesto, comprometido y proactivo.
+				Soy desarrollador fullstack. Me motiva construir sistemas limpios, robustos y mantenibles, tanto desde la UI como desde el código que leemos los devs.
 			</p>
 			<Row>
 				<Button
@@ -48,6 +46,11 @@ export default function AboutMeSection() {
 				/>
 			</Row>
 
+			<p>
+				Trabajé como Freelancer en Workana con clientes de España, Ecuador y Uruguay.
+				Mi lengua materna es el castellano, y actualmente estoy aprendiendo inglés.
+			</p>
+
 			<Space />
 			<Title icons={[python_logo, csharp_logo, javascript_logo]}>Historia</Title>
 			<p>
@@ -55,7 +58,7 @@ export default function AboutMeSection() {
 				aplicaciones a través de los videojuegos, lo que despertó mi interés y me impulsó a
 				aprender de manera <strong>autodidacta</strong>.
 				<br />
-				Comencé con <strong>Python</strong> y PyGame, lo que me proporcionó una base sólida para expandir mis conocimientos hacia <strong>C# y Unity3D</strong>, desarrollando y publicando varios proyectos de videojuegos.
+				Comencé con <strong>Python</strong> y PyGame, y luego pasé a <strong>C# y Unity3D</strong>, desarrollando y publicando varios proyectos de videojuegos.
 				<br />
 				Posteriormente, amplié mi experiencia hacia el desarrollo web, adquiriendo habilidades en backend con <strong>C#/ASP.NET y Java</strong>, así como en frontend con <strong>React y Angular</strong>.
 			</p>

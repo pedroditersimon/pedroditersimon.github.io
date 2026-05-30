@@ -70,7 +70,7 @@ export default function ProjectsSection() {
 
 				<ProjectCardV2
 					title="Obra Paw"
-					description="Pagina web sobre prepaga personalizada para mascotas."
+					description="Landing page para una prepaga de mascotas. Diseñada con foco en marketing y conversión."
 					img={obrapaw_img}
 					icons={[
 						{ icon: html_icon, },
@@ -127,7 +127,7 @@ export default function ProjectsSection() {
 
 				<ProjectCardV2
 					title="Veggie Shop"
-					description="Tienda de vegetales. Navega entre diferentes vistas de productos, agregar artículos al carrito, cambiar entre temas, y realizar compras enviando los detalles por WhatsApp."
+					description="Tienda de vegetales desarrollada en Angular. Permite explorar productos, gestionar un carrito y realizar pedidos por WhatsApp."
 					img={veggie_shop_logo}
 					icons={[
 						{ icon: angular_logo, },

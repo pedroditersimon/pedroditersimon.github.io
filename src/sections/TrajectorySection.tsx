@@ -12,7 +12,7 @@ export default function TrajectorySection() {
 					{
 						date: "Diciembre 2024 - Presente",
 						title:
-							"Desarrollador Frontend en Chango Consultora",
+							"Desarrollador Fullstack en Chango Consultora",
 						description:
 							"Lidero el desarrollo de aplicaciones web con React, Angular, Java/Springboot en un entorno remoto full-time;\nImplementé pipelines de CI/CD con GitHub Actions que redujeron los tiempos de despliegue;\nColaboro con equipos de diseño, frontend, backend y testing;\nConfiguré entornos de desarrollo y producción en VPS con Nginx."
 					},
