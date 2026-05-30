@@ -1,3 +1,19 @@
+.knowledge-grid {
+    columns: 2;
+    column-gap: 1rem;
+}
+
+.knowledge-grid .badge-group {
+    break-inside: avoid;
+    margin-bottom: 1rem;
+}
+
+@media (max-width: 576px) {
+    .knowledge-grid {
+        columns: 1;
+    }
+}
+
 .badge-group {
     display: flex;
     flex-direction: column;
@@ -6,8 +22,9 @@
 
     padding: 0.5rem;
     background-color: var(--color-secondary);
-    border: var(--color-secondary) 1px solid;
+    border: 2px solid var(--color-secondary-hover);
     border-radius: var(--border-radius);
+    transition: border-color 0.2s ease-in-out;
 }
 
 .badge-group-header-divider {

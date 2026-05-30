@@ -32,6 +32,7 @@ export default function KnowledgeSection() {
 		<Section id="knowledge">
 			<Title>Conocimientos</Title>
 
+			<div className="knowledge-grid">
 			<BadgeGroup title="Desarrollo Web">
 				<Badge icon={java_logo} text="Java" />
 				<Badge icon={springboot_logo} text="SpringBoot" />
@@ -94,6 +95,7 @@ export default function KnowledgeSection() {
 				<Badge icon={github_logo} text="Git y GitHub" />
 				<Badge icon={github_logo} text="CI/CD con GitHub Actions" />
 			</BadgeGroup>
+			</div>
 
 			<p>
 				Trabajé como Freelancer en línea en la web Workana, finalizando con
