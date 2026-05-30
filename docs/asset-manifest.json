@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/static/css/main.a6ba137d.css",
-    "main.js": "/static/js/main.b63f2c17.js",
+    "main.css": "/static/css/main.50a89fd1.css",
+    "main.js": "/static/js/main.9e76e6bb.js",
     "static/media/OPI 2025.jpg": "/static/media/OPI 2025.33678e14a2b9f836363b.jpg",
     "static/media/miniroompainter.png": "/static/media/miniroompainter.4617b9a0218dd0ae1209.png",
     "static/media/obrapaw_shot.png": "/static/media/obrapaw_shot.18142c889fa492bb5348.png",
     "static/media/chef-hunters.png": "/static/media/chef-hunters.5ced6cf3275827e2feb4.png",
     "static/media/UC-LV2POPKJ.jpg": "/static/media/UC-LV2POPKJ.0f8ef8dd28d217ba3287.jpg",
-    "static/media/me.png": "/static/media/me.f5f6b6c0842b02e0e35b.png",
+    "static/media/me.png": "/static/media/me.fe458f254cb6d5bd6dcb.png",
     "static/media/veggie_shop_logo.png": "/static/media/veggie_shop_logo.7d71df06a5239517d24a.png",
     "static/media/cronomate.png": "/static/media/cronomate.e28af7cfc393b6328c06.png",
     "static/media/brand-logo.png": "/static/media/brand-logo.d82f02387e0f2b31afb1.png",
@@ -28,11 +28,11 @@
     "static/media/html.webp": "/static/media/html.de3b4c4187db7e7992eb.webp",
     "static/media/mongodb.svg": "/static/media/mongodb.42c7731b62be8e054aac7818d3068793.svg",
     "index.html": "/index.html",
-    "main.a6ba137d.css.map": "/static/css/main.a6ba137d.css.map",
-    "main.b63f2c17.js.map": "/static/js/main.b63f2c17.js.map"
+    "main.50a89fd1.css.map": "/static/css/main.50a89fd1.css.map",
+    "main.9e76e6bb.js.map": "/static/js/main.9e76e6bb.js.map"
   },
   "entrypoints": [
-    "static/css/main.a6ba137d.css",
-    "static/js/main.b63f2c17.js"
+    "static/css/main.50a89fd1.css",
+    "static/js/main.9e76e6bb.js"
   ]
 }
