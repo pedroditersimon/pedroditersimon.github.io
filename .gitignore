@@ -13,6 +13,9 @@ pnpm-workspace.yaml
 # production
 /build
 
+# tools
+.atl/
+
 # misc
 .DS_Store
 .env.local
