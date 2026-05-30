@@ -82,12 +82,12 @@ export default function KnowledgeSection() {
 				<Badge text="Railway Programming" />
 
 				<BadgeGroupDivider />
-				<Badge text="Atomic Design" />
+				{/* <Badge text="Atomic Design" /> */}
 				<Badge text="Feature Oriented" />
 
 				<BadgeGroupDivider />
 				<Badge text="Kanban" />
-				<Badge text="Scrum" />
+				{/* <Badge text="Scrum" /> */}
 			</BadgeGroup>
 
 			<BadgeGroup title="Otros">
