@@ -1,0 +1,32 @@
+{
+  "files": {
+    "main.css": "/static/css/main.50a89fd1.css",
+    "main.js": "/static/js/main.f7709e6a.js",
+    "static/media/OPI 2025.jpg": "/static/media/OPI 2025.33678e14a2b9f836363b.jpg",
+    "static/media/obrapaw_shot.png": "/static/media/obrapaw_shot.18142c889fa492bb5348.png",
+    "static/media/me.png": "/static/media/me.fe458f254cb6d5bd6dcb.png",
+    "static/media/veggie_shop_logo.png": "/static/media/veggie_shop_logo.7d71df06a5239517d24a.png",
+    "static/media/cronomate.png": "/static/media/cronomate.e28af7cfc393b6328c06.png",
+    "static/media/mysql-logo.png": "/static/media/mysql-logo.3bcb6acddddc91bca35f.png",
+    "static/media/1676682682729.png": "/static/media/1676682682729.ab1ddef522fee55572df.png",
+    "static/media/postgresql.png": "/static/media/postgresql.519a271ad6537a824c0c.png",
+    "static/media/1677122274760.png": "/static/media/1677122274760.8483013e889ed91630e9.png",
+    "static/media/Introducción al control de versiones con Git - Microsoft Learn.png": "/static/media/Introducción al control de versiones con Git - Microsoft Learn.2fdd829bd932c05d735b.png",
+    "static/media/css.png": "/static/media/css.706a0458159bfe25c73d.png",
+    "static/media/tailwindcss.png": "/static/media/tailwindcss.5244e663848d99ee0291.png",
+    "static/media/typescript.png": "/static/media/typescript.16b157ea18cd87601675.png",
+    "static/media/java-logo.png": "/static/media/java-logo.f5dd86c3ef6ef3f85acf.png",
+    "static/media/react.png": "/static/media/react.a32f0f599693ab40bac4.png",
+    "static/media/javascript.png": "/static/media/javascript.266bd9fb2663dcc057b4.png",
+    "static/media/angular.png": "/static/media/angular.e0a8b5c82da70d2ebb97.png",
+    "static/media/html.webp": "/static/media/html.de3b4c4187db7e7992eb.webp",
+    "static/media/mongodb.svg": "/static/media/mongodb.1f548d0ac32c2d0e9addddd03051f491.svg",
+    "index.html": "/index.html",
+    "main.50a89fd1.css.map": "/static/css/main.50a89fd1.css.map",
+    "main.f7709e6a.js.map": "/static/js/main.f7709e6a.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.50a89fd1.css",
+    "static/js/main.f7709e6a.js"
+  ]
+}
