@@ -10,14 +10,14 @@ export default function TrajectorySection() {
 			<Timeline
 				entries={[
 					{
-						date: "Diciembre 2024 - Presente",
+						date: "2024 - Presente",
 						title:
-							"Desarrollador Fullstack en Chango Consultora",
+							"Programador Fullstack en Chango Consultora S.R.L.",
 						description:
-							"Lidero el desarrollo de aplicaciones web con React, Angular, Java/Springboot en un entorno remoto full-time;\nImplementé pipelines de CI/CD con GitHub Actions que redujeron los tiempos de despliegue;\nColaboro con equipos de diseño, frontend, backend y testing;\nConfiguré entornos de desarrollo y producción en VPS con Nginx."
+							"Argentina · En remoto · Jornada completa\n\n- Desarrollo de funcionalidades para un ERP y aplicaciones web.\n- Despliegues en VPS con Nginx, automatizados con GitHub Actions y backups.\n- Integraciones con AWS Lambda, OneDrive y Microsoft Graph.\n- Colaboración directa con clientes y equipos de diseño, desarrollo y testing.\n- Migración de datos de MongoDB a MySQL.\n- Conversión automática de documentos Word y Excel con LibreOffice.\nTecnologías: Java, Spring Boot, Angular, React, Tailwind CSS, MySQL, MongoDB, AWS Lambda, Microsoft Graph, OneDrive, GitHub Actions, Nginx y VPS."
 					},
 					{
-						date: "2022-2024 Educación Superior",
+						date: "2022 - 2024",
 						title:
 							"Tecnicatura superior en Gestión en Programación e Innovación Tecnológica y Digital",
 						description:

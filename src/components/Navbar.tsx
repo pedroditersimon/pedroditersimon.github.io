@@ -16,10 +16,6 @@ const sections: SectionType[] = [
 		title: "Conocimientos",
 	},
 	{
-		id: "personal_brand",
-		title: "Marca personal",
-	},
-	{
 		id: "projects",
 		title: "Proyectos",
 	},
@@ -30,10 +26,6 @@ const sections: SectionType[] = [
 	{
 		id: "certifications",
 		title: "Certificaciones",
-	},
-	{
-		id: "blog",
-		title: "Blog",
 	},
 ];
 

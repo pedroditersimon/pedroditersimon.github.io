@@ -7,7 +7,6 @@ import { BadgeGroupDivider } from "src/components/BadgeGroupDivider";
 import { BadgeGroupNewLine } from "src/components/BadgeGroupNewLine";
 
 // icons
-import unity_logo from "src/assets/logos/unity.png";
 import react_logo from "src/assets/logos/react.png";
 import csharp_logo from "src/assets/logos/csharp.png";
 import angular_logo from "src/assets/logos/angular.png";
@@ -21,7 +20,6 @@ import postgresql_logo from "src/assets/logos/postgresql.png";
 import mongodb_logo from "src/assets/logos/mongodb.svg";
 import html_logo from "src/assets/logos/html.webp";
 import css_logo from "src/assets/logos/css.png";
-import blender_logo from "src/assets/logos/blender.png";
 import mysql_logo from "src/assets/logos/mysql-logo.png";
 import java_logo from "src/assets/logos/java-logo.png";
 import springboot_logo from "src/assets/logos/spring-boot-logo.png";
@@ -33,7 +31,7 @@ export default function KnowledgeSection() {
 			<Title>Conocimientos</Title>
 
 			<div className="knowledge-grid">
-			<BadgeGroup title="Desarrollo Web">
+			<BadgeGroup title="Desarrollo Fullstack">
 				<Badge icon={java_logo} text="Java" />
 				<Badge icon={springboot_logo} text="SpringBoot" />
 				<Badge icon={csharp_logo} text="C# ASP.NET" />
@@ -59,27 +57,15 @@ export default function KnowledgeSection() {
 			</BadgeGroup>
 
 
-			<BadgeGroup title="Desarrollo de Videojuegos">
-				<Badge icon={unity_logo} text="Unity3D" />
-				<Badge icon={blender_logo} text="Blender" />
-				<Badge text="Diseño UI" />
-				<Badge text="Ilustración con vectores" />
-			</BadgeGroup>
-
-
 			<BadgeGroup title="Ingeniería de Software">
 				<Badge text="SOLID" />
-				<Badge text="Hexagonal Architecture" />
 				<Badge text="Clean Architecture" />
-				<Badge text="DDD" />
 				<Badge text="MVC" />
 
 				<BadgeGroupDivider />
 				<Badge text="Repository Pattern" />
-				<Badge text="Unit of Work Pattern" />
 				<Badge text="Singleton Pattern" />
 				<Badge text="Strategy Pattern" />
-				<Badge text="Railway Programming" />
 
 				<BadgeGroupDivider />
 				{/* <Badge text="Atomic Design" /> */}
@@ -87,6 +73,7 @@ export default function KnowledgeSection() {
 
 				<BadgeGroupDivider />
 				<Badge text="Kanban" />
+				<Badge text="Gitflow" />
 				{/* <Badge text="Scrum" /> */}
 			</BadgeGroup>
 
@@ -94,6 +81,9 @@ export default function KnowledgeSection() {
 				<Badge icon={python_logo} text="Python" />
 				<Badge icon={github_logo} text="Git y GitHub" />
 				<Badge icon={github_logo} text="CI/CD con GitHub Actions" />
+				<Badge text="AWS Lambda" />
+				<Badge text="Microsoft Graph y OneDrive" />
+				<Badge text="Nginx y VPS" />
 			</BadgeGroup>
 			</div>
 

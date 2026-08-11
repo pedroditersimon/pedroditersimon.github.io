@@ -6,24 +6,19 @@ import Space from "src/components/Space";
 import Row from "src/layouts/Row";
 
 // icons
-import csharp_logo from "src/assets/logos/csharp.png";
-import unity_logo from "src/assets/logos/unity.png";
 import linkedin_logo from "src/assets/logos/linkedin-white.png";
 import github_logo from "src/assets/logos/github.png";
 import link_logo from "src/assets/link.png";
-import web_logo from "src/assets/logos/web-white.png";
-import javascript_logo from "src/assets/logos/javascript.png";
-
-import python_logo from "src/assets/logos/python.png";
-import pygame_logo from "src/assets/logos/pygame.png";
-import gamemaker_logo from "src/assets/logos/gamemaker.png";
 
 export default function AboutMeSection() {
 	return (
 		<Section id="about_me">
 			<Title>Acerca de mí</Title>
 			<p>
-				Soy desarrollador fullstack. Me motiva construir sistemas limpios, robustos y mantenibles, tanto desde la UI como desde el código que leemos los devs.
+				Me motiva construir sistemas limpios, robustos y mantenibles, tanto desde la UI como desde el código que leemos los devs.
+			</p>
+			<p>
+				Mi idioma nativo es el español y tengo un nivel básico de inglés.
 			</p>
 			<Row>
 				<Button
@@ -40,27 +35,16 @@ export default function AboutMeSection() {
 				/>
 				<Button
 					icon={link_logo}
-					href={`${process.env.PUBLIC_URL}/cv/Programador web - Pedro Simón Resumen CV.pdf`}
+					href={`${process.env.PUBLIC_URL}/cv/Fullstack Developer - Pedro Simón - Resumen CV.pdf`}
 					alt="Resumen CV button"
 					text="Resumen CV"
 				/>
 			</Row>
 
-			<p>
-				Trabajé como Freelancer en Workana con clientes de España, Ecuador y Uruguay.
-				Mi lengua materna es el castellano, y actualmente estoy aprendiendo inglés.
-			</p>
-
 			<Space />
-			<Title icons={[python_logo, csharp_logo, javascript_logo]}>Historia</Title>
+			<Title>Enfoque profesional</Title>
 			<p>
-				A los 12 años, descubrí los lenguajes de <strong>programación</strong> y sus
-				aplicaciones a través de los videojuegos, lo que despertó mi interés y me impulsó a
-				aprender de manera <strong>autodidacta</strong>.
-				<br />
-				Comencé con <strong>Python</strong> y PyGame, y luego pasé a <strong>C# y Unity3D</strong>, desarrollando y publicando varios proyectos de videojuegos.
-				<br />
-				Posteriormente, amplié mi experiencia hacia el desarrollo web, adquiriendo habilidades en backend con <strong>C#/ASP.NET y Java</strong>, así como en frontend con <strong>React y Angular</strong>.
+				Busco aportar en equipos que valoren las buenas prácticas, el código limpio, la documentación, las pruebas y la comunicación. Me enfoco en aprender continuamente, enfrentar nuevos desafíos y aportar mejoras en cada proyecto.
 			</p>
 		</Section>
 	);

@@ -32,7 +32,7 @@ export default function Header() {
 				<ProfileCard
 					icon={me_logo}
 					name="Pedro Diter Simón"
-					description="Programador web"
+					description="Fullstack Developer"
 					href=""
 				/>
 
