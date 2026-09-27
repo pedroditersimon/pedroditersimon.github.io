@@ -19,7 +19,7 @@ import tailwindcss_logo from "src/assets/logos/tailwindcss.png";
 import veggie_shop_logo from "src/assets/projects/veggie_shop_logo.png";
 import cronomate_img from "src/assets/projects/cronomate.png";
 import obrapaw_img from "src/assets/projects/obrapaw_shot.png";
-import anro_eternal_img from "src/assets/projects/909_1x_shots_so.png";
+import anro_eternal_img from "src/assets/projects/anro_eternal.png";
 
 export default function ProjectsSection() {
 	return (
