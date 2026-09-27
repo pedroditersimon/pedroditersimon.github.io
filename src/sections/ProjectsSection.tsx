@@ -19,6 +19,7 @@ import tailwindcss_logo from "src/assets/logos/tailwindcss.png";
 import veggie_shop_logo from "src/assets/projects/veggie_shop_logo.png";
 import cronomate_img from "src/assets/projects/cronomate.png";
 import obrapaw_img from "src/assets/projects/obrapaw_shot.png";
+import anro_eternal_img from "src/assets/projects/909_1x_shots_so.png";
 
 export default function ProjectsSection() {
 	return (
@@ -46,6 +47,27 @@ export default function ProjectsSection() {
 							text: "Visitar",
 							icon: link_img,
 							href: "https://cronomate.vercel.app",
+						},
+					]}
+				/>
+
+				<ProjectCardV2
+					title="Tienda de flores"
+					description="Tienda de ramos artesanales desarrollada en Angular con catálogo, carrito y pedidos por WhatsApp."
+					img={anro_eternal_img}
+					icons={[{ icon: angular_logo }, { icon: tailwindcss_logo }]}
+					tags={[{ text: "Shop" }]}
+					buttons={[
+						{
+							text: "Repositorio GitHub",
+							icon: github_logo,
+							icon_border: "square",
+							href: "https://github.com/pedroditersimon/anro-eternal-landing",
+						},
+						{
+							text: "Visitar",
+							icon: link_img,
+							href: "https://anro-eternal.vercel.app/",
 						},
 					]}
 				/>
