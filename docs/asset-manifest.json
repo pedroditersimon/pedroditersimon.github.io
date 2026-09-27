@@ -1,8 +1,9 @@
 {
   "files": {
     "main.css": "/static/css/main.50a89fd1.css",
-    "main.js": "/static/js/main.f7709e6a.js",
+    "main.js": "/static/js/main.d7e4e38a.js",
     "static/media/OPI 2025.jpg": "/static/media/OPI 2025.33678e14a2b9f836363b.jpg",
+    "static/media/anro_eternal.png": "/static/media/anro_eternal.055f262466b46d580037.png",
     "static/media/obrapaw_shot.png": "/static/media/obrapaw_shot.18142c889fa492bb5348.png",
     "static/media/me.png": "/static/media/me.fe458f254cb6d5bd6dcb.png",
     "static/media/veggie_shop_logo.png": "/static/media/veggie_shop_logo.7d71df06a5239517d24a.png",
@@ -23,10 +24,10 @@
     "static/media/mongodb.svg": "/static/media/mongodb.1f548d0ac32c2d0e9addddd03051f491.svg",
     "index.html": "/index.html",
     "main.50a89fd1.css.map": "/static/css/main.50a89fd1.css.map",
-    "main.f7709e6a.js.map": "/static/js/main.f7709e6a.js.map"
+    "main.d7e4e38a.js.map": "/static/js/main.d7e4e38a.js.map"
   },
   "entrypoints": [
     "static/css/main.50a89fd1.css",
-    "static/js/main.f7709e6a.js"
+    "static/js/main.d7e4e38a.js"
   ]
 }
