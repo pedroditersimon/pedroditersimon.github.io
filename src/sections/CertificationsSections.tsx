@@ -11,6 +11,7 @@ import cert2 from "src/assets/certificates/Introducción al control de versiones
 import cert3 from "src/assets/certificates/1677122274760.png";
 import cert5 from "src/assets/certificates/1676682682729.png";
 import cert_opi from "src/assets/certificates/OPI 2025.jpg";
+import cert_ia from "src/assets/certificates/desarrollo-con-ia.png";
 
 export default function CertificationsSection() {
 	return (
@@ -18,6 +19,13 @@ export default function CertificationsSection() {
 			<Title>Certificaciones</Title>
 
 			<div className="certificates">
+				<CertificationCard
+					img={cert_ia}
+					href={`${process.env.PUBLIC_URL}/certificates/Certificado-Pedro-Simon-hyu6u2bp.pdf`}
+				>
+					Curso de iniciación al desarrollo con IA — mouredev y BIG school
+				</CertificationCard>
+
 				<CertificationCard
 					img={cert_opi}
 					href="https://www.linkedin.com/posts/pedro-diter-simon_no-es-el-final-es-el-comienzo-franco-share-7382772453300678656-WT-I"
